@@ -1,133 +1,262 @@
 /*
    Base Elements
    ========================================================================== */
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  color: $text-color;
-  font-family: $global-font-family;
-  line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: $site_font;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 2rem 0 0.5rem;
-  line-height: 1.2;
-  font-family: $header-font-family;
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: $type-size-3;
+    @include text-formatting($headings_font, 3.25rem, normal, normal, normal, none, $black);
+    
+    @include media-breakpoint-up(sm) {
+        font-size: 4.25rem;
+        line-height: normal;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 5.25rem;
+        line-height: normal;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 6.25rem;
+        line-height: 4.063rem;
+    }
 }
 
 h2 {
-  font-size: $type-size-4;
+    @include text-formatting($headings_font, 2rem, normal, normal, 0.2px, uppercase, $white);
+
+    @include media-breakpoint-up(sm) {
+        font-size: 3rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 3.25rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 3.75rem;
+    }
 }
 
 h3 {
-  font-size: $type-size-5;
+    @include text-formatting($headings_font, 1.25rem, normal, normal, 0.25px, none, $black); 
+    
+    @include media-breakpoint-up(sm) {
+        font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.8rem;
+        line-height: normal;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+        line-height: 2.625rem;
+    }
 }
 
-h4 {
-  font-size: $type-size-6;
-}
+h4 {}
 
-h5 {
-  font-size: $type-size-6;
-}
+h5 {}
 
-h6 {
-  font-size: $type-size-6;
-}
-
-small, .small {
-  font-size: $type-size-6;
-}
+h6 {}
 
 p {
-  margin-bottom: 1.3rem;
+    @include text-formatting($site_font, 0.75rem, normal, 1.4rem, 0.45px, none, $dark-grey); 
+    
+    @include media-breakpoint-up(lg) {
+        font-size: 0.9375rem;
+        line-height: 1.875rem;
+    }
+}
+
+.left-line{
+    @include media-breakpoint-up(sm) {
+        padding-left: 7.5rem;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            background-color: $dark-grey;
+            height: 3px;
+            width: 5rem;
+            top: 0.75rem;
+            left: 0px;
+        }
+    }    
+}
+
+.theme-btn{
+    background-color: $dark-grey;
+    padding: 1.563rem 1.875rem;
+    @include text-formatting($site_font_bold, 0.8125rem, normal, normal, 0.6px, uppercase, $white);
+    display: inline-block;
+    border: 1px solid $dark-grey;
+    @include transition-time(0.4s);
+    i{
+        font-size: 1rem;
+        padding-left: 6px;
+    }
+    &:active, &:focus{
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: $hover-green;
+        border: 1px solid $hover-green;
+        color: $white;
+    }
+    
+
+    &.white-theme{
+        background-color: $white;
+        color: $primary-color;
+        border: 1px solid $white;
+        &:hover{
+            background-color: $light-grey;
+            border: 1px solid $light-grey;
+            color: $primary-color;
+        }
+    }  
+
+    &.white-dark{
+        background-color: $white;
+        color: $dark-grey;
+        border: 1px solid $white;
+        &:hover{
+            background-color: $light-grey;
+            border: 1px solid $light-grey;
+            color: $dark-grey;
+        }
+    } 
+
+    &.transparent-dark{
+        background-color: transparent;
+        color: $dark-grey;
+        border: 1px solid $dark-grey;
+        &:hover{
+            background-color: $dark-grey;            
+            color: $white;
+        }
+    }
+
+    &.transparent-primary{
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        &:hover{
+            background-color: $light-grey;
+            border: 1px solid $light-grey;
+            color: $primary-color;
+        }
+    }
+
+    &.transparent-btn-dark{
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        &:hover{
+            background-color: $light-grey;
+            color: $dark-grey;
+        }
+    }
 }
 
 u,
 ins {
-  text-decoration: none;
-  border-bottom: 1px solid $text-color;
-  a {
-    color: inherit;
-  }
+    text-decoration: none;
+    a {
+        color: inherit;
+    }
 }
 
 del a {
-  color: inherit;
+    color: inherit;
 }
+
 
 /* links */
 
 a {
-  &:hover,
-  &:active {
-    outline: 0;
-  }
+    &:hover,
+    &:active {
+        outline: 0;
+    }
 }
+
 
 /* horizontal rule */
 
 hr {
-  display: block;
-  margin: 1rem 0;
-  border: 0;
-  border-top: 1px solid $border-color;
+    display: block;
+    margin: 1rem 0;
+    border: 0;
 }
+
 
 /* sets a default bottom margin and removes bullet points from lists */
 
 ul li,
 ol li {
-  margin-bottom: 0.5rem;
-  list-style: none;
+    margin-bottom: 0.5rem;
+    list-style: none;
 }
 
 li ul,
 li ol {
-  margin-top: 0.5rem;
-  list-style: none;
+    margin-top: 0.5rem;
+    list-style: none;
 }
+
 
 /* removes margins, padding, and bullet points from navigation lists */
+
 nav {
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  /* override white-space for nested lists */
-  ul li,
-  ol li {
-    margin-bottom: 0;
-  }
-
-  li ul,
-  li ol {
-    margin-top: 0;
-  }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    /* override white-space for nested lists */
+    ul li,
+    ol li {
+        margin-bottom: 0;
+    }
+    li ul,
+    li ol {
+        margin-top: 0;
+    }
 }
+
 
 /* fix IE9 SVG bug */
 
 svg:not(:root) {
-  overflow: hidden;
+    overflow: hidden;
 }
