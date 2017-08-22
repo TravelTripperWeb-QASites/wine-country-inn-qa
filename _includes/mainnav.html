@@ -1,19 +1,32 @@
-{% assign menuitems = site.data.navigation.main %}
+{% assign leftmenuitems = site.data.navigation.leftmenu %}
+{% assign rightmenuitems = site.data.navigation.rightmenu %}
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #e3f2fd;">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <a class="navbar-brand" href="{{ home | absolute_url }}">{{ site.title }}</a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	<ul class="navbar-nav mr-auto">
-	    {% for item in menuitems %}
-	    <li class="nav-item {% if page.url==item.url %}active{% endif%}">
-		<a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
-	    </li>
-	    {% endfor %}
-	</ul>
-    </div>
-</nav>
+<section class="navbar-section">	
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        <ul class="navbar-nav mr-auto">
+	            {% for item in leftmenuitems %}
+	            <li class="nav-item {% if page.url==item.url %}active{% endif%}">
+	                <a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+	            </li>
+	            {% endfor %}
+           		<li class="nav-item">
+	           		<div class="header-logo">           			
+						<a href="/">
+							<img src="/assets/images/main-logo.png" alt="Wine Country Inn" />
+						</a>
+	           		</div>
+				</li>
+	            {% for item in rightmenuitems %}
+	            <li class="nav-item {% if page.url==item.url %}active{% endif%}">
+	                <a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+	            </li>
+	            {% endfor %}
+	        </ul>
+	    </div>
+	    <a href="#" class="theme-btn check-availability-btn">Check Availability</a>
+	</nav>
+</section>

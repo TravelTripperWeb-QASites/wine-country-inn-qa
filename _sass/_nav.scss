@@ -1,0 +1,54 @@
+.navbar-section{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 99;
+	.navbar{
+		max-width: 1680px;
+		margin: auto;
+		padding: 0px;
+		background-color: $black-transparent;
+		position: relative;
+		top: 50px;
+		.navbar-nav{
+			padding-left: 35px;
+			.nav-item{
+				padding-bottom: 10px;
+				padding-right: 35px;
+
+				a{
+					@include text-formatting($site_font_medium, 0.9375rem, normal, normal, 0.5px, uppercase, $white);
+					padding: 25px 0 10px 0;
+					border-bottom: 1px solid transparent;
+				    @include transition-time(0.4s);	
+					&:hover{
+						color: $white;
+						border-bottom: 1px solid $white;
+					}
+				}
+				.header-logo{
+				    text-align: center;	    
+				    z-index: 9;
+				    width: 240px;
+				    margin: auto;
+				    height: 0px;
+					position: relative;
+					top: -52px;
+					margin: 0;
+				    a{
+				    	background-color: $white;
+				    	display: inline-block;
+				    	padding: 15px 30px 30px 30px;
+				    	img{
+				    		width: 100%;
+				    	}
+				    }
+				}
+			}
+		}
+		.check-availability-btn{
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
