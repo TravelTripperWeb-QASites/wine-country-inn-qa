@@ -83,6 +83,18 @@ h5 {}
 
 h6 {}
 
+.italic{
+    font-family: $headings_font_italic;
+}
+.container{
+    width: 100%;
+    padding: 0 20px 0 20px;  
+    @media screen and (min-width: 1700px){        
+        max-width: 1680px; 
+        padding: 0px;       
+    }
+}
+
 p {
     @include text-formatting($site_font, 0.75rem, normal, 1.4rem, 0.45px, none, $dark-grey); 
     
@@ -179,6 +191,13 @@ p {
         &:hover{
             background-color: $light-grey;
             color: $dark-grey;
+        }
+    }
+    &.check-availability-btn{
+        background-color: $primary-color;
+        color: $white;
+        &:hover{
+            background-color: $primary-hover;
         }
     }
 }
