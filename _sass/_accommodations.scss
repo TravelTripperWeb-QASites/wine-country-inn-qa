@@ -1,0 +1,88 @@
+.accommodations-container{
+	@extend .container;
+	max-width:1080px;
+	padding-bottom: 4rem;
+	
+	.accommodations-row{
+		@extend .row;
+		margin-right: 0;
+		margin-left: 0;
+		.accommodations-col{
+			@extend .col-lg-12;
+			padding-left: 0px;
+			padding-right: 0px;
+			.left-line{
+				@extend .left-line;
+			}
+			h3{
+				color: $black;					
+				font-size:2rem;				
+				@include media-breakpoint-up(lg){
+					
+					    font-size: 3.75rem;
+					    padding: 6.4rem 0 2.5rem 0;
+					    line-height: 4rem;
+				}
+			}
+
+			h5{
+				margin-bottom: 2rem;
+			}
+			p{
+				
+				margin-bottom: 2rem;
+			}
+
+		}
+		
+	}
+}
+
+
+.accom-list-container{
+	padding:0;
+	@extend .container;
+	.accom-item{
+		@extend .row;
+		margin:0;
+		margin-bottom: 7rem;
+		
+		.accom-item-col{
+			padding:0;
+			span{
+				    position: absolute;
+				    left: 0;
+				    top: -25px;
+			}
+			h6{
+				margin:1rem 0;
+			}
+			p{
+				 color:$white;	
+				 max-width: 430px;
+				 margin-bottom: 3rem;
+			}
+			.btns-group{
+				a:first-child{
+					margin-right:1rem;
+				}
+			}
+		@extend .col-lg-5;	
+		 background-color: $dark-grey;
+		 color:$white;	
+		 	.accom-item-text{
+		 		@extend .left-line;
+		 		margin:8rem 0 8rem 4rem;
+		 		&:before{
+		 			 background-color: $white;
+		 		}
+		 	}		
+		}
+		.accom-item-img{
+			padding:0;
+		@extend .col-lg-7;		
+						
+		}
+		
+	}
+}

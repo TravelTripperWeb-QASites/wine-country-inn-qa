@@ -1,0 +1,55 @@
+---
+layout: default
+title: "Accomodations"
+meta_description: "Accomodations Descriptions"
+permalink: /accomodations/
+---
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/accommodations/accommodations-banner.jpg);">
+ 	<h1>accommodations</h1>
+</section>
+
+<section class="accommodations-container no-padding">
+		<div class="accommodations-row">
+		<div class="accommodations-col">
+	
+
+			<h3>Luxury overlooking some of the finest views <br clear="hidden-lg"> in the Napa Valley</h3>
+				<div class="left-line">
+		
+			<h5>Our gorgeous Napa Valley hotel features beautiful vineyard views in select rooms and cottages that you can’t find anywhere else. Wake up every morning in your room greeted by the picturesque vineyard view right outside your window. Whether you are traveling to the gorgeous Napa Valley to explore the breathtaking vineyards, delicious restaurants, or incredible landscape, Wine Country Inn & Cottages provides the most luxurious St. Helena accommodations so you can experience the ultimate retreat.
+			</h5>
+					<p>The Wine Country Inn & Cottages is in the heart of wine country, hence the name. It is within minutes of world-class wineries, Michelin-starred restaurants, unique shopping, and so much more. Yet, this secluded St. Helena bed and breakfast allows you to immerse yourself in a relaxing getaway. Here, you’ll enjoy luxurious accommodations and amenities, and some of the finest views in the valley.</p>
+
+					<p>elect from 5 luxury cottages, 4 spacious suites, and 20 elegant guestrooms. Enjoy a sumptuous breakfast each morning complete with healthy and hearty offerings. We are also one of the few hotels in Napa Valley with Jacuzzis in select rooms. Some days, guests elect to sleep in and spend a leisurely day at this St. Helena inn. Relax by the pool or enjoy a massage in the seasonal outdoor spa. Take a walk around the grounds to view the gardens and vineyards.</p>
+
+					<p>Most accommodations feature either a private patio or deck to indulge in views of the vineyards or enjoy a glass of Napa Valley wine. Each reservation at Wine Country Inn provides free parking and complimentary WiFi.</p>
+			</div>
+		</div>
+		</div>	
+</section>
+<section class="accom-list-container">
+{% assign accom-List = site.data._models.accommodations | sort:'order'  %}
+{% for accommodations in accom-List %}
+
+		<div class="accom-item">									        
+    		<div class="accom-item-col no-padding {% cycle '', 'push-md-7' %}">
+    			<div class="accom-item-text">
+    			
+    			<span>01</span>
+                <h4>{{accommodations.title }}</h4>
+    			<h6>from {{accommodations.nightprice}} per night </h6>
+    			<p>{{accommodations.short_description}}</p>
+    			<div class="btns-group">
+    				<a href="{{accommodations.url_friendly_name}}/" title="Book Offer" class="theme-btn transparent-btn-dark">View Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    				<a href="{{accommodations.booking_url}}" target="_blank" title="Book Room" class="theme-btn white-dark" target="_blank">Book Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    			</div>
+    		 </div>	
+    		</div>
+    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-md-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
+    			
+    		</div>						    	
+		</div>		
+	
+{% endfor %}
+</section>
+

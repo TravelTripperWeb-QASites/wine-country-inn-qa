@@ -24,20 +24,30 @@ p {
     margin-bottom: 0px;
 }
 
+.container{
+    width:auto;
+    max-width:1680px;
+    position:relative;
+}
+
 h1 {
-    @include text-formatting($headings_font, 3.25rem, normal, normal, normal, none, $black);
+    @include text-formatting($headings_font, 1.5rem, normal, normal, normal, none, $black);
     
     @include media-breakpoint-up(sm) {
-        font-size: 4.25rem;
+        font-size: 3rem;
         line-height: normal;
     }
 
     @include media-breakpoint-up(md) {
-        font-size: 5.25rem;
+        font-size: 4rem;
         line-height: normal;
     }
 
     @include media-breakpoint-up(lg) {
+        font-size: 5rem;
+        line-height: 4.063rem;
+    }
+    @include media-breakpoint-up(xl) {
         font-size: 6.25rem;
         line-height: 4.063rem;
     }
@@ -77,14 +87,22 @@ h3 {
     }
 }
 
-h4 {}
+h4 {
 
-h5 {}
+     @include text-formatting($headings_font, 2rem, normal, normal, .7px, none, $white);
+}
 
-h6 {}
+h5 {
+     @include text-formatting($headings_font_bold,1.6rem, normal, normal, 0.25px, none, $hover-green); 
+}
+
+h6 {
+        @include text-formatting($site_font_bold,1.1rem, normal, normal, 0.25px, uppercase, $hover-green); 
+
+}
 
 .italic{
-    font-family: $headings_font_italic;
+    font-family: $headings_font_ita;
 }
 .container{
     width: 100%;
@@ -104,6 +122,26 @@ p {
     }
 }
 
+.inner-page-banner{
+    min-height:400px;
+    position:relative;
+
+    @include media-breakpoint-up(md) {
+         min-height:700px;
+    }
+
+    h1{
+        @include translate-text(0%, -50%);
+        position:absolute;
+        top:55%;
+        width: 100%;
+        text-align: center;
+        line-height: 6rem;
+        color: $white;
+        text-transform:uppercase;
+    }
+}
+
 .left-line{
     @include media-breakpoint-up(sm) {
         padding-left: 7.5rem;
@@ -112,7 +150,7 @@ p {
             content: "";
             position: absolute;
             background-color: $dark-grey;
-            height: 3px;
+            height: 2px;
             width: 5rem;
             top: 0.75rem;
             left: 0px;
@@ -122,7 +160,7 @@ p {
 
 .theme-btn{
     background-color: $dark-grey;
-    padding: 1.563rem 1.875rem;
+    padding:1.4rem 2.2rem;
     @include text-formatting($site_font_bold, 0.8125rem, normal, normal, 0.6px, uppercase, $white);
     display: inline-block;
     border: 1px solid $dark-grey;
