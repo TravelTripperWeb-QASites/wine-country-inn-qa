@@ -1,0 +1,38 @@
+{ 
+"title":
+	{"required":true},
+"seo_title":
+	{"type":"text"},
+"seo_description":
+	{"type":"text","required":true},
+"order":
+	{"type":"text"},
+"thumb_image":
+	{"type":"image","required":true},
+"large_image":
+	{"type":"image","required":true},	
+"url_friendly_name":
+	{"type":"url_slug"},
+
+"short_description":
+	{"required":true},
+"nightprice":
+	{"required":true},
+"long_description":
+	{"required":true,"type":"richtext"},
+"g_image1":
+    {"required": true,"type": "image", "label": "Gallery Image 1"},
+    "g_image2":
+    { "required": true, "type": "image","label": "Gallery Image 2" },
+"g_image3":
+    {"required": true,"type": "image","label": "Gallery Image 3" },
+"g_image4":
+    {"required": true, "type": "image", "label": "Gallery Image 4" },
+
+"booking_url":
+	{"type":"text"},
+"amenities":
+	{"type":"richtext"},
+"features":
+	{"type":"richtext"}
+}
