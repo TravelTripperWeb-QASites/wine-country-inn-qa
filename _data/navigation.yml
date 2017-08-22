@@ -1,15 +1,22 @@
-main:
+leftmenu:
   - title: About
-    url: /
-  - title: Rooms
-    url: /
+    url: /about/
+  - title: Accommodations
+    url: /accommodations/
+  - title: Amenities
+    url: /amenities/
   - title: Offers
-    url: /
-  - title: Location
-    url: /
+    url: /offers/
   - title: Events
-    url: 
+    url: /events/
+  - title: Dining
+    url: /dining/
+rightmenu:
+  - title: Attractions
+    url: /attractions/
   - title: Gallery
-    url: /
+    url: /gallery/
+  - title: Blog
+    url: /blog/
   - title: Contact
-    url: /
+    url: /contact/
