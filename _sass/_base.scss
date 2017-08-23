@@ -101,6 +101,13 @@ h6 {
 
 }
 
+.ita_large_text{
+    font-family:$headings_font_semiboldita;
+    color:$hover-green;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0 3rem 0;
+}
 .italic{
     font-family: $headings_font_ita;
 }
@@ -152,7 +159,7 @@ p {
             background-color: $dark-grey;
             height: 2px;
             width: 5rem;
-            top: 0.75rem;
+            top: 0px;
             left: 0px;
         }
     }    
@@ -316,4 +323,30 @@ nav {
 
 svg:not(:root) {
     overflow: hidden;
+}
+
+.heading-italic{
+    font-family:$headings_font_ita;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.before-line{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 40px;
+    background-color: $white;
+    @include media-breakpoint-up(lg){
+     width: 80px;
+    }
+    
+}
+
+.form-control, button{
+    border-radius:0;
 }

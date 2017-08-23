@@ -1,0 +1,24 @@
+{ 
+"title":
+	{"required":true},
+"seo_title":
+	{"type":"text"},
+"seo_description":
+	{"type":"text","required":true},
+"order":
+	{"type":"text"},
+"thumb_image":
+	{"type":"image","required":true},
+"large_image":
+	{"type":"image","required":true},	
+"url_friendly_name":
+	{"type":"url_slug"},
+"short_description":
+	{"required":true},
+"check_rate_url":
+	{"required":true},
+"long_description":
+	{"required":true,"type":"richtext"},
+"booking_url":
+	{"type":"text","required":true}
+}

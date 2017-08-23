@@ -1,0 +1,148 @@
+---
+layout: default
+title: 
+meta_description: 
+parent: accommodations
+---
+
+{% assign accommodations = page %}
+{% assign model = page %}
+<section class="accom-page-slider">
+	<div class="container-fluid no-padding">
+		<div data-ride="carousel" class="carousel slide" id="accomPageSlider">
+		    <div role="listbox" class="carousel-inner">
+		        <div class="carousel-item active bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.large_image.url}}');">
+		        </div>
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image1.url}}');">
+		           
+		        </div>
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image2.url}}');">
+		          
+		        </div>		        
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image3.url}}');">
+		           
+		        </div>		        
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image4.url}}');">
+		            
+		        </div>
+		    </div>
+		    <div class="carousel-arrows">
+		    	<a data-slide="prev" href="#accomPageSlider" class="bg-center-center bg-norepeat left-arrow">
+		    	</a>
+		    	<a data-slide="next" href="#accomPageSlider" class="bg-center-center bg-norepeat right-arrow">
+		    	</a>
+		    	<div class="clear-float"></div>
+		    </div>
+		</div>
+	</div>
+</section>
+
+<section class="accom-details-text">
+	<div class="accom-details-container">
+		<div class="accom-details-row">
+			<div class="left-sec">
+				<h3>{{accommodations.title }}<!-- ocean front efficiency --></h3>
+				<h6 class="left-line">from <span> {{accommodations.nightprice}} per night</span> </h6>
+				{{accommodations.long_description}}
+				
+				<div><a href="{{accommodations.booking_url}}" class="theme-btn" target="_blank">Book this room <i class="fa  fa-angle-right" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="right-sec">
+				<div class="accom-amenities-row">
+					<div class="amenities">
+						<h3> Luxury Amenities: </h3>
+						<ul>	
+							<li>Wine Country Buffet Breakfast
+							served each morning in the 
+							Winery House from 
+							7:30-10:30 AM</li>
+							<li>Wine Reception Friday and 
+							Saturday evenings from 
+							5:00pm-6:00 PM, hosted by
+							a local vintners</li>
+							<li>Split of wine and assorted 
+							beverages in your guest room 
+							upon arrival</li>
+							<li> Heated swimming pool and 
+							Jacuzzi open from 8:00 AM 
+							-10:00 PM</li>
+							<li>In-room spa services available 
+							for purchase</li>	
+							<li> Concierge services</li>
+							<li>Daily parking</li>
+							<li>No resort fee</li>						
+						</ul>
+												   
+					</div>
+					<div class="features">
+						<h3> Features: </h3>
+							<ul>
+							
+							<li>	King or Queen sized beds</li>
+							<li>	All Cottages have a fireplace</li>
+							<li>	Hypo-allergenic bedding</li>
+							<li>	High-speed Wi-Fi Internet</li>
+							<li>	iPod docking capabilities</li>
+							<li>	Oliva Farmacia bath products</li>
+							<li>	Bathrobes & slippers</li>
+							<li>	Iron & ironing board</li>
+							<li>	Hairdryer</li>
+							<li>	Keurig coffee/tea machine
+							<li>	Most rooms have an outdoor 
+							<li>	terrace or patio</li>
+							<li>	Daily housekeeping service
+							<li>	Refrigerator, which includes 
+									assorted beverages and split 
+									of wine upon arrival</li>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="more-accommodation">
+	<div class="more-accommodation-fluid">
+		<div class="more-accommodation-container">
+			<h3><span class="heading-italic">More</span> Accommodations</h3>
+			<div class="clear-float"></div>
+			<div class="more-accom-rooms">
+			
+			{% assign accom-List = site.data._models.accommodations | order:ascending %}
+				{% for accommodations in accom-List limit:3 %}
+				<div class="more-accom-room-item">
+					<div class="first-item accom-inner">						
+						<div class="top-img bg-norepeat bg-cover bg-center-center" style="background-image: url('{{accommodations.thumb_image.url}}');">
+							
+						</div>
+						<div class="left-line">
+						<div class="room-no">0{{forloop.index }}</div>
+						<h4>{{accommodations.title }}</h4>
+						<h6>From <span> {{accommodations.nightprice}} per night </span> </h6>
+						<a href="/accommodations/{{accommodations.url_friendly_name}}/" title="View Rooms" class="">VIEW ROOM <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="clear-float"></div>
+				</div>
+				{% endfor %}
+				
+			</div>
+			<a href="/accommodations/" title="All Offers" class="btn-custom white">View All Accommodations<i class="fa  fa-caret-right" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</section>
+
+
+<section class="common-banner" style="background-image: url(/assets/images/banner-rooms-details.jpg);">
+	
+	<div class="banner-content">
+		<h4>Enjoy a sumptuous breakfast on the house!</h4>
+		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+		<a href="/" target="_blank" class="theme-btn" target="_blank">view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+
+	</div>
+
+</section>

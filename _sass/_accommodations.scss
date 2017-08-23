@@ -88,9 +88,24 @@
 }
 
 .common-banner{
-
+	padding: 12rem 1rem;
+	@extend .bg-img-cover;
 	.banner-content{
-		background: rgba(200, 54, 54, 0.5);
+		background: rgba(255, 255, 255, 0.8);
+		@extend .m-auto;
+		    padding: 3.5rem;
+    		max-width: 635px;
+    		h4{
+    			color:$black;
+    			font-size: 3.5rem;
+    		}
+    		.ita_large_text{
+    			font-family:$headings_font_semiboldita;
+    		}
+		
 	}
 	
 }
+
+
+
