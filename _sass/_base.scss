@@ -57,14 +57,18 @@ h2 {
     @include text-formatting($headings_font, 2rem, normal, normal, 0.2px, uppercase, $white);
 
     @include media-breakpoint-up(sm) {
+        font-size: 2.5rem;
+    } 
+
+    @include media-breakpoint-up(md) {
         font-size: 3rem;
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         font-size: 3.25rem;
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         font-size: 3.75rem;
     }
 }
@@ -111,6 +115,14 @@ h6 {
 .italic{
     font-family: $headings_font_ita;
 }
+
+.semi-ital{
+    font-family: $headings_font_semiboldita;
+    font-size: 1.5625rem;
+    color: $hover-green;
+    line-height: 1.875rem;
+}
+
 .container{
     width: 100%;
     padding: 0 20px 0 20px;  
@@ -118,6 +130,9 @@ h6 {
         max-width: 1680px; 
         padding: 0px;       
     }
+}
+.row{
+    margin: 0px;
 }
 
 p {
@@ -150,7 +165,7 @@ p {
 }
 
 .left-line{
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         padding-left: 7.5rem;
         position: relative;
         &:before{
@@ -164,7 +179,14 @@ p {
         }
     }    
 }
-
+.left-gap{
+    @include media-breakpoint-up(lg) {
+        padding-left: 1.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-left: 7.5rem;
+    }
+}
 .theme-btn{
     background-color: $dark-grey;
     padding:1.4rem 2.2rem;
