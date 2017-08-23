@@ -6,6 +6,9 @@
 	    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	    </button>
+		<a class="small-logo" href="/" title="Wine Country Inn">
+			<img src="/assets/images/small-logo.png" alt="Wine Country Inn" />
+		</a>
 	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	        <ul class="navbar-nav mr-auto">
 	            {% for item in leftmenuitems %}
@@ -13,7 +16,7 @@
 	                <a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
 	            </li>
 	            {% endfor %}
-           		<li class="nav-item">
+           		<li class="nav-item logo-item">
 	           		<div class="header-logo">           			
 						<a href="/">
 							<img src="/assets/images/main-logo.png" alt="Wine Country Inn" />
