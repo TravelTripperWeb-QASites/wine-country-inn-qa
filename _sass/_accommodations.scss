@@ -72,7 +72,13 @@
 		 color:$white;	
 		 	.accom-item-text{
 		 		@extend .left-line;
-		 		margin:8rem 0 8rem 4rem;
+		 		margin:2rem 1rem;
+		 		@include media-breakpoint-up(md){
+		 		margin:2rem;	
+		 		}
+		 		@include media-breakpoint-up(lg){
+		 		margin:8rem 0 8rem 4rem;	
+		 		}
 		 		&:before{
 		 			 background-color: $white;
 		 		}

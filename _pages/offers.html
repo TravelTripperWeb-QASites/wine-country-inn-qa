@@ -1,0 +1,89 @@
+---
+layout: default
+title: Chatham MA Hotel Deals | Chatham Tides Special Offers
+meta_description: There are a number of special offers available when you book here on the Official Website of Chatham Tides, including "Kids Stay Free" and Ferry trip deals.
+permalink: /offers/
+parent: offers
+---
+
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/images/offers/offers-banner.jpg);">
+{% regionblock special-offers-heading %}
+  <h1>Special Offers</h1>
+  {% endregionblock %}
+</section>
+
+<section class="offers-text">
+	<div class="offers-container no-padding">
+		<div class="offers-row">
+			<div class="offers-left no-padding">
+			{% regionblock package-heading %}				
+				<h3>PACKAGES & PROMOTIONS</h3>
+				{% endregionblock %}
+			</div>
+			<div class="offers-right no-padding">
+				
+			</div>
+		</div>
+		<div class="offers-row">
+			<div class="offers-left no-padding">
+			{% regionblock special-offer-content %}			
+				<p class="bold-text">Our Cape Cod hotel deals and promotional offers, allow guests to take advantage of what Cape Cod has at an exceptional promotional rate. Whether you’re looking to go whale-watching, a day spent on the golf course, or dining at Cape Cod’s iconic seafood shacks, Chatham Tides has a package to fit your needs.</p>
+				{% endregionblock %}
+				
+				{% assign counter = 0 %}
+				{% assign offersArray = site.data._models.offers %}
+				
+				{% for offer in offersArray %}
+					{% assign counter = counter | plus: 1 %}
+				{% endfor %}
+
+				{% if counter <= 1 %}
+					<p class="bold-text">At this time there are no special offers available, check back soon!</p>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% if counter <= 1 %}
+	{% include rooms-section.html %}
+{% endif %}
+
+{% if counter > 1 %}
+<section class="offers-list">
+	<div class="offers-list-container">
+    {% assign offers-List = site.data._models.offers | sort: 'order' %}
+    {% for offers in offers-List %}
+		<div class="offers-list-item">									        
+    		<div class="offers-list-item-text no-padding {% cycle '', 'push-md-7' %}">
+    			<h6>{{offers.order}}</h6>
+    			<h4>{{offers.title }}</h4>
+    			<p>{{offers.short_description}}</p>
+    			<div class="special-offers-btns">
+					<a href="{{offers.url_friendly_name}}/" title="All Offers" class="btn-custom white">Learn More <i class="fa  fa-caret-right" aria-hidden="true"></i></a>
+    				<a href="{{offers.check_rate_url}}" title="Book Offer" target="_blank" class="btn-custom left-btn transparent">Check Rate <i class="fa  fa-caret-right" aria-hidden="true"></i></a>
+    			</div>
+    		</div>
+    		<div class="offers-list-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-md-5' %}" style="background-image: url({{offers.thumb_image.url}});" >
+    			
+    		</div>						    	
+		</div>	
+     {% endfor %}   	
+	</div>
+</section>
+{% endif %}
+
+
+<section class="visitors-love">
+	<div class="text-section">	
+	{% regionblock ofr-get-back %}					
+		<h2>
+			Get back<br>
+			to nature.<br>
+		</h2>
+		 {% endregionblock %}
+		<a href="/location/" title="Book Your Stay" class="btn-custom dark-blue">Explore More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+	</div>
+	<div class="clear-float"></div>
+</section>

@@ -41,24 +41,34 @@
 			}
 			.logo-section {
 
-			@extend .col-md-2;
+			@extend .col-xl-2;
+			@extend .col-md-4;
+			@extend .col-sm-12;
 			}
 			.address-section {
 
-			@extend .col-md-2;
+			@extend .col-xl-2;
+			@extend .col-md-4;
+			@extend .col-sm-12;
 			}
 			.contact-section {
 
-			@extend .col-md-2;
+			@extend .col-xl-2;
+			@extend .col-md-4;
+			@extend .col-sm-12;
 			}
 			.quick-section {
 
-			@extend .col-md-2;							
+			@extend .col-xl-2;	
+			@extend .col-md-4;	
+			@extend .col-sm-12;					
 				text-transform:uppercase;
 			}
 			.news-section {
 
-			@extend .col-md-4;	
+			@extend .col-xl-4;	
+			@extend .col-md-8;
+			@extend .col-sm-12;
 				.input-group{
 					    margin: 1rem 0;
 				}	
