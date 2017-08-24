@@ -269,9 +269,7 @@
 }
 
 .special-offers{
-
 	background-position: center bottom;
-
 	@include media-breakpoint-up(sm) {
 		min-height: 1000px;
 		margin-top: 3.5rem;
@@ -280,17 +278,20 @@
 	@include media-breakpoint-up(lg) {
 		min-height: 1920px;
 		margin-top: 7.5rem;
+	}	
+
+}
+
+.special-offers-section{
+	.offers-container{
+		@extend .container;
 	}
-	
 	h2{
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
 		color: $black;
 		text-align: center;
 		text-transform: none;
-	}
-	.offers-container{
-		@extend .container;
 	}
 	.carousel-arrows{
 		top: 0;
@@ -310,7 +311,6 @@
 			}
 		}
 	}
-
 }
 
 .special-offers-slider{
@@ -370,20 +370,56 @@
 	}
 }
 
-
-.recent-blog-posts{
+.items-grid{
 	background-color: $light-grey;
-	padding: 5.625rem 0 3.25rem 0;
-	.blog-container{
+	padding: 4.625rem 0 3.25rem 0;
+	.items-container{
 		@extend .container;
 		h2{
-			padding-bottom: 4.25rem;
+			
 			text-transform: none;
 			color: $black;
+			width: max-content;
+			&:after{
+				width: 100%;
+				background-color: $black;
+				height: 2px; 
+			}
 		}
-		.blog-row{
+		.items-heading-row{
 			@extend .row;
-			.blog-item{
+			padding-bottom: 4.25rem;
+			.items-heading-text{
+				@extend .col-md-5;
+				padding: 0px;
+				width: auto;
+				flex: none;
+			}
+			.items-heading-underline{
+				@extend .col-md-7;
+				padding: 0px;			    
+			    margin-left: 60px;
+			    flex: none;
+			    padding-top: 30px;
+				h6{
+					color: $hover-green;
+					text-transform: uppercase;
+					font-size: 0.8rem;
+					letter-spacing: 0.8px;
+					border-bottom: 2px solid $black;
+					text-align: right;
+					padding-bottom: 20px;
+					width: 100%;
+					@media screen and (max-width: 1700px){
+						width: 55%;
+					}
+				}
+			}
+		}
+
+		.items-row{
+			@extend .row;
+			.item-single{
 				@extend .col-md-4;
 				margin-bottom: 2rem;
 				padding-left: 5px;
@@ -396,7 +432,7 @@
 					padding-left: 50px;
 					padding-right: 50px;
 				}
-				.blog-image{
+				.item-image{
 					margin-bottom: 1.5rem;
 					@media screen and (min-width: 1350px){
 						margin-bottom: 3rem;
@@ -414,7 +450,7 @@
 				a{
 					color: $hover-green;
 					text-transform: uppercase;
-					font-style: 0.8rem;
+					font-size: 0.8rem;
 					letter-spacing: 0.8px;
 					.fa{
 						margin-left: 5px;
