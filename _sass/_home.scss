@@ -292,6 +292,25 @@
 	.offers-container{
 		@extend .container;
 	}
+	.carousel-arrows{
+		top: 0;
+	    bottom: auto;
+	    left: 0;
+	    right: auto;
+	    @include media-breakpoint-down(md) {
+	    	right: 0;
+	    }
+	}
+	.carousel-indicators{
+		&.custom{
+			background-color: $primary-color;
+			padding-top: 0px;
+			li{
+				margin-top: 60px;
+			}
+		}
+	}
+
 }
 
 .special-offers-slider{
@@ -349,24 +368,6 @@
 			}
 		}
 	}
-}
-.carousel-indicators{
-	&.custom{
-		background-color: $primary-color;
-		padding-top: 0px;
-		li{
-			margin-top: 60px;
-		}
-	}
-}
-.carousel-arrows{
-	top: 0;
-    bottom: auto;
-    left: 0;
-    right: auto;
-    @include media-breakpoint-down(md) {
-    	right: 0;
-    }
 }
 
 
