@@ -270,6 +270,8 @@
 
 .special-offers{
 
+	background-position: center bottom;
+
 	@include media-breakpoint-up(sm) {
 		min-height: 1000px;
 		margin-top: 3.5rem;
@@ -280,7 +282,6 @@
 		margin-top: 7.5rem;
 	}
 	
-	background-position: center bottom;
 	h2{
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
