@@ -290,80 +290,83 @@
 	}
 	.offers-container{
 		@extend .container;
-		.offers-row{
-			@extend .row;
-			width: 100%;
-			.offer-text{
+	}
+}
 
-				@extend .col-xl-5;
-				@extend .col-lg-6;
-				padding: 4rem 1.75rem;
+.special-offers-slider{
+	.offers-row{
+		@extend .row;
+		width: 100%;
+		.offer-text{
+			@extend .col-xl-5;
+			@extend .col-lg-6;
+			padding: 4rem 1.75rem;
 
-				@media screen and (min-width: 1400px){
-					padding: 8rem 1.75rem;
-				}
-
-				@include media-breakpoint-down(md) {
-					text-align: center;
-					padding-top: 6rem;
-				}
-
-				background-color: $primary-color;
-				h3{
-					color: $white;
-					padding-bottom: 2.5rem;
-				}
-				p{
-					color: $white;
-					padding-bottom: 3rem;
-				}
-				a{
-					margin: 0 1.25rem 1rem 0;
-					width: 190px;
-					text-align: center;
-				}
-				.left-line{
-					&:before{
-						background-color: $white;
-					}
-				}
-				.slide-count{
-			    	font-size: 10px;
-			    	color: $white;
-			    	position: relative;
-	    			top: 0px;
-	    			@media screen and (max-width: 999px){
-	    				display: none;
-	    			}
-			    }
+			@media screen and (min-width: 1400px){
+				padding: 8rem 1.75rem;
 			}
-			.offer-img{
-				@extend .col-xl-7;
-				@extend .col-lg-6;
-				@include media-breakpoint-down(md) {
-					min-height: 400px;
+
+			@include media-breakpoint-down(md) {
+				text-align: center;
+				padding-top: 6rem;
+			}
+
+			background-color: $primary-color;
+			h3{
+				color: $white;
+				padding-bottom: 2.5rem;
+			}
+			p{
+				color: $white;
+				padding-bottom: 3rem;
+			}
+			a{
+				margin: 0 1.25rem 1rem 0;
+				width: 190px;
+				text-align: center;
+			}
+			.left-line{
+				&:before{
+					background-color: $white;
 				}
 			}
-		}
-		.carousel-indicators{
-			&.custom{
-				background-color: $primary-color;
-				padding-top: 0px;
-				li{
-					margin-top: 60px;
+			.slide-count{
+		    	font-size: 10px;
+		    	color: $white;
+		    	position: relative;
+				top: 0px;
+				@media screen and (max-width: 999px){
+					display: none;
 				}
-			}
-		}
-		.carousel-arrows{
-			top: 0;
-		    bottom: auto;
-		    left: 0;
-		    right: auto;
-		    @include media-breakpoint-down(md) {
-		    	right: 0;
 		    }
 		}
+		.offer-img{
+			@extend .col-xl-7;
+			@extend .col-lg-6;
+			@include media-breakpoint-down(md) {
+				min-height: 400px;
+			}
+		}
 	}
+}
+.carousel-indicators{
+	&.custom{
+		background-color: $primary-color;
+		padding-top: 0px;
+		li{
+			margin-top: 60px;
+		}
+	}
+}
+.carousel-arrows{
+	top: 0;
+    bottom: auto;
+    left: 0;
+    right: auto;
+    @include media-breakpoint-down(md) {
+    	right: 0;
+    }
+}
 }
 
 .recent-blog-posts{
