@@ -87,4 +87,6 @@ page_gen: #
   - data: 'accommodations'
     template: 'accommodation-details'
     dir: 'accommodations'
-  
+  - data: 'offers'
+    template: 'offer-details'
+    dir: 'offers'

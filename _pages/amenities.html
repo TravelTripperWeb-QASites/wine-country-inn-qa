@@ -1,0 +1,76 @@
+---
+layout: default
+title: "amenities"
+meta_description: "amenities desc"
+permalink: /amenities/
+---
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/accommodations/accommodations-banner.jpg);">
+ 	<h1>amenities</h1>
+</section>
+
+<section class="full-text-section">
+	<div class="text-section-container">
+		<div class="left-gap">			
+			<div class="text-row">
+				<div class="text-col">
+					<h2>Escape to luxury <span class="italic"> in the heart </span> of the Napa Valley</h2>
+				</div>
+				<div class="text-col">
+					
+				</div>
+			</div>
+			<div class="text-row">
+				<div class="text-col">
+					<p class="semi-ital left-line">
+						The accommodations at the Wine Country Inn & Cottages allow guests to rest, relax, and rejuvenate in the intimate privacy of a longtime Napa Valley hideaway, where unique architecture meshes with surrounding vineyards for that perfect wine country experience.
+					</p>
+					<a href="#" class="theme-btn"> All Accommodations <i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="text-col">
+					<p class="left-gap">
+						The Wine Country Inn & Cottages is recognized as one of the best St. Helena bed and breakfasts in Napa Valley. With 29 comfortable guestrooms and suites, the inn merges traditional design and country charm, making it one of the most unique boutique hotels near Napa Valley. Don’t miss the chance to take a dip in the pool or spend a luxurious afternoon in the seasonal outdoor spa. Take some time to explore the property of our St. Helena hotel, which includes lush landscape, open lawns, and shaded nooks. Your reward is a picture perfect panoramic view of the Napa Valley wine district.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="accom-list-container">
+{% assign accom-List = site.data._models.accommodations | sort:'order'  %}
+{% for accommodations in accom-List %}
+
+		<div class="accom-item">									        
+    		<div class="accom-item-col no-padding {% cycle '', 'push-md-7' %}">
+    			<div class="accom-item-text">
+    			
+    			<span>01</span>
+                <h4>{{accommodations.title }}</h4>
+    			<h6>from {{accommodations.nightprice}} per night </h6>
+    			<p>{{accommodations.short_description}}</p>
+    			<div class="btns-group">
+    				<a href="{{accommodations.url_friendly_name}}/" title="Book Offer" class="theme-btn transparent-btn-dark">View Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    				<a href="{{accommodations.booking_url}}" target="_blank" title="Book Room" class="theme-btn white-dark" target="_blank">Book Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    			</div>
+    		 </div>	
+    		</div>
+    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-md-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
+    			
+    		</div>						    	
+		</div>		
+	
+{% endfor %}
+</section>
+
+
+
+
+<section class="common-banner" style="background-image: url(/assets/images/banner-plenty.jpg);">
+	
+	<div class="banner-content">
+		<h4>There’s always plenty to go around!</h4>
+		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+		<a href="/" target="_blank" class="theme-btn" target="_blank">group bookings<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+
+	</div>
+
+</section>
