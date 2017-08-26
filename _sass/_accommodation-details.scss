@@ -119,25 +119,6 @@
 					padding-bottom: .5rem;
 				}
 				ul{
-					li{
-						color: $white;
-						padding-bottom: 5px;
-						margin-bottom: 0px;
-						margin-left:15px;
-						font-size: 0.9375rem;
-						line-height: 1.875rem;
-						position:relative;
-								&:before{
-								content:"";
-								width:5px;
-								height:5px;
-								border-radius:10px;
-								position:absolute;
-								background-color:$white;
-								    left: -12px;
-   								 top: 12px;
-							}
-					}
 					
 				}
 			}

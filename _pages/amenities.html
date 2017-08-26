@@ -4,7 +4,7 @@ title: "amenities"
 meta_description: "amenities desc"
 permalink: /amenities/
 ---
-<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/accommodations/accommodations-banner.jpg);">
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-amenities.jpg);">
  	<h1>amenities</h1>
 </section>
 
@@ -13,7 +13,7 @@ permalink: /amenities/
 		<div class="left-gap">			
 			<div class="text-row">
 				<div class="text-col">
-					<h2>Escape to luxury <span class="italic"> in the heart </span> of the Napa Valley</h2>
+					<h2><span class="italic">Unique details  </span> to make your stay with us unforgettable.</h2>
 				</div>
 				<div class="text-col">
 					
@@ -22,55 +22,151 @@ permalink: /amenities/
 			<div class="text-row">
 				<div class="text-col">
 					<p class="semi-ital left-line">
-						The accommodations at the Wine Country Inn & Cottages allow guests to rest, relax, and rejuvenate in the intimate privacy of a longtime Napa Valley hideaway, where unique architecture meshes with surrounding vineyards for that perfect wine country experience.
+						Wine Country Inn & Cottages is one of the most beautiful St. Helena hotels near Napa Valley. Our inn features luxury accommodations and amenities that you can’t find at other hotels or bed and breakfasts in the area.
 					</p>
-					<a href="#" class="theme-btn"> All Accommodations <i class="fa fa-angle-right"></i></a>
+					
 				</div>
 				<div class="text-col">
 					<p class="left-gap">
-						The Wine Country Inn & Cottages is recognized as one of the best St. Helena bed and breakfasts in Napa Valley. With 29 comfortable guestrooms and suites, the inn merges traditional design and country charm, making it one of the most unique boutique hotels near Napa Valley. Don’t miss the chance to take a dip in the pool or spend a luxurious afternoon in the seasonal outdoor spa. Take some time to explore the property of our St. Helena hotel, which includes lush landscape, open lawns, and shaded nooks. Your reward is a picture perfect panoramic view of the Napa Valley wine district.
+						Imagine waking up each morning and being greeted by the picturesque views of the gorgeous Napa Valley vineyards in our select rooms and cottages. And, since we are situated right in St. Helena, our Napa Valley hotel is near the best wineries in the area. Whether you are traveling to the gorgeous Napa Valley to explore the breathtaking vineyards, delicious restaurants, or incredible landscape, the Wine Country Inn & Cottages in St. Helena, CA, is the ultimate retreat.
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="accom-list-container">
-{% assign accom-List = site.data._models.accommodations | sort:'order'  %}
-{% for accommodations in accom-List %}
 
-		<div class="accom-item">									        
-    		<div class="accom-item-col no-padding {% cycle '', 'push-md-7' %}">
-    			<div class="accom-item-text">
-    			
-    			<span>01</span>
-                <h4>{{accommodations.title }}</h4>
-    			<h6>from {{accommodations.nightprice}} per night </h6>
-    			<p>{{accommodations.short_description}}</p>
-    			<div class="btns-group">
-    				<a href="{{accommodations.url_friendly_name}}/" title="Book Offer" class="theme-btn transparent-btn-dark">View Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-    				<a href="{{accommodations.booking_url}}" target="_blank" title="Book Room" class="theme-btn white-dark" target="_blank">Book Room <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-    			</div>
-    		 </div>	
-    		</div>
-    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-md-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
-    			
-    		</div>						    	
-		</div>		
-	
-{% endfor %}
+<section class="recent-blog-posts">
+	<div class="blog-container">		
+		<h2 class="left-gap">Luxury <i class="italic">ameniteis</i></h2>
+		<div class="blog-row">
+			<div class="blog-item">
+				<div class="blog-item-inner">
+					<div class="blog-image">
+						<img src="/assets/images/home/blog1.jpg">
+					</div>
+					<div class="blog-text left-line">
+						<h3>Complimentary Wine Country breakfast</h3>
+						<p>A daily assortment of fresh local delicacies served buffet style from 7:30 a.m. to 10:30 a.m.</p>
+						<a href="#" title="Learn more">Learn more <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="blog-item">
+				<div class="blog-item-inner">
+					<div class="blog-image">
+						<img src="/assets/images/home/blog2.jpg">
+					</div>
+					<div class="blog-text left-line">
+						<h3>Complimentary Wine Country breakfast</h3>
+						<p>A daily assortment of fresh local delicacies served buffet style from 7:30 a.m. to 10:30 a.m.</p>
+						<a href="#" title="Learn more">Learn more <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>			
+			<div class="blog-item">
+				<div class="blog-item-inner">
+					<div class="blog-image">
+						<img src="/assets/images/home/blog3.jpg">
+					</div>
+					<div class="blog-text left-line">
+						<h3>Complimentary Wine Country breakfast</h3>
+						<p>A daily assortment of fresh local delicacies served buffet style from 7:30 a.m. to 10:30 a.m.</p>
+						<a href="#" title="Learn more">Learn more <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="blog-item">
+				<div class="blog-item-inner">
+					<div class="blog-image">
+						<img src="/assets/images/home/blog3.jpg">
+					</div>
+					<div class="blog-text left-line">
+						<h3>Complimentary Wine Country breakfast</h3>
+						<p>A daily assortment of fresh local delicacies served buffet style from 7:30 a.m. to 10:30 a.m.</p>
+						<a href="#" title="Learn more">Learn more <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="blog-item">
+				<div class="blog-item-inner">
+					<div class="blog-image">
+						<img src="/assets/images/home/blog3.jpg">
+					</div>
+					<div class="blog-text left-line">
+						<h3>Complimentary Wine Country breakfast</h3>
+						<p>A daily assortment of fresh local delicacies served buffet style from 7:30 a.m. to 10:30 a.m.</p>
+						<a href="#" title="Learn more">Learn more <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="blog-item">
+				<div class="blog-item-inner">
+					<div class="plus-container">
+
+					<h3 class="italic">Plus:<span></span></h3>
+
+					<ul>
+						<li style="background-image: url(/assets/images/amenities/drinks.png);">Split of wine & assorted beverages in your room upon arrival</li>
+						<li style="background-image: url(/assets/images/amenities/services.png);">Concierge services</li>
+						<li style="background-image: url(/assets/images/amenities/parking.png);">Daily parking</li>
+						<li style="background-image: url(/assets/images/amenities/free.png);">No resort fee</li>
+					</ul>
+
+						
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 
-
-
-<section class="common-banner" style="background-image: url(/assets/images/banner-plenty.jpg);">
+<section class="room-features">
 	
-	<div class="banner-content">
-		<h4>There’s always plenty to go around!</h4>
-		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-		<a href="/" target="_blank" class="theme-btn" target="_blank">group bookings<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+	<div class="row">
+	<div class="col">
+	<h2>In-room features<span></span></h2>
+
+					<ul>
+						
+							<li>King or Queen sized beds</li>
+							<li>iPod docking capabilities</li>
+							<li>Hairdryer</li>
+							<li>Daily housekeeping service</li>
+
+							<li>All Cottages have a fireplace</li>
+							<li>Oliva Farmacia bath products</li></li>
+							<li>Keurig coffee/tea machine</li>
+
+							<li>Hypo-allergenic bedding</li>
+							<li>High-speed Wi-Fi Internet</li>
+							
+							
+							<li>Bathrobes & slippers</li>
+							<li>Iron & ironing board</li>
+							
+							
+							<li>Most rooms have an outdoor terrace or patio</li>
+							
+							<li>Refrigerator, which includes assorted beverages and split of wine upon arrival</li>
+						
+					</ul>
 
 	</div>
 
 </section>
+
+
+<section class="common-banner" style="background-image: url(/assets/images/banner-amenities.jpg);">
+	
+	<div class="banner-content">
+		<h4>Escape to <span class="italic">comfort </span>  in wine country.</h4>
+		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+		<a href="/" target="_blank" class="theme-btn" >book your stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+
+	</div>
+
+</section>
+
