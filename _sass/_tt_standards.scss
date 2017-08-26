@@ -116,4 +116,34 @@ a{
 
 /*Banner center End*/
 
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.p-t-#{$i} {
+			padding-top: #{$i}px;
+		}
+	}
+}
 
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.p-b-#{$i} {
+			padding-bottom: #{$i}px;
+		}
+	}
+}
+
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.m-b-#{$i} {
+			margin-bottom: #{$i}px;
+		}
+	}
+}
+
+@for $i from 0 through 150 {
+	@if $i % 5 == 0 {
+		.m-t-#{$i} {
+			margin-top: #{$i}px;
+		}
+	}
+}
