@@ -18,7 +18,5 @@
 "check_rate_url":
 	{"required":true},
 "long_description":
-	{"required":true,"type":"richtext"},
-"booking_url":
-	{"type":"text","required":true}
+	{"required":true,"type":"richtext"}
 }
