@@ -1,0 +1,57 @@
+---
+layout: default
+title: "Gallery"
+meta_description: "Gallery Descriptions"
+permalink: /gallery/
+---
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/gallery/gallery-banner.jpg);">
+ 	<h1>Photo Gallery</h1>
+</section>
+
+<section>
+    <!-- gallery wrap --> 
+    <div class="gallery-wrapper">
+        <div class="gallery-listing">
+            <div class="gallery-container">
+                <ul class="gallery-nav">
+                    <li><a href="javascript:void(0);" data-rel="all" class="filter active"  data-filter="all">All</a></li>
+                    <li><a href="javascript:void(0);"  data-rel="accommodations" class="filter">Accommodations</a></li>
+                    <li><a href="javascript:void(0);"  data-rel="area"  class="filter">Area </a></li>
+                    <li><a href="javascript:void(0);" data-rel="attractions" class="filter"> Attractions</a></li>
+                </ul>
+            </div>
+            <div class="gallery-wrap" id="lightGallery">
+                <ul class="gallery-row">
+                    {% assign accommodations_images = site.data._models.gallery_accommodations_images | sort : "sort_order" %}
+                    {% for accommodations_gallery in accommodations_images %}          
+                    <li class="gallery-item fancybox" data-filter="accommodations">
+                        <div class="item" data-src="{{accommodations_gallery.large_image.url}}"><img src="{{accommodations_gallery.thumb_image.url}}" class="img-responsive"/> </div>
+                    </li>
+                    {% endfor %}
+
+                    {% assign area_images = site.data._models.gallery_area_images | sort : "sort_order" %}
+                    {% for area_gallery in area_images %}          
+                    <li class="gallery-item fancybox" data-filter="area">
+                        <div class="item" data-src="{{area_gallery.large_image.url}}"><img src="{{area_gallery.thumb_image.url}}" class="img-responsive"/> </div>
+                    </li>
+                    {% endfor %}
+
+                    {% assign attractions_images = site.data._models.gallery_attractions_images | sort : "sort_order" %}
+                    {% for attractions_gallery in attractions_images %}          
+                    <li class="gallery-item fancybox" data-filter="attractions">
+                        <div class="item" data-src="{{attractions_gallery.large_image.url}}"><img src="{{attractions_gallery.thumb_image.url}}" class="img-responsive"/> </div>
+                    </li>
+                    {% endfor %}   
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="common-banner" style="background-image: url(/assets/images/gallery/comfort.jpg);">
+    <div class="banner-content">
+        <h4> Escape to <span class="italic"> comfort </span> in wine country.</h4>
+        <div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+        <a href="/" target="_blank" class="theme-btn" target="_blank" title="Book Your Stay">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+</section>
