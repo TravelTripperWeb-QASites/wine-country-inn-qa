@@ -59,6 +59,8 @@
 			@extend .row;
 			@media screen and (max-width: 1300px){	
 				background-color: $transparent-white3;
+				padding-left: 20px;
+				padding-right: 20px; 
 			}
 			.bottom-img{
 				@extend .col-lg-6;
