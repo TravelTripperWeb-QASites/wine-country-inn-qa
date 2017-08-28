@@ -63,31 +63,39 @@
     	   }
     }
 
-
-   
-
     ul{
-		li{	width: 22%;
-		    display: inline-block;
-		    padding-bottom: 5px;
-			margin-bottom: 0px;
-			margin-left:15px;
-			font-size: 0.9375rem;
-			line-height: 1.875rem;
-			position:relative;
-					&:before{
-					content:"";
-					width:5px;
-					height:5px;
-					border-radius:10px;
-					position:absolute;
-					background-color:$dark-grey;
-					    left: -12px;
-						 top: 12px;
-				}
-		}
-		
-	}
+          @extend .ul-dots; 
+
+          li{
+            display: inline-block;
+            width: 22%;
+          }
+    }
+    
+}
+
+.ul-dots{
+    
+        li{ 
+            
+            padding-bottom: 5px;
+            margin-bottom: 0px;
+            margin-left:15px;
+            font-size: 0.9375rem;
+            line-height: 1.875rem;
+            position:relative;
+                    &:before{
+                    content:"";
+                    width:5px;
+                    height:5px;
+                    border-radius:10px;
+                    position:absolute;
+                    background-color:$dark-grey;
+                        left: -12px;
+                         top: 12px;
+                }
+        }
+        
 }
 
 

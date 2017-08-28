@@ -62,13 +62,13 @@
 
 			h3{
 				color: $dark-grey;
-				font-size: 2rem;
+				font-size: 3.8rem;
 				padding-top: 6.25rem;
 				padding-bottom: 2.5rem;
 				@include media-breakpoint-down(md){
 					padding-top: 7rem;
     				padding-bottom: 3rem;
-					font-size: 4rem;    
+					font-size: 2rem;
 				}
 			}
 
@@ -119,7 +119,16 @@
 					padding-bottom: .5rem;
 				}
 				ul{
-					
+					 @extend .ul-dots;
+
+					 li{
+
+					 	color: $white;
+
+					 	&:before{
+					 	background-color: $white !important;
+					 	}
+					 }
 				}
 			}
 			.amenities{
