@@ -1,1 +1,39 @@
-{"thumb_image":{"url":"/assets/images/gallery/attractions/a-thumb-2.jpg"},"large_image":{"url":"/assets/images/gallery/attractions/a-big-2.jpg"},"sort_order":2}
+{
+  "sort_order": 2,
+  "thumb_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/th-ext-2.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/th-ext-2.jpg",
+    "file_type": "image/jpeg",
+    "name": "th-ext-2",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/large_th-ext-2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/thumb_th-ext-2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/medium_th-ext-2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/small_th-ext-2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070935/xsmall_th-ext-2.jpg",
+    "width": 520,
+    "height": 340,
+    "file_size": 77158,
+    "alt": "garden",
+    "caption": "",
+    "description": ""
+  },
+  "large_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/lg-ext-2.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/lg-ext-2.jpg",
+    "file_type": "image/jpeg",
+    "name": "lg-ext-2",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/large_lg-ext-2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/thumb_lg-ext-2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/medium_lg-ext-2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/small_lg-ext-2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070928/xsmall_lg-ext-2.jpg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 254760,
+    "alt": "garden",
+    "caption": "",
+    "description": ""
+  }
+}
