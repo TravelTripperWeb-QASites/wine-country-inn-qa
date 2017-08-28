@@ -1,9 +1,39 @@
 {
-	"thumb_image": {
-		"url": "/assets/images/gallery/attractions/a-thumb-1.jpg"
-	},
-	"large_image": {
-		"url": "/assets/images/gallery/attractions/a-big-1.jpg"
-	},
-	"sort_order": 1
+  "sort_order": 1,
+  "thumb_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/th-ext-1.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/th-ext-1.jpg",
+    "file_type": "image/jpeg",
+    "name": "th-ext-1",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/large_th-ext-1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/thumb_th-ext-1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/medium_th-ext-1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/small_th-ext-1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070933/xsmall_th-ext-1.jpg",
+    "width": 520,
+    "height": 340,
+    "file_size": 132587,
+    "alt": "attractions",
+    "caption": "",
+    "description": ""
+  },
+  "large_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/lg-ext-1.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/lg-ext-1.jpg",
+    "file_type": "image/jpeg",
+    "name": "lg-ext-1",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/large_lg-ext-1.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/thumb_lg-ext-1.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/medium_lg-ext-1.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/small_lg-ext-1.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-070926/xsmall_lg-ext-1.jpg",
+    "width": 2000,
+    "height": 1333,
+    "file_size": 1075721,
+    "alt": "attractions",
+    "caption": "",
+    "description": ""
+  }
 }
