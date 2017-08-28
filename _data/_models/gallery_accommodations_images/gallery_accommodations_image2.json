@@ -1,1 +1,39 @@
-{"thumb_image":{"url":"/assets/images/gallery/accommodations/a-thumb-2.jpg"},"large_image":{"url":"/assets/images/gallery/accommodations/a-big-2.jpg"},"sort_order":2}
+{
+  "sort_order": 2,
+  "thumb_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/th-acc-2.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/th-acc-2.jpg",
+    "file_type": "image/jpeg",
+    "name": "th-acc-2",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/large_th-acc-2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/thumb_th-acc-2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/medium_th-acc-2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/small_th-acc-2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080648/xsmall_th-acc-2.jpg",
+    "width": 520,
+    "height": 340,
+    "file_size": 63389,
+    "alt": "TV",
+    "caption": "",
+    "description": ""
+  },
+  "large_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/lg-acc-2.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/lg-acc-2.jpg",
+    "file_type": "image/jpeg",
+    "name": "lg-acc-2",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/large_lg-acc-2.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/thumb_lg-acc-2.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/medium_lg-acc-2.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/small_lg-acc-2.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/xsmall_lg-acc-2.jpg",
+    "width": 1000,
+    "height": 667,
+    "file_size": 213250,
+    "alt": "TV",
+    "caption": "",
+    "description": ""
+  }
+}
