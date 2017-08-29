@@ -75,13 +75,12 @@ sass:
 permalink: pretty
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# data_paginate: 
-#   per_page: 5
-#   data: 'blog'
-#   path: 'blog/page:num'
-#   pagination_template: 'blog/index.html'
-#   sort_field: 'date'
-#   sort_reverse: true
+data_paginate: 
+    per_page: 5
+    data: 'blog'
+    path: 'blog/page:num'
+    pagination_template: 'blog/index.html'
+    sort_field: 'date'
 
 page_gen: # 
   - data: 'accommodations'
@@ -90,3 +89,6 @@ page_gen: #
   - data: 'offers'
     template: 'offer-details'
     dir: 'offers'
+  - data: 'blog'
+    template: 'blog-details'
+    dir: 'blog'

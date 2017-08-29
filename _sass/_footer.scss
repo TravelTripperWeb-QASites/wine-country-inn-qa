@@ -11,7 +11,11 @@
 				padding: 3.75rem 0 3.75rem 0;
 			}
 			.left-line{
-				    padding-left: 5rem;
+				padding-left: 0rem;
+				@include media-breakpoint-up(lg) {
+					padding-left: 5rem;
+				}
+				    
 				&:before{
 					background-color:$white;
 					top: 3px;

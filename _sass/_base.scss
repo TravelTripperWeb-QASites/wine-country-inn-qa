@@ -147,7 +147,16 @@ p {
 .inner-page-banner{
     min-height:400px;
     position:relative;
-
+    &:after{
+        z-index: 1;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color:rgba(0,0,0,0.2);
+        }
     @include media-breakpoint-up(md) {
          min-height:700px;
     }
@@ -161,6 +170,7 @@ p {
         line-height: 6rem;
         color: $white;
         text-transform:uppercase;
+         z-index: 3;
     }
 }
 
@@ -371,4 +381,19 @@ svg:not(:root) {
 
 .form-control, button{
     border-radius:0;
+}
+
+.read-more-btn{
+    color:$hover-green;
+    font-family:$site_font_bold;
+    text-transform:uppercase;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .05rem;
+    display: block;
+    margin: 2rem 0;
+
+    &:hover{
+        color:$dark-grey;
+    }
 }

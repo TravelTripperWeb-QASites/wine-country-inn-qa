@@ -126,8 +126,16 @@
 			.text-col{
 				@extend .col-md-6;
 				padding: 0px;
+				p:first-of-type{
+					    margin-top: 2rem;	
+					}
 				.theme-btn{
 					margin-bottom: 20px;
+				}
+				a{
+					&.link{
+						color:$primary-color
+					}
 				}
 				.left-gap{
 					@include media-breakpoint-up(md) {
@@ -137,6 +145,8 @@
 					@include media-breakpoint-up(xl) {
 						padding-left: 120px;
 					}
+
+
 				}
 				h2{
 					color: $black;
@@ -452,6 +462,7 @@
 					text-transform: uppercase;
 					font-size: 0.8rem;
 					letter-spacing: 0.8px;
+					display:block;
 					.fa{
 						margin-left: 5px;
 					}

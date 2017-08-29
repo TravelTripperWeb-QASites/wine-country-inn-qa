@@ -1,0 +1,94 @@
+
+.map-wrap{
+    position:relative;
+    .map-inner{
+        height:450px;
+         @include media-breakpoint-up(lg) {
+            height:1142px;
+         }
+        height:1142px;
+         position:relative;
+        z-index:1;
+    }
+    .dining-widget{
+        position:relative;
+        @include media-breakpoint-up(lg) {
+        position:absolute;
+        z-index:3;
+        right:80px;
+        top:100px;
+        }
+        
+        background-color:$dark-grey;
+        padding-bottom: 1rem;
+        @include media-breakpoint-up(lg) {
+            max-width:720px;
+         }   
+    h4{
+            text-align: center;
+            padding: 2rem 1rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+    }
+    .nav-tabs{
+            
+                border: 0;
+                @extend .row;
+            
+        a{  
+                @extend .col;
+                background-color:$grey3;
+                font-family:$site_font_bold;
+                font-size:2rem;
+                border-radius: 0;
+                cursor:pointer;
+                padding: .5rem 3rem;
+                color:$dark-grey;  
+                font-size: .8rem;
+                text-transform: uppercase;
+
+                letter-spacing: .09rem;
+            &.active{
+              background-color:$dark-grey;
+              color:$white;  
+              border:none;
+              border-top:1px solid $grey3;
+            }
+
+        }
+        a:nth-child(2){
+                margin: 0 1px;
+            }
+    }
+    .tab-content{
+        padding-right: 1rem;
+        margin: 1.5rem;
+        height: 300px;
+        @include media-breakpoint-up(lg) {
+           padding-right: 2rem;      
+           height: 700px;
+            margin: 2.5rem;
+         } 
+        overflow-y: scroll;
+        &::-webkit-scrollbar
+        {
+            width: 10px;
+            
+        }
+        &::-webkit-scrollbar-thumb {
+             width: 10px;
+             background-color: $grey3 ;
+        }
+        &::-webkit-scrollbar-track{
+             width: 10px;
+             background-color: #232323 ;
+        }
+       p{
+
+        color:$white;
+       } 
+    }
+}
+}   
+
+

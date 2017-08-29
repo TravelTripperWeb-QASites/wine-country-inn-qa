@@ -1,0 +1,69 @@
+---
+layout: default
+title: Blog
+meta_description:
+parent: blog
+---
+
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-blog.jpg);">
+    <h1>Blog</h1>
+</section>
+
+<section class="blog-main-sec">
+    <div class="blog-main-inner">
+        <div class="blog-box">
+            
+            {% for post in data_paginator.posts %}
+            <div class="post">
+                <div class="post-img"  style="background-image: url({{post.blogimage.url}});"></div>
+              
+                <div class="info">
+                  <h4><a href="/blog/{{ post.url_friendly_name }}/">{{post.title}}</a></h4>
+                  <div class="date">
+                      {% assign d = post.date | date: "%-d" %}  
+                      <p><span class="">{{ post.date | date: "%B" }} {{ d }},
+                {{ post.date | date: "%Y" }}</span> <span class="categories"><a href="/blog/category/{{post.category.url_friendly_name}}/" title="{{post.category.title}}">{{post.category.title}}</a></span></p>
+                  </div>
+                  {{post.short_description}} 
+                  <a href="/blog/{{ post.url_friendly_name }}/" class="btn-custom no-border read-more-btn" title="More {{post.title}}"> Read more <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            {% endfor %}
+
+            
+            {% if data_paginator.total_pages > 1 %}
+                <div class="pagination">
+                    {% if data_paginator.previous_page %}
+                        {% if data_paginator.page %}
+                            <a class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
+                        {% else %}
+                            <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> {{ page }} </a>
+                         {% endif %}
+                    {% else %}
+                        <a href="#" class="bg-center-center bg-norepeat left-arrow disabled"></a>
+                    {% endif %}
+                    <div class="pagnum">
+                        {% for page in (1..data_paginator.total_pages) %}
+                            {% if page == data_paginator.page %}
+                                <a class="current" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                            {% elsif page == 1 %}
+                                <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                            {% else %}
+                                <a href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% if data_paginator.next_page %}
+                        <a  class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> </a>
+                    {% else %}
+                        <a href="#" class="bg-center-center bg-norepeat right-arrow disabled"> </a>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+        </div>
+        {% include blog-aside.html %}
+    </div>
+
+</section>
+

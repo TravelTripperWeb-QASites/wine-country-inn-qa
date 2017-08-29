@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog Categories
+meta_description:
+--- 
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-blog.jpg);">
+    <h1>Blog</h1>
+</section>
+
+<section class="blog-main-sec">
+    <div class="blog-main-inner">
+        <div class="blog-box">
+         {% for post in site.data._models.category%} 
+            <div class="post">
+                <img src="{{post.blogimage.url}}" alt="Blog">
+                <div class="info">
+                  <h4><a href="{{ post.url_friendly_name }}">{{post.title}}</a></h4>
+                  <div class="date">
+                      {% assign d = post.date | date: "%-d" %}  
+                      <p><span class="">{{ post.date | date: "%B" }} {{ d }},
+                {{ post.date | date: "%Y" }}</span> <span class="categories"><a href="/blog/category/{{post.category.url_friendly_name}}/" title="{{post.category.title}}">{{post.category.title}}</a></span></p>
+                  </div>
+                  {{post.short_description}} 
+                  <a href="/blog/{{ post.url_friendly_name }}/" class="btn-custom no-border" title="Read more"> Read more <i class="fa  fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+         {% endfor %}
+          
+        </div>
+        {%include blog-aside.html%}
+ 
+</section>
+
