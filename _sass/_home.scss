@@ -399,11 +399,13 @@
 		.items-heading-row{
 			@extend .row;
 			padding-bottom: 4.25rem;
+			overflow: hidden;
 			.items-heading-text{
 				@extend .col-md-5;
 				padding: 0px;
 				width: auto;
 				flex: none;
+
 			}
 			.items-heading-underline{
 				@extend .col-md-7;

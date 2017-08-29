@@ -55,21 +55,21 @@
 
     }
     
-    span{
-    	   @extend .line-after-bottom;
-
-    	   &:after{
-    	   	background-color:$dark-grey;
-    	   	height:2px;
-    	   }
-    }
-
     ul{
           @extend .ul-dots; 
 
           li{
             display: inline-block;
-            width: 22%;
+            width: 100%;
+            @include media-breakpoint-up(md) {
+
+                width: 30%;
+            }
+            @include media-breakpoint-up(lg) {
+
+                width: 22%;
+            }
+
           }
     }
     
@@ -101,3 +101,11 @@
 
 
  
+  .right-line{
+           @extend .line-after-bottom;
+
+           &:after{
+            background-color:$dark-grey;
+            height:2px;
+           }
+    }

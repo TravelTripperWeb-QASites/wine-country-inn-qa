@@ -9,6 +9,10 @@
 				margin-left: 0px;
 				margin-right: 0px;
 				padding: 3.75rem 0 3.75rem 0;
+				@include media-breakpoint-down(sm) {
+
+                   text-align: center;
+                }
 			}
 			.left-line{
 				padding-left: 0rem;
@@ -48,15 +52,20 @@
 			@extend .col-xl-2;
 			@extend .col-md-4;
 			@extend .col-sm-12;
+
 			}
 			.address-section {
-
+				@include media-breakpoint-down(sm) {
+					padding-top:3rem;
+				}
 			@extend .col-xl-2;
 			@extend .col-md-4;
 			@extend .col-sm-12;
 			}
 			.contact-section {
-
+				@include media-breakpoint-down(sm) {
+					padding-top:3rem;
+				}
 			@extend .col-xl-2;
 			@extend .col-md-4;
 			@extend .col-sm-12;
@@ -67,9 +76,15 @@
 			@extend .col-md-4;	
 			@extend .col-sm-12;					
 				text-transform:uppercase;
+
+				@include media-breakpoint-down(md) {
+					padding-top:3rem;
+				}
 			}
 			.news-section {
-
+				@include media-breakpoint-down(md) {
+					padding-top:3rem;
+				}
 			@extend .col-xl-4;	
 			@extend .col-md-8;
 			@extend .col-sm-12;
@@ -135,14 +150,16 @@
             } 
     }
     .copyright-content {
-        @extend .col-md-4;
+        @extend .col-lg-4;
         font-size: .7rem ;
         text-transform:uppercase;
-                    
+        @include media-breakpoint-down (md) {
+        	 text-align: center;
+        }            
         
     } 
     .social-content{
-        @extend .col-md-4;
+        @extend .col-lg-4;
         @extend .social;
         @include media-breakpoint-down (md) {
         	margin:2rem 0;
@@ -150,14 +167,14 @@
 
     }
     .credentials {
-        @extend .col-md-4;
+        @extend .col-lg-4;
         font-size: 0.625rem;
         text-transform: uppercase;
         letter-spacing: 0.20rem;
         padding: 0 0 0 0;
         text-align: right;
-        @include media-breakpoint-down (md) {
-            text-align: right;
+        @include media-breakpoint-down (lg) {
+            text-align: center;
         }
         a {
             display: inline-block;

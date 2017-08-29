@@ -105,20 +105,27 @@
 }
 
 .common-banner{
-	padding: 12rem 1rem;
+	padding: 6rem 1rem;
 	margin-top: 6rem;
-	@include media-breakpoint-down(md){
-	 			margin-top: 2rem;
+	@include media-breakpoint-up(md){
+				padding: 12rem 1rem;
+	 			margin-top: 6rem;
 	 		}
 	@extend .bg-img-cover;
 	.banner-content{
 		background: rgba(255, 255, 255, 0.8);
 		@extend .m-auto;
-		    padding: 3.5rem;
+		    padding: 2rem;
     		max-width: 635px;
+    		@include media-breakpoint-up(md){
+    		padding: 3.5rem;
+    		}
     		h4{
     			color:$black;
-    			font-size: 3.5rem;
+    			font-size: 2rem;
+    			@include media-breakpoint-up(md){
+	    		font-size: 3.5rem;
+	    		}
     		}
     		.ita_large_text{
     			font-family:$headings_font_semiboldita;
