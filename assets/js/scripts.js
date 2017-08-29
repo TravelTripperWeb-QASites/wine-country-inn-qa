@@ -31,6 +31,25 @@ $(document).ready(function(){
 		fullScreen: !1
 	}), $("img.lazy").show();
 
+	$(".owl-carousel").owlCarousel({
+	    dots: false,
+	    nav: true,
+	    margin: 30,
+	    responsiveClass: true,
+	    responsive: {
+	      0: {
+	        items: 1
+	      },
+	      960: {
+	        items: 2
+	      },
+	      1366: {
+	        items: 3,
+	        loop: false
+	      }
+	    }
+	  });	
+
 });
 
 
