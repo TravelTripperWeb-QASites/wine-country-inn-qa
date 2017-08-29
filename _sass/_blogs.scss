@@ -13,7 +13,7 @@
 .blog-main-sec{
 	@extend .container;
 	max-width:1440px;
-	padding-bottom:7.5rem;
+	padding-bottom:5rem;
 	.blog-main-inner{
 		@extend .row;
 		.blog-box{
@@ -33,14 +33,22 @@
 				.info{
 					width:100%;
 					position:relative;
-					padding-left:13%;
+					padding-left: 7.5rem;
 					margin-top: 2rem;
 					&:before{
-						@extend .left-line;
-						top:15px;
-					}
+			            content: "";
+			            position: absolute;
+			            background-color: $dark-grey;
+			            height: 2px;
+			            width: 5rem;
+			            top: 9px;
+			            left: 0px;
+			        }
+					
 					h4{
-						font-size:1.5rem;
+						font-size:2rem;
+
+						
 						a{
 							color:$dark-grey;
 						}
@@ -245,11 +253,11 @@
 	    		@extend h6;
 	    		color:$dark-grey;
 	    		&.prev{
-    			    background: url(/images/home/left-arrow-grey.png) no-repeat 0 0;
+    			    background: url(/assets/images/home/left-arrow-grey.png) no-repeat 0 0;
     			    padding: 0 0 0 2.5rem;
 	    		}
 	    		&.next{
-    			    background: url(/images/home/right-arrow-grey.png) no-repeat right 0;
+    			    background: url(/assets/images/home/right-arrow-grey.png) no-repeat right 0;
 			        padding: 0 2.5rem 0 1.875rem;
 	    		}
 	    		&:hover{
@@ -436,4 +444,17 @@
 			}
 		}
 	}
+}
+
+
+.blog-details{
+
+	h3{
+		 font-size: 4rem;
+	}
+
+	.post-img{
+	    margin-bottom: 2rem;	
+	}
+
 }

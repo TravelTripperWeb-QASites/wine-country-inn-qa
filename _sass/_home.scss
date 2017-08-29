@@ -400,6 +400,18 @@
 			@extend .row;
 			padding-bottom: 4.25rem;
 			overflow: hidden;
+			position:relative;
+
+			.view-all-items{
+				position:absolute;
+				right:0;
+				top:20px;
+				font-family:$site_font_bold;
+				color:$hover-green;
+				text-transform:uppercase;
+				font-size: .8rem;
+    			letter-spacing: .05rem;
+			}
 			.items-heading-text{
 				@extend .col-md-5;
 				padding: 0px;

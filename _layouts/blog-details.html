@@ -32,7 +32,7 @@ layout: default
 
 <section class="blog-main-sec blog-detail-main">
     <div class="blog-main-inner">
-        <div class="blog-box">
+        <div class="blog-box blog-details">
         <div class="next-prev">
              {%if prevPostUrl %}
             <a href="/blog/{{prevPostUrl}}" title="Prev" class="prev">Prev</a>
@@ -45,16 +45,16 @@ layout: default
             <div class="post">
                 <div class="info">
                   <div class="date">
-                  {% assign d = post.date | date: "%-d" %}
-                      <p><span class="">{{ post.date | date: "%B" }} {{ d }},
-                {{ post.date | date: "%Y" }}</span>{%for banner in category%}
+                  {% assign d = blog.date | date: "%-d" %}
+                      <p><span class="">{{ blog.date | date: "%B" }} {{ d }},
+                {{ blog.date | date: "%Y" }}</span>{%for banner in category%}
                 {%if banner.id == blog.category %}
                   <span class="categories"><a href="/blog/category/{{banner.url_friendly_name}}/">{{banner.title}}</a></span>
                 {%endif%}
                 {%endfor%}
                 </p>
                   </div>
-                  <img src="{{blog.blogimage.url}}" alt="{{blog.title}}" />
+                   <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
                   {{blog.long_description}}
                   <div class="events-social">
                     <ul>
@@ -73,7 +73,7 @@ layout: default
                       <li><a href="" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                   </div>
-                  <div class="related-posts-block no-padding">
+              <!--     <div class="related-posts-block no-padding">
                     <h5>related posts</h5>
                     <div class="related-posts-block-inner">
                       <div class="blog-related">
@@ -91,7 +91,7 @@ layout: default
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="comment-sec-main no-padding">
                     <h5><span>2</span> comments</h5>
                       <div class="comment-sec">
@@ -106,7 +106,7 @@ layout: default
                       </div>
                   </div>
                   <div class="form-section no-padding">
-                    <h5>leave a comment</h5>
+                    <h5>LEAVE A COMMENT</h5>
                     <h6>Required fields are marked *</h6>
                       <div class="form-group name">
                           <input type="text" class="form-control" id="" placeholder="Name *" aria-label="Name">
@@ -120,7 +120,7 @@ layout: default
                       <div class="form-group">
                         <textarea class="form-control" id="" placeholder="Comment" aria-label="Comment"></textarea>
                       </div>
-                      <button type="submit" class="btn-custom black-border">Submit Comment <i class="fa  fa-caret-right" aria-hidden="true"></i></button>
+                      <button type="submit" class="theme-btn transparent-dark">Submit Comment <i class="fa  fa-caret-right" aria-hidden="true"></i></button>
                   </div>
 
                 </div>
@@ -131,3 +131,13 @@ layout: default
 
 </section>
 
+<section class="common-banner mt-0" style="background-image: url(/assets/images/banner-blog-details.jpg);">
+  
+  <div class="banner-content">
+    <h4>Enjoy a host of <span class="italic">unique extras</span> during your stay.</h4>
+    <div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+    <a href="/amenities/" target="_blank" class="theme-btn" >view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+
+  </div>
+
+</section>
