@@ -36,10 +36,12 @@ $(document).ready(function(){
 
 function setScrollHeader(){
 	var scroll = $(window).scrollTop();
-    if(scroll == 0){
-    	$(".navbar-section").removeClass("scroll-header");
-    } else {
-    	$(".navbar-section").addClass("scroll-header");
-    }	
+	if(window.innerWidth > 992) {		
+	    if(scroll == 0){
+	    	$(".navbar-section").removeClass("scroll-header");
+	    } else {
+	    	$(".navbar-section").addClass("scroll-header");
+	    }	
+	}
 }
 
