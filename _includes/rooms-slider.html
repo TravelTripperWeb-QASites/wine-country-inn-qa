@@ -14,58 +14,24 @@
         </li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <div class="carousel-bg bg-center-center bg-cover bg-norepeat" style="background-image: url('/assets/images/home/room-slide-1.jpg');">
+     {% assign accom-List = site.data._models.accommodations | sort:'order' | limit: 4 %}
+      {% for accommodations in accom-List %}
+        <div class="carousel-item bg-center-center bg-cover bg-norepeat {% if forloop.first == true %} active{% endif %}" >
+            <div class="carousel-bg bg-center-center bg-cover bg-norepeat" style="background-image: url({{accommodations.large_image.url}});">
             	<div class="room-text">
             		<span class="slide-count">
-            			1 / 4
+            			1 / {{forloop.index }}
             		</span>
-            		<h3 class="left-line">The Winery House</h3>
-            		<p class="left-gap">from $250 per night</p>
-            		<a href="#" class="theme-btn transparent-dark">View Room <i class="fa fa-angle-right"></i></a>
-            		<a href="#" class="theme-btn">Book Now <i class="fa fa-angle-right"></i> </a>
+            		<h3 class="left-line">{{accommodations.title }}</h3>
+            		<p class="left-gap">{{accommodations.short_description }}</p> 
+            		<a href="/accommodations/{{accommodations.url_friendly_name}}/" class="theme-btn transparent-dark">View Room <i class="fa fa-angle-right"></i></a>
+            		<a href="{{accommodations.booking_url}}" class="theme-btn">Book Now <i class="fa fa-angle-right"></i> </a>
             	</div>
             </div>
         </div>
-        <div class="carousel-item">
-            <div class="carousel-bg bg-center-center bg-cover bg-norepeat" style="background-image: url('/assets/images/home/room-slide-1.jpg');">
-            	<div class="room-text">
-            		<span class="slide-count">
-            			2 / 4
-            		</span>
-            		<h3 class="left-line">The Winery House</h3>
-            		<p class="left-gap">from $250 per night</p>
-            		<a href="#" class="theme-btn transparent-dark">View Room <i class="fa fa-angle-right"></i></a>
-            		<a href="#" class="theme-btn">Book Now <i class="fa fa-angle-right"></i> </a>
-            	</div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-bg bg-center-center bg-cover bg-norepeat" style="background-image: url('/assets/images/home/room-slide-1.jpg');">
-            	<div class="room-text">
-            		<span class="slide-count">
-            			3 / 4
-            		</span>
-            		<h3 class="left-line">The Winery House</h3>
-            		<p class="left-gap">from $250 per night</p>
-            		<a href="#" class="theme-btn transparent-dark">View Room <i class="fa fa-angle-right"></i></a>
-            		<a href="#" class="theme-btn">Book Now <i class="fa fa-angle-right"></i> </a>
-            	</div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="carousel-bg bg-center-center bg-cover bg-norepeat" style="background-image: url('/assets/images/home/room-slide-1.jpg');">
-            	<div class="room-text">
-            		<span class="slide-count">
-            			4 / 4
-            		</span>
-            		<h3 class="left-line">The Winery House</h3>
-            		<p class="left-gap">from $250 per night</p>
-            		<a href="#" class="theme-btn transparent-dark">View Room <i class="fa fa-angle-right"></i></a>
-            		<a href="#" class="theme-btn">Book Now <i class="fa fa-angle-right"></i> </a>
-            	</div>
-            </div>
-        </div>
+           {% endfor %}
+       
+      
     </div>
     <div class="carousel-arrows">
     	<a data-slide="prev" href="#roomsSlider" class="bg-center-center bg-norepeat left-arrow">
