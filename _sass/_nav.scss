@@ -12,8 +12,26 @@
 		top: 44px;
 		@include transition-time(0.4s);	
 		.small-logo{
-			display: none;
-			@include transition-time(0.4s);	
+			display: inline-block;			
+			text-align: center;
+			background-color: $white;
+			padding: 15px 0 15px 0;
+			width: 120px;
+			@media screen and (max-width: 1650px){
+				padding: 10px 0 10px 0;
+			}
+			@media screen and (min-width: 992px){
+				display: none;
+				@include transition-time(0.4s);	
+				width: 300px;
+			}
+
+			@media screen and (max-width: 991px){
+				width: 240px;
+			}
+			@media screen and (max-width: 580px){
+				width: 120px;
+			}
 		}
 		@media screen and (max-width: 1499px){
 			top: 20px;
@@ -77,6 +95,9 @@
 					@media screen and (max-width: 1299px) and (min-width: 992px){
 						width: 140px;
 					}
+					@media screen and (max-width: 991px){
+						display: none;
+					}
 				    a{
 				    	background-color: $white;
 				    	display: inline-block;
@@ -92,10 +113,20 @@
 				}
 			}
 		}
+		.navbar-toggler{
+			background-color: $white;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			width: 55px;
+			top: 12px;
+		}
 		.check-availability-btn{
 			width: 250px;
 			text-align: center;
 			padding: 30px 10px 30px 10px;
+			border: 0px;
 			@media screen and (max-width: 1650px){
 				padding-left: 240px;
 				padding: 25px 10px 25px 10px;
@@ -103,28 +134,32 @@
 			@media screen and (max-width: 1499px){
 				font-size: 0.7rem;
 			}
+			@media screen and (max-width: 991px){
+				position: absolute;
+				right: 0px;
+				width: 240px;
+    			padding: 25px 0 25px 0;
+			}
+			@media screen and (max-width: 580px){
+				width: 120px;
+				padding: 18px 0 18px 0;
+			}
+
 		}
 	}
 }
 
 .scroll-header{
 	.navbar{
+		.small-logo{
+			display: inline-block;	
+		}
 		top: 0px;
 		.navbar-nav{
 			.nav-item{
 				&.logo-item{
 					display: none;
 				}
-			}
-		}
-		.small-logo{
-			display: inline-block;
-			width: 300px;
-			text-align: center;
-			background-color: $white;
-			padding: 15px 0 15px 0;
-			@media screen and (max-width: 1650px){
-				padding: 10px 0 10px 0;
 			}
 		}
 	}

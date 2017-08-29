@@ -190,6 +190,9 @@ p {
     }    
 }
 .left-gap{
+    @include media-breakpoint-up(xs) {
+        padding-left: 0.5rem;
+    }
     @include media-breakpoint-up(lg) {
         padding-left: 1.5rem;
     }
@@ -279,6 +282,9 @@ p {
     }
 }
 
+button {
+    cursor: pointer;
+}
 u,
 ins {
     text-decoration: none;
@@ -383,6 +389,7 @@ svg:not(:root) {
     border-radius:0;
 }
 
+<<<<<<< HEAD
 .read-more-btn{
     color:$hover-green;
     font-family:$site_font_bold;
@@ -396,4 +403,36 @@ svg:not(:root) {
     &:hover{
         color:$dark-grey;
     }
+=======
+
+@mixin placeholder($color, $font-size){
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $color;
+        font-size: $font-size;
+        font-style: italic;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: $color;
+        font-size: $font-size;
+        font-style: italic;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: $color;
+        font-size: $font-size;
+        font-style: italic;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $color;
+        font-size: $font-size;
+        font-style: italic;
+    }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1 !important;
+   margin-right: 5px;
+
+
+>>>>>>> 6717d06c3a6d6606390fa95698e23576b46ee987
 }
