@@ -1,0 +1,51 @@
+.rfp-container{
+	max-width: 640px !important;
+	text-align:center;
+	margin: 0 auto; 
+	p{
+		padding-bottom:0 !important;
+	}
+	h3{
+		width:100%;
+		text-align:center;
+		color: $black;
+		text-transform: none;
+	}
+	.rfp-row{
+		@extend .row;
+		.form-group{
+			@extend .col-md-6;
+			text-align:left;
+			input, textarea{
+			    border: 1px solid $border-color;
+			    padding: 1.125rem 0 1.125rem 1.125rem;
+			    border-radius: 0;
+			    margin-bottom: 10px;
+			    height: 50px;
+			    background: transparent;
+    			font-size: 14px;
+			}
+			textarea{
+				height:200px;
+				resize:none;
+			}
+			&.full{
+				max-width:100% !important;
+				flex:0 0 100%;
+			}
+			button{
+				cursor:pointer;
+			}
+			span{
+				display:inline-block;
+			}
+			input[type="radio"]{
+				display:inline-block;
+				height:auto;
+			}
+			label{
+				padding-left:30px;
+			}
+		}
+	}
+}
