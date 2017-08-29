@@ -436,3 +436,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 }
+
+.two-btn-margin{
+     margin-right:0rem;
+     margin-bottom:1rem;  
+     @include media-breakpoint-up(lg){
+      margin-right:1rem;
+    }
+   
+}

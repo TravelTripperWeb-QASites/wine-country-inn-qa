@@ -35,7 +35,7 @@ permalink: /accommodations/
     		<div class="accom-item-col no-padding {% cycle '', 'push-md-7' %}">
     			<div class="accom-item-text">
     			
-    			<span>01</span>
+    			<span>0{{forloop.index }}</span>
                 <h4>{{accommodations.title }}</h4>
     			<h6>from {{accommodations.nightprice}} per night </h6>
     			<p>{{accommodations.short_description}}</p>

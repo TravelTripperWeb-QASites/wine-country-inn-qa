@@ -126,7 +126,7 @@
 					 	color: $white;
 
 					 	&:before{
-					 	background-color: $white !important;
+					 	background-color: $white ;
 					 	}
 					 }
 				}
@@ -180,24 +180,15 @@
 			    font-size: 2rem;
 			    float: left;
 			    width: 100%;
+			    overflow: hidden;
 				@media screen and (min-width: 1680px) {
 					padding: 0rem 0 5.625rem 7.5rem;
 					font-size: 3.7rem;
 				}
-				&:after{
-					@include media-breakpoint-down(xs){
-						display: none;
-					}
-					@extend .before-line;
-					    width: 100%;
-					    left: 0rem;
-					    top: 60px;
-					    @media screen and (min-width: 1680px) {
-				    	    width: 50%;
-							left: 50%;
-							top: 41px;
-					    }
+				.right-line:after{
+					    background-color: $white;
 				}
+				
 				
 			}
 
@@ -213,18 +204,19 @@
 						padding-right: 0rem;
 						padding-left: 0rem;						
 					}	
-					.left-line{
-						&:before{
-							background-color:$white;
-							top:10px;
-						}
-
 					.room-no{
 						    position: absolute;
 						    left: 0;
 						    top: -18px;
 						    color:$white;
 					}
+					.left-line{
+						&:before{
+							background-color:$white;
+							top:10px;
+						}
+
+					
 					}
 					.accom-inner{
 						@media screen and (min-width: 992px){

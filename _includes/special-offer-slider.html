@@ -3,152 +3,41 @@
 		<h2>Special <span class="italic">offers</span></h2>
 		<div id="offersSlider" class="carousel slide special-offers-slider" data-ride="carousel">
 		    <ol class="carousel-indicators custom">
-		        <li data-target="#offersSlider" data-slide-to="0" class="active">
+		   
+      		
+		    {% assign offers-List = site.data._models.offers %}
+      		
+		     {% for offers in offers-List %}
+
+		      <li data-target="#offersSlider" data-slide-to="{{forloop.index0}}" class="active">
 		        </li>
-		        <li data-target="#offersSlider" data-slide-to="1">
-		        </li>
-		        <li data-target="#offersSlider" data-slide-to="2">
-		        </li>
-		        <li data-target="#offersSlider" data-slide-to="3">
-		        </li>
-		        <li data-target="#offersSlider" data-slide-to="4">
-		        </li>
-		        <li data-target="#offersSlider" data-slide-to="5">
-		        </li>
-		        <li data-target="#offersSlider" data-slide-to="6">
-		        </li>
-		        <li data-target="#offersSlider" data-slide-to="7">
-		        </li>
+		     {% endfor %}
+		        
+		        
+		      
 		    </ol>
 		    <div class="carousel-inner" role="listbox">
-		        <div class="carousel-item active">
+
+		    {% assign offers-List = site.data._models.offers | sort:'order' | limit: 4 %}
+      		
+		     {% for offers in offers-List %}
+		        <div class="carousel-item {% if forloop.first == true %} active{% endif %} ">
 			        <div class="offers-row">
 			        	<div class="offer-text">
-			        		<span class="slide-count">1 / 8</span>
+			        		<span class="slide-count">	1 / {{forloop.index }}</span>
 			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
+			        			<h3>{{offers.title }}</h3>
+			        			<p>{{offers.short_description}}</p>
+			        			<a href="{{offers.booking_url}}" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
+			        			<a href="/offers/" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
 			        		</div>
 			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
+			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url({{offers.thumb_image.url}});">
 			        		
 			        	</div>
 			        </div>
 		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">2 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">3 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">4 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">5 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">6 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">7 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
-		        <div class="carousel-item">
-			        <div class="offers-row">
-			        	<div class="offer-text">
-			        		<span class="slide-count">8 / 8</span>
-			        		<div class="offer-text-inner left-line">
-			        			<h3>Advanced Purchase Package</h3>
-			        			<p>Book your reservation in advance and receive up to 15% Off. Special complimentary winery visits and wine tasting opportunities are included.</p>
-			        			<a href="#" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
-			        			<a href="#" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
-			        		</div>
-			        	</div>
-			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url(/assets/images/home/offer-slide-1.jpg);">
-			        		
-			        	</div>
-			        </div>
-		        </div>
+		   {% endfor %}
 		    </div>
 		    <div class="carousel-arrows">
 		    	<a data-slide="prev" href="#offersSlider" class="bg-center-center bg-norepeat left-arrow">
