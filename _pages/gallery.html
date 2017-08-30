@@ -25,21 +25,36 @@ permalink: /gallery/
                     {% assign accommodations_images = site.data._models.gallery_accommodations_images | sort : "sort_order" %}
                     {% for accommodations_gallery in accommodations_images %}          
                     <li class="gallery-item fancybox" data-filter="accommodations">
-                        <div class="item" data-src="{{accommodations_gallery.large_image.url}}"><img src="{{accommodations_gallery.thumb_image.url}}" class="img-responsive"/> </div>
+                        <div class="item" data-src="{{accommodations_gallery.large_image.url}}">
+                            <img src="{{accommodations_gallery.thumb_image.url}}" class="img-responsive"/> 
+                            <div class="overlay">
+                                <div class="text"><i class="fa fa-arrows-alt" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
                     </li>
                     {% endfor %}
 
                     {% assign area_images = site.data._models.gallery_area_images | sort : "sort_order" %}
                     {% for area_gallery in area_images %}          
                     <li class="gallery-item fancybox" data-filter="area">
-                        <div class="item" data-src="{{area_gallery.large_image.url}}"><img src="{{area_gallery.thumb_image.url}}" class="img-responsive"/> </div>
+                        <div class="item" data-src="{{area_gallery.large_image.url}}">
+                            <img src="{{area_gallery.thumb_image.url}}" class="img-responsive"/> 
+                            <div class="overlay">
+                                <div class="text"><i class="fa fa-arrows-alt" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
                     </li>
                     {% endfor %}
 
                     {% assign attractions_images = site.data._models.gallery_attractions_images | sort : "sort_order" %}
                     {% for attractions_gallery in attractions_images %}          
                     <li class="gallery-item fancybox" data-filter="attractions">
-                        <div class="item" data-src="{{attractions_gallery.large_image.url}}"><img src="{{attractions_gallery.thumb_image.url}}" class="img-responsive"/> </div>
+                        <div class="item" data-src="{{attractions_gallery.large_image.url}}">
+                            <img src="{{attractions_gallery.thumb_image.url}}" class="img-responsive"/> 
+                            <div class="overlay">
+                                <div class="text"><i class="fa fa-arrows-alt" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
                     </li>
                     {% endfor %}   
                 </ul>
