@@ -84,11 +84,13 @@
 		 		top:10px;
 		 		margin:2rem 1rem;
 		 		@include media-breakpoint-up(md){
-		 		margin:2rem;	
+		 		margin:4rem 1rem;	
 		 		}
-		 		@include media-breakpoint-up(lg){
-		 		margin:8rem 0 8rem 4rem;	
+		 		@media screen and (min-width: 1380px){
+
+		 			margin:8rem 0 8rem 4rem;	
 		 		}
+		 		
 		 		&:before{
 		 			 background-color: $white;
 		 		}
