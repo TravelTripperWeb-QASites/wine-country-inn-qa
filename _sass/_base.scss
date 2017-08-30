@@ -305,6 +305,7 @@ del a {
 /* links */
 
 a {
+    cursor: pointer;
     &:hover,
     &:active {
         outline: 0;
