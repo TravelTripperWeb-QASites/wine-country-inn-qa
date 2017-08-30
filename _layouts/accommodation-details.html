@@ -2,14 +2,14 @@
 layout: default
 title: 
 meta_description: 
-parent: accommodations
+parent: /accommodations/
 ---
 
 {% assign accommodations = page %}
 {% assign model = page %}
 <section class="accom-page-slider">
 	<div class="container-fluid no-padding">
-		<div data-ride="carousel" class="carousel slide" id="accomPageSlider">
+<!-- 		<div data-ride="carousel" class="carousel slide" id="accomPageSlider">
 		    <div role="listbox" class="carousel-inner">
 		        <div class="carousel-item active bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.large_image.url}}');">
 		        </div>
@@ -33,7 +33,12 @@ parent: accommodations
 		    	</a>
 		    	<div class="clear-float"></div>
 		    </div>
+		</div> -->
+		<div class="accommodation-details-img">
+			
+			<img src="{{accommodations.large_image.url}}" title="{{accommodations.title }}" />
 		</div>
+
 	</div>
 </section>
 
@@ -50,22 +55,21 @@ parent: accommodations
 			<div class="right-sec">
 				<div class="accom-amenities-row">
 					<div class="amenities">
-						<h3> Luxury Amenities: </h3>
+						<h3> Amenities: </h3>
 						<ul>	
 							<li>Wine Country Buffet Breakfast
 							served each morning in the 
 							Winery House from 
-							7:30-10:30 AM</li>
+							7:30 am - 10:30 am</li>
 							<li>Wine Reception Friday and 
 							Saturday evenings from 
-							5:00pm-6:00 PM, hosted by
+							5:00 pm - 6:00 pm, hosted by
 							a local vintners</li>
 							<li>Split of wine and assorted 
 							beverages in your guest room 
 							upon arrival</li>
 							<li> Heated swimming pool and 
-							Jacuzzi open from 8:00 AM 
-							-10:00 PM</li>
+							Jacuzzi open from 8:00 am - 10:00 pm</li>
 							<li>In-room spa services available 
 							for purchase</li>	
 							<li> Concierge services</li>
@@ -78,6 +82,7 @@ parent: accommodations
 						<h3> Features: </h3>
 							<ul>
 							
+							<li>	Pet Friendly</li>
 							<li>	King or Queen sized beds</li>
 							<li>	All Cottages have a fireplace</li>
 							<li>	Hypo-allergenic bedding</li>
@@ -89,11 +94,8 @@ parent: accommodations
 							<li>	Hairdryer</li>
 							<li>	Keurig coffee/tea machine
 							<li>	Most rooms have an outdoor 
-							<li>	terrace or patio</li>
-							<li>	Daily housekeeping service
-							<li>	Refrigerator, which includes 
-									assorted beverages and split 
-									of wine upon arrival</li>
+							<li>	Terrace or patio</li>
+							<li>	Daily housekeeping service</li>
 					</div>
 				</div>
 				
@@ -145,8 +147,8 @@ parent: accommodations
 <section class="common-banner" style="background-image: url(/assets/images/banner-rooms-details.jpg);">
 	<div class="banner-content">
 		<h4>Enjoy a sumptuous breakfast on the house!</h4>
-		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-		<a href="/" target="_blank" class="theme-btn" target="_blank">view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+		<div class="ita_large_text left-line">Complimentary breakfast is one of many perks you'll enjoy during your stay in Napa Valley.</div>
+		<a href="/amenities/" class="theme-btn" title="View Amenities">View Amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
 	</div>
 </section>
 

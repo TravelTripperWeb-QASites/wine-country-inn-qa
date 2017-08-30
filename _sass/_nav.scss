@@ -79,6 +79,11 @@
 						border-bottom: 1px solid $white;
 					}
 				}
+				&.active {
+					a{
+						border-bottom: 1px solid $white;
+					}
+				}
 				.header-logo{
 				    text-align: center;	    
 				    z-index: 9;
@@ -142,7 +147,6 @@
 			}
 			@media screen and (max-width: 580px){
 				width: 120px;
-				padding: 18px 0 18px 0;
 			}
 
 		}

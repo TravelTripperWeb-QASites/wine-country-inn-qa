@@ -1,11 +1,11 @@
 # Site Settings
-title                    : "Bedrock"
+title                    : "Wine Country Inn"
 title_separator          : "-"
-name                     : "Hotel Property Name"
-description              : "Site default description."
+name                     : "Wine Country Inn"
+description              : "Wine Country Inn"
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : TravelTripperWeb/bedrock # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
+repository               : https://github.com/TravelTripperWeb-Sites/wine-country-inn # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
 # Language Settings
 default_lang             : 'en'

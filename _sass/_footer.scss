@@ -17,13 +17,13 @@
 			.left-line{
 				padding-left: 0rem;
 				@include media-breakpoint-up(lg) {
-					padding-left: 5rem;
+					padding-left: 4rem;
 				}
 				    
 				&:before{
 					background-color:$white;
 					top: 3px;
-					width: 3.5rem;
+					width: 3rem;
 				}
 			}
 			h4{
