@@ -55,7 +55,7 @@
 				top: -6.25rem;
 				padding-left: 6rem;
 				padding-right: 6rem;
-				width: 50%;
+				width: 45%;
 				max-width: none;
 				flex: none;
 			}
@@ -98,7 +98,7 @@
 			flex: none;
 			width: 100%;
 			@include media-breakpoint-up(xl){
-				width: 50%;
+				width: 55%;
 				position: relative;
 				top: 6.25rem;
 				padding-bottom: 6.25rem;
@@ -303,5 +303,11 @@
 				}
 			}
 		}
+	}
+}
+
+.accommodation-details-img{
+	img{
+		width: 100%;
 	}
 }

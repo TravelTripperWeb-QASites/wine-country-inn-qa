@@ -1,17 +1,15 @@
 <div id="roomsSlider" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators custom">
-        <li data-target="#roomsSlider" data-slide-to="0" class="active">
-        	<span>01</span>
-        </li>
-        <li data-target="#roomsSlider" data-slide-to="1">
-        	<span>02</span>
-        </li>
-        <li data-target="#roomsSlider" data-slide-to="2">
-        	<span>03</span>
-        </li>
-        <li data-target="#roomsSlider" data-slide-to="3">
-        	<span>04</span>
-        </li>
+
+         {% assign accom-List = site.data._models.accommodations | sort:'order' | limit: 4 %}
+            
+         {% for accommodations in accom-List %}
+
+          <li data-target="#roomsSlider" data-slide-to="{{forloop.index0}}" class="{% if forloop.index == 1 %} active {% endif %}">
+            <span>  0{{forloop.index}}</span>
+          </li>
+         {% endfor %}       
+
     </ol>
     <div class="carousel-inner" role="listbox">
      {% assign accom-List = site.data._models.accommodations | sort:'order' | limit: 4 %}
@@ -19,9 +17,9 @@
         <div class="carousel-item bg-center-center bg-cover bg-norepeat {% if forloop.first == true %} active{% endif %}" >
             <div class="carousel-bg bg-center-center bg-cover bg-norepeat" style="background-image: url({{accommodations.large_image.url}});">
             	<div class="room-text">
-            		<span class="slide-count">
+            		<!-- <span class="slide-count">
             			1 / {{forloop.index }}
-            		</span>
+            		</span> -->
             		<h3 class="left-line">{{accommodations.title }}</h3>
             		<p class="left-gap">{{accommodations.short_description }}</p> 
             		<a href="/accommodations/{{accommodations.url_friendly_name}}/" class="theme-btn transparent-dark">View Room <i class="fa fa-angle-right"></i></a>
@@ -34,9 +32,9 @@
       
     </div>
     <div class="carousel-arrows">
-    	<a data-slide="prev" href="#roomsSlider" class="bg-center-center bg-norepeat left-arrow">
+    	<a data-slide="prev" data-target="#roomsSlider" class="bg-center-center bg-norepeat left-arrow" title="Previous Slide">
     	</a>
-    	<a data-slide="next" href="#roomsSlider" class="bg-center-center bg-norepeat right-arrow">
+    	<a data-slide="next" data-target="#roomsSlider" class="bg-center-center bg-norepeat right-arrow" title="Next Slide">
     	</a>
     	<div class="clear-float"></div>
     </div>
