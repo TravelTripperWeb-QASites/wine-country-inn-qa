@@ -73,10 +73,12 @@
 			}
 			.pagination{
 				@extend .carousel-arrows;
-				width: 50%;
+				width: 99%;
     			position: relative;
     			margin:0 auto;
-    			
+    			@include media-breakpoint-up(md){
+    				width: 50%;
+    			}
     			a{
     				width:56px;
     				background-color:$light-grey;
