@@ -138,7 +138,9 @@ h6 {
 .row{
     margin: 0px;
 }
-
+.theme-color{
+    color: $primary-color;
+}
 p {
     @include text-formatting($site_font, 0.75rem, normal, 1.4rem, 0.45px, none, $dark-grey); 
     
