@@ -34,9 +34,12 @@
             
                 border: 0;
                 @extend .row;
+
             
         a{  
                 @extend .col;
+                 @extend .d-flex;
+                  @extend .align-items-center;
                 background-color:$grey3;
                 font-family:$site_font_bold;
                 font-size:2rem;
