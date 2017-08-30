@@ -3,7 +3,7 @@
     {
       "label": "Choose Category",
       "type":"model",
-      "display_field": "name", 
+      "display_field": "title", 
       "model_name":"category"
     },
     "title":
