@@ -24,8 +24,8 @@ parent: /blog/
 {% assign category = site.data._models.category  %}
 {%for banner in category%}
    {%if banner.id == blog.category.id %}
-<section class="inner-page-banner bg-img-cover" style="background-image: url({{banner.categoryimage.url}});">
-<h1>{{banner.title}}</h1>
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-blog.jpg);">
+<h1>Blog</h1>
          
 </section>
   {%endif%}
@@ -58,15 +58,7 @@ parent: /blog/
                   </div>
                    <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
                   {{blog.long_description}}
-                  <div class="events-social">
-                    <ul>
-                      <span>tags: </span>
-                      <li><a href="" title="Art">Art, </a></li>
-                      <li><a href="" title="ChathamTides">ChathamTides, </a></li>
-                      <li><a href="" title="sharks">sharks</a></li>
-                      <li><a href="" title="park">park</a></li>
-                    </ul>
-                  </div>
+                 
                   <div class="tags">
                     <ul>
                       <span>share: </span>
@@ -137,7 +129,7 @@ parent: /blog/
   
   <div class="banner-content">
     <h4>Enjoy a host of <span class="italic">unique extras</span> during your stay.</h4>
-    <div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+    <div class="ita_large_text left-line">Wine Country Inn & Cottages is one of the most beautiful St. Helena hotels near Napa Valley.</div>
     <a href="/amenities/" target="_blank" class="theme-btn" >view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
 
   </div>
