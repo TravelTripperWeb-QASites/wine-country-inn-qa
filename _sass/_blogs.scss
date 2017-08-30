@@ -276,7 +276,7 @@
 	    }
 	    .post{
 	    	p{
-	    		margin-bottom: 2.4rem;
+	    		margin-bottom: 1rem;
 	    		&.top{
 		    		line-height:2.125rem;
 		    		color:$dark-grey !important;
@@ -468,6 +468,19 @@
 		}
 	}
 
+	h4{
+		color: $black;
+		margin-bottom: 1rem;
+	}
+	p{
+		margin-bottom: 0.8rem;
+	}
+	a{
+		color: $primary-color;
+		&:hover{
+			color: $black;
+		}
+	}
 	.post-img{
 	    margin-bottom: 2rem;	
 	}
