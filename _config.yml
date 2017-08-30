@@ -1,6 +1,6 @@
 # Site Settings
 title                    : "Wine Country Inn"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Wine Country Inn"
 description              : "Wine Country Inn"
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
