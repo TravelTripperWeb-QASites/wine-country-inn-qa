@@ -15,18 +15,27 @@ parent: blog
             
             {% for post in data_paginator.posts %}
             <div class="post">
-                <div class="post-img"  style="background-image: url({{post.blogimage.url}});"></div>
-              
-                <div class="info">
+            <div class="row">
+            <div class="col-md-5">
+                 <div class="post-img"  style="background-image: url({{post.blogimage.url}});"></div>
+            </div>
+            <div class="col-md-7">
+                  <div class="info">
                   <h4><a href="/blog/{{ post.url_friendly_name }}/">{{post.title}}</a></h4>
                   <div class="date">
                       {% assign d = post.date | date: "%-d" %}  
                       <p><span class="">{{ post.date | date: "%B" }} {{ d }},
-                {{ post.date | date: "%Y" }}</span> <span class="categories"><a href="/blog/category/{{post.category.url_friendly_name}}/" title="{{post.category.title}}">{{post.category.title}}</a></span></p>
+                {{ post.date | date: "%Y" }}</span>
+
+                 
+
+                 </p>
                   </div>
                   {{post.short_description}} 
                   <a href="/blog/{{ post.url_friendly_name }}/" class="btn-custom no-border read-more-btn" title="More {{post.title}}"> Read more <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
                 </div>
+            </div>
+            </div>
             </div>
             {% endfor %}
 
@@ -62,7 +71,7 @@ parent: blog
             {% endif %}
 
         </div>
-        {% include blog-aside.html %}
+        <!-- {% include blog-aside.html %} -->
     </div>
 
 </section>
@@ -71,7 +80,7 @@ parent: blog
   
   <div class="banner-content">
     <h4>Stay<span class="italic"> in the heart</span> of the Napa Valley</h4>
-    <div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+    <div class="ita_large_text left-line">Wine Country Inn & Cottages is one of the most beautiful St. Helena hotels near Napa Valley.</div>
     <a href="/amenities/" target="_blank" class="theme-btn" >view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
 
   </div>
