@@ -34,16 +34,17 @@ parent: /blog/
 <section class="blog-main-sec blog-detail-main">
     <div class="blog-main-inner">
         <div class="blog-box blog-details">
-        <div class="next-prev">
-             {%if prevPostUrl %}
-            <a href="/blog/{{prevPostUrl}}" title="Prev" class="prev">Prev</a>
-            {%endif%}
-            {%if nextPostUrl %}
-            <a href="/blog/{{nextPostUrl}}" title="Next" class="next">Next</a>
-            {%endif%}
-        </div>
-        <h3>{{blog.title}}</h3>
+        
             <div class="post">
+                    <div class="next-prev">
+                    {%if prevPostUrl %}
+                    <a href="/blog/{{prevPostUrl}}" title="Prev" class="prev">Prev</a>
+                    {%endif%}
+                    {%if nextPostUrl %}
+                    <a href="/blog/{{nextPostUrl}}" title="Next" class="next">Next</a>
+                    {%endif%}
+                    </div>
+                    <h3>{{blog.title}}</h3>
                 <div class="info">
                   <div class="date">
                   {% assign d = blog.date | date: "%-d" %}
@@ -127,7 +128,7 @@ parent: /blog/
                 </div>
             </div>
         </div>
-         {% include blog-aside.html %}
+        <!--  {% include blog-aside.html %} -->
     </div>
 
 </section>

@@ -53,6 +53,37 @@
 				padding-right: 0.9rem;
 				margin-bottom: 1.75rem;
 			}
+
+			.item{
+				position: relative;
+				.overlay{				
+					position: absolute;
+				    top: 0;
+				    bottom: 0;
+				    left: 0;
+				    right: 0;
+				    height: 100%;
+				    width: 100%;
+				    opacity: 0;
+				    @include transition-time(0.5s);
+				    &:hover{
+				    	background-color: $primary-color;
+				    	opacity: 0.8;
+				    }
+				    .text{
+				    	position: absolute;
+					    top: 50%;
+					    left: 50%;
+					    text-align: center;
+					    @include translate-text(-50%, -50%);
+					    .fa-arrows-alt{
+					    	font-size: 1.8rem;
+					    	color: $white;
+					    }
+				    }
+				}
+			}
+
 		}
 	}
 }

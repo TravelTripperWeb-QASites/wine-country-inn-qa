@@ -11,18 +11,18 @@
 }
 
 .blog-main-sec{
-	@extend .container;
-	max-width:1440px;
+	
 	padding-bottom:5rem;
 	.blog-main-inner{
-		@extend .row;
+		@extend .container;
+		padding-top:7.5rem;
 		.blog-box{
-			@extend .col-md-9;
-			padding-top:7.5rem;
+			@extend .row;
 			.post{
-				width:100%;
+				@extend .m-auto;
+				@extend .col-md-10;
 				padding-bottom: 3rem;
-				@include media-breakpoint-up(lg) { width:90%; }
+		
 				.post-img{
 					min-height:400px;
 					@extend .bg-img-cover;
@@ -33,8 +33,12 @@
 				.info{
 					width:100%;
 					position:relative;
-					padding-left: 7.5rem;
+					padding-left:0;
 					margin-top: 2rem;
+					 @include media-breakpoint-up(md){
+
+					 	padding-left: 7.5rem;
+					 }
 					&:before{
 			            content: "";
 			            position: absolute;
@@ -43,6 +47,11 @@
 			            width: 5rem;
 			            top: 9px;
 			            left: 0px;
+			            display:none;
+			            @include media-breakpoint-up(md){
+			            display:block;
+			            }
+
 			        }
 					
 					h4{
@@ -58,10 +67,10 @@
 			}
 			.pagination{
 				@extend .carousel-arrows;
-				width: 100%;
+				width: 50%;
     			position: relative;
-    			margin:0;
-    			@include media-breakpoint-up(lg) { width:90%; }
+    			margin:0 auto;
+    			
     			a{
     				width:56px;
     				background-color:$light-grey;
@@ -243,9 +252,9 @@
 .blog-detail-main{
 	padding-bottom:4.5rem;
 	.blog-box{
-	    padding-top: 3.438rem !important;
+	    padding-top: 3.438rem;
 	    h3{
-	    	padding-bottom:2.125rem;
+	    	padding-bottom:1rem;
 	    }
 	    .next-prev{
     	    padding: 0 0 1.875rem 0;
@@ -450,7 +459,13 @@
 .blog-details{
 
 	h3{
-		 font-size: 4rem;
+		 font-size: 2rem;
+		 line-height: 2rem; 
+
+		 @include media-breakpoint-up(md){
+		 	font-size: 4rem;
+		   line-height: 4rem;
+		}
 	}
 
 	.post-img{

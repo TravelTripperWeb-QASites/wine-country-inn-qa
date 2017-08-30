@@ -1,0 +1,19 @@
+.page-not-found-banner{
+	h1{
+		position: static;
+	}
+}
+.page-not-found-container{
+	@extend .container;
+}
+.sitemap{
+	h3{
+		text-transform: uppercase;
+	}
+	li{
+		a{
+			color: $primary-color;
+			text-transform: uppercase;
+		}
+	}
+}
