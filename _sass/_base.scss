@@ -164,7 +164,9 @@ p {
     @include media-breakpoint-up(md) {
          min-height:700px;
     }
-
+    &.offers-banner{
+        min-height:360px; 
+    }
     h1{
         @include translate-text(0%, -50%);
         position:absolute;

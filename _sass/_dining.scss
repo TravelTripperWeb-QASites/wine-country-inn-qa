@@ -64,6 +64,16 @@
         padding-right: 1rem;
         margin: 1.5rem;
         height: 300px;
+        p{
+           margin-bottom:1rem;
+        }
+        a{
+          font-family:$site_font_bold;
+          color:$white;
+
+
+        }
+
         @include media-breakpoint-up(lg) {
            padding-right: 2rem;      
            height: 700px;

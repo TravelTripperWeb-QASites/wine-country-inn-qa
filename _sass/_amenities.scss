@@ -47,31 +47,38 @@
 .room-features{
 	@extend .container;
 	padding-top: 3rem;
-	 h2{
-    	color: $dark-grey;
-    	overflow: hidden;
-    	text-transform: inherit;
-    	margin: 2rem 0;
 
+    .room-features-row{
+        @extend .row
     }
+    .room-title{
+        @extend .col-sm-12;
+         h2{
+        color: $dark-grey;
+        overflow: hidden;
+        text-transform: inherit;
+        margin: 2rem 0;
+
+        }
+    }
+    .list-col{
+
+        @extend .col-md-3;
+        @extend .col-sm-6;
+       
     
     ul{
           @extend .ul-dots; 
+          @extend .my-0;
 
-          li{
-            display: inline-block;
-            width: 100%;
-            @include media-breakpoint-up(md) {
-
-                width: 30%;
+        li{
+            &:before{
+                background-color: $dark-grey;
             }
-            @include media-breakpoint-up(lg) {
-
-                width: 22%;
-            }
-
-          }
+        }
     }
+    }
+	 
     
 }
 

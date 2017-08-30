@@ -4,11 +4,14 @@
 			min-height: 1920px;
 			.bottom-container{
 				.bottom-row{
-					.bottom-text{
-						.theme-btn {
-			   				width: 190px;
-			   			}
-			   		}
+							.link{
+								font-family:$site_font_bold;
+								color:$dark-grey;
+
+								&:hover{
+									color:$primary-color;
+								}
+							}
 			   	}
 			}
 		}
