@@ -17,7 +17,7 @@
 
 <title>{{ seo_title }}</title>
 
-{% if page.seo_description %}
+{% if page.url contains '/blog/' %} 
 {% assign seo_description = page.seo_title | append: " " | append: site.title_separator | append: " " | append: "Read this and more on the Wine Country Inn blog!" %}
 {% else %}
 {% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}

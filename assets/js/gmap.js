@@ -221,7 +221,7 @@ function initialize() {
         var lng = -122.494766;
 
        if(window.innerWidth > 992) {
-
+        
             lat = 38.540409;
             lng = -122.207817;
         }
@@ -230,8 +230,7 @@ function initialize() {
     var mapOptions = {
         zoom: 11,
         center: center,
-        styles: mapstyle,
-        clickableIcons: false
+        styles: mapstyle
     };
    
    if(document.getElementById('map-canvas')){
