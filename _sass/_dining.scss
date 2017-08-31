@@ -6,7 +6,7 @@
          @include media-breakpoint-up(lg) {
             height:1142px;
          }
-        height:1142px;
+       
          position:relative;
         z-index:1;
     }
@@ -45,12 +45,15 @@
                 font-size:2rem;
                 border-radius: 0;
                 cursor:pointer;
-                padding: .5rem 3rem;
+                padding: .6rem;
                 color:$dark-grey;  
-                font-size: .8rem;
+                font-size: .7rem;
                 text-transform: uppercase;
-
                 letter-spacing: .09rem;
+                @include media-breakpoint-up(md){
+                padding: .5rem 3rem;
+                font-size: .8rem;
+              }
             &.active{
               background-color:$dark-grey;
               color:$white;  
