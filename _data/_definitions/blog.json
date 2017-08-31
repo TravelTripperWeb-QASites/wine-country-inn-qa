@@ -12,7 +12,7 @@
 		{"type":"image","required":true},
 	"seo_title":
 		{"type":"text"},
-	"meta_description":
+	"seo_description":
 		{"type":"text"},
 	"url_friendly_name":
 		{"type":"url_slug"},

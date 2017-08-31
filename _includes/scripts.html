@@ -187,11 +187,23 @@
   }
 ];
     if(document.getElementById('map')){
+
+
+
+
+        var lat = 38.526192;
+        var lng = -122.494767;
+
+        if(window.innerWidth > 992) {
+            lat = 38.525318;
+            lng = -122.363177;
+        }
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           styles: stylemap,         
 
-          center: new google.maps.LatLng(38.526192, -122.494767),
+          center: new google.maps.LatLng(lat, lng),
           scrollwheel: false,
           disableDefaultUI: true
         });
