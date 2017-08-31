@@ -27,12 +27,17 @@
 
 
 {% if page.url contains '/blog/' %} 
-{% assign seo_description = page.title | append:" Read this and more on the Wine Country Inn blog!"  %}
-{% else %}
- {% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}
+{% assign seo_description = page.seo_title | append: " " | append: site.title_separator | append: " " | append: "Read this and more on the Wine Country Inn blog!" %}
+{% elsif page.url contains '/offers/' %} 
+{% assign seo_description = page.seo_description  %}
+{% elsif page.url contains '/accommodations/' %} 
+{% assign seo_description = page.seo_description  %}
+{%else%}
+{% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}
 {% endif %}
+
 {% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | normalize_whitespace | escape_once %}
+{% assign seo_description = seo_description | strip_html | strip_newlines | normalize_whitespace | escape_once %}
 {% endif %}
 
 
