@@ -55,7 +55,7 @@
 			        }
 					a{
 						color:$primary-color;
-
+						font-family: $site_font_bold;
 						&:hover{
 							color:$dark-grey;
 						}
@@ -73,11 +73,11 @@
 			}
 			.pagination{
 				@extend .carousel-arrows;
-				width: 99%;
+				width: 90%;
     			position: relative;
     			margin:0 auto;
     			@include media-breakpoint-up(md){
-    				width: 50%;
+    				width: 80%;
     			}
     			a{
     				width:56px;
@@ -296,17 +296,7 @@
 	    	.tags{
 	    		@extend .events-social;
 	    		padding: 0 0 .5rem 0;
-	    		&:after{
-	    			@extend .before-line;
-    			    height: 1px;
-				    width: 100%;
-				    background: #e5e5e5;
-				    top:auto;
-				    bottom:0;
-	    		}
-	    		&:before{
-	    			content:none;
-	    		}
+	    		
 	    	}
 	    }
 	}

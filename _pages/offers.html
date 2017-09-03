@@ -18,7 +18,7 @@ parent: offers
 			<h3> <span class="italic"> Irresistible reasons </span> to book your stay with us  <br clear="hidden-lg"> in the Napa Valley</h3>
 				<div class="left-line">
 		
-			<h5>The Wine Country Inn & Cottages is a destination in and of itself. During your time at this St. Helena inn, your cares will melt away as you achieve total relaxation. If you’re looking to make your wine country getaways even more spectacular, check out our Napa Valley Vacation Packages.
+			<h5  class="semi-ital">The Wine Country Inn & Cottages is a destination in and of itself. During your time at this St. Helena inn, your cares will melt away as you achieve total relaxation. If you’re looking to make your wine country getaways even more spectacular, check out our Napa Valley Vacation Packages.
 			</h5>
 					<p>Enhance your stay with one of our fabulous specials. You can indulge in a massage in the seasonal outdoor spa. Or set the mood in your luxurious room with sparkling wine and delectable chocolates. Or celebrate a special occasion with an evening customized just for you. Whether you are planning a Napa Valley romantic getaway, girls vacation, or just a relaxing trip to beautiful Wine Country in St. Helena, we have the perfect vacation package for you. Below are just a few of our incredible specials that are sure to help create the wine country getaway of a lifetime.</p>
 
@@ -35,7 +35,7 @@ parent: offers
     {% for offers in offers-List %}
 
 		<div class="accom-item">									        
-    		<div class="accom-item-col offerbg no-padding {% cycle '', 'push-md-7' %}">
+    		<div class="accom-item-col offerbg no-padding {% cycle '', 'push-lg-7' %}">
     			<div class="accom-item-text">
     			
     			
@@ -47,7 +47,7 @@ parent: offers
     			</div>
     		 </div>	
     		</div>
-    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-md-5' %}" style="background-image: url({{offers.thumb_image.url}});" >
+    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-lg-5' %}" style="background-image: url({{offers.thumb_image.url}});" >
     			
     		</div>						    	
 		</div>		
