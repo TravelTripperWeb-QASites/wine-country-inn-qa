@@ -25,11 +25,7 @@ parent: blog
                   <div class="date">
                       {% assign d = post.date | date: "%-d" %}  
                       <p><span class="">{{ post.date | date: "%B" }} {{ d }},
-                {{ post.date | date: "%Y" }}</span>
-
-                 
-
-                 </p>
+                     {{ post.date | date: "%Y" }}</span></p>
                   </div>
                   {{post.short_description}} 
                   <a href="/blog/{{ post.url_friendly_name }}/" class="btn-custom no-border read-more-btn" title="More {{post.title}}"> Read more <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
@@ -81,7 +77,7 @@ parent: blog
   <div class="banner-content">
     <h4>Stay<span class="italic"> in the heart</span> of the Napa Valley</h4>
     <div class="ita_large_text left-line">Wine Country Inn & Cottages is one of the most beautiful St. Helena hotels near Napa Valley.</div>
-    <a href="/amenities/" target="_blank" class="theme-btn" >view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    <a href="/amenities/" class="theme-btn" >view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
 
   </div>
 

@@ -9,31 +9,7 @@ parent: /accommodations/
 {% assign model = page %}
 <section class="accom-page-slider">
 	<div class="container-fluid no-padding">
-<!-- 		<div data-ride="carousel" class="carousel slide" id="accomPageSlider">
-		    <div role="listbox" class="carousel-inner">
-		        <div class="carousel-item active bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.large_image.url}}');">
-		        </div>
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image1.url}}');">
-		           
-		        </div>
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image2.url}}');">
-		          
-		        </div>		        
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image3.url}}');">
-		           
-		        </div>		        
-		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('{{accommodations.g_image4.url}}');">
-		            
-		        </div>
-		    </div>
-		    <div class="carousel-arrows">
-		    	<a data-slide="prev" href="#accomPageSlider" class="bg-center-center bg-norepeat left-arrow">
-		    	</a>
-		    	<a data-slide="next" href="#accomPageSlider" class="bg-center-center bg-norepeat right-arrow">
-		    	</a>
-		    	<div class="clear-float"></div>
-		    </div>
-		</div> -->
+
 		<div class="accommodation-details-img bg-norepeat bg-cover bg-center-center" style="background-image: url('{{accommodations.large_image.url}}');">
 		</div>
 
@@ -102,38 +78,34 @@ parent: /accommodations/
 	</div>
 </section>
 
+<section class="accom-grid">
+	<div class="items-container">		
 
-
-<section class="more-accommodation">
-	<div class="more-accommodation-fluid">
-		<div class="more-accommodation-container">
-			<h3><span class="heading-italic">More</span> Accommodations<span class="right-line"></span></h3> 
-
-			<!-- <a href="/accommodations/" title="All Offers" class="btn-custom white">View All Accommodations<i class="fa  fa-angle-right" aria-hidden="true"></i></a> -->
-			
-			<div class="clear-float"></div>
-			<div class="more-accom-rooms">
-			
-			{% assign accom-List = site.data._models.accommodations | order:ascending %}
-				{% for accommodations in accom-List limit:3 %}
-				<div class="more-accom-room-item">
-					<div class="first-item accom-inner">						
-						<div class="top-img bg-norepeat bg-cover bg-center-center" style="background-image: url('{{accommodations.thumb_image.url}}');">
-							
-						</div>
-						<div class="left-line">
-						<div class="room-no">0{{forloop.index }}</div>
-						<h4>{{accommodations.title }}</h4>
-						<!-- <h6>From <span> {{accommodations.nightprice}} per night </span> </h6> -->
-						<a href="/accommodations/{{accommodations.url_friendly_name}}/" title="View Rooms" class="">VIEW ROOM <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="clear-float"></div>
-				</div>
-				{% endfor %}
-				
+			<div class="items-heading-row">
+		<a href="/blog/" class="view-all-items">view all accommodations <i class="fa fa-angle-right"></i></a>	
+			<div class="items-heading-text">			
+				<h2 class="left-gap">More <i class="italic"> Accommodation</i> <span class="right-line"></span></h2>
 			</div>
-			
+			<!-- <div class="items-heading-underline">
+				<a href="#"><h6>View All Posts</h6></a>
+			</div> -->
+		</div>
+		
+		<div class="items-row">
+		{% assign accom-List = site.data._models.accommodations | order:ascending %}
+				{% for accommodations in accom-List limit:3 %}
+			<div class="item-single">
+				<div class="item-inner">
+					<div class="item-image" style="background-image: url({{accommodations.thumb_image.url}});">
+						
+					</div>
+					<div class="item-text left-line">
+						<h3>{{accommodations.title }}</h3>
+						<a href="/accommodations/{{accommodations.url_friendly_name}}/" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
 		</div>
 	</div>
 </section>

@@ -16,7 +16,7 @@ permalink: /accommodations/
 			<h3>Luxury overlooking some of the finest views in the Napa Valley</h3>
 				<div class="left-line">
 		
-			<h5>Our gorgeous Napa Valley hotel features beautiful vineyard views in select rooms and cottages that you can’t find anywhere else. Wake up every morning in your room greeted by the picturesque vineyard view right outside your window. Whether you are traveling to the gorgeous Napa Valley to explore the breathtaking vineyards, delicious restaurants, or incredible landscape, Wine Country Inn & Cottages provides the most luxurious St. Helena accommodations so you can experience the ultimate retreat.
+			<h5 class="semi-ital">Our gorgeous Napa Valley hotel features beautiful vineyard views in select rooms and cottages that you can’t find anywhere else. Wake up every morning in your room greeted by the picturesque vineyard view right outside your window. Whether you are traveling to the gorgeous Napa Valley to explore the breathtaking vineyards, delicious restaurants, or incredible landscape, Wine Country Inn & Cottages provides the most luxurious St. Helena accommodations so you can experience the ultimate retreat.
 			</h5>
 					<p>The Wine Country Inn & Cottages is in the heart of wine country, hence the name. It is within minutes of world-class wineries, Michelin-starred restaurants, unique shopping, and so much more. Yet, this secluded St. Helena bed and breakfast allows you to immerse yourself in a relaxing getaway. Here, you’ll enjoy luxurious accommodations and amenities, and some of the finest views in the valley.</p>
 
@@ -32,7 +32,7 @@ permalink: /accommodations/
 {% for accommodations in accom-List %}
 
 		<div class="accom-item">									        
-    		<div class="accom-item-col no-padding {% cycle '', 'push-md-7' %}">
+    		<div class="accom-item-col no-padding {% cycle '', 'push-lg-7' %}">
     			<div class="accom-item-text">
     			
     			<span>0{{forloop.index }}</span>
@@ -45,7 +45,7 @@ permalink: /accommodations/
     			</div>
     		 </div>	
     		</div>
-    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-md-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
+    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-lg-5' %}" style="background-image: url({{accommodations.thumb_image.url}});" >
     			
     		</div>						    	
 		</div>		

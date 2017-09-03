@@ -16,8 +16,8 @@
          {% for blog-item in blog-List | limit: 3 %}
 			<div class="item-single">
 				<div class="item-inner">
-					<div class="item-image">
-						<img src="{{blog-item.blogimage.url}}" >
+					<div class="item-image" style="background-image: url({{blog-item.blogimage.url}});">
+						
 					</div>
 					<div class="item-text left-line">
 						<h3>{{blog-item.title | truncatewords:10 }}</h3>

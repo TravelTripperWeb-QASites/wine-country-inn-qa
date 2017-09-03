@@ -18,12 +18,47 @@
 	}
 }
 
+.accom-grid{
+
+	@extend .items-grid;
+	background-color: $dark-grey;
+	.items-container{
+			h2{
+		color: $white;
+	 }
+	}
+	.right-line{
+	&:after{
+		background-color: $white;
+	}
+	h3{
+		color: $white;
+
+
+	}
+
+	}
+	.item-single {
+		h3{
+			color: $white;
+		}
+	}
+	.left-line{
+		&:before{
+			background-color: $white;
+		}
+	}
+}
+
 .accom-details-container{
 	@extend .container;
 	padding-left: 0px;
 	padding-right: 0px;
 	background-color: $white;
-	padding-bottom: 7.5rem;
+	padding-bottom: 0rem;
+	@media screen and (min-width: 1680px){
+			padding-bottom: 7.5rem;
+			}
 	.accom-details-row{
 		@extend .row;		
 		margin-right: 0px;
@@ -158,153 +193,7 @@
 }
 
 
-.more-accommodation{
-	.more-accommodation-fluid{
-		@extend .container-fluid;
-		background-color: $dark-grey;
-		padding-left: 0px;
-		padding-right: 0px;
-		.more-accommodation-container{
-			@extend .container;
-			padding-left: 0px;
-			padding-right: 0px;
-			padding-bottom: 2rem;
-			@include media-breakpoint-up(md){
-			padding-bottom: 5rem;
-			}
-			h3{
-				padding: 0rem 0 5.625rem 0.5rem;
-			    position: relative;
-			    color:$white;
-			    margin-top: 5.625rem;
-			    font-size: 2rem;
-			    float: left;
-			    width: 100%;
-			    overflow: hidden;
-				@media screen and (min-width: 1680px) {
-					padding: 0rem 0 5.625rem 7.5rem;
-					font-size: 3.7rem;
-				}
-				.right-line:after{
-					    background-color: $white;
-				}
-				
-				
-			}
 
-			.more-accom-rooms{
-				@extend .row;
-				margin-left: 0px;
-				margin-right: 0px;
-				.more-accom-room-item{
-					@extend .col-lg-4;
-					padding-right: 0.5rem;
-					padding-left: 0.5rem;
-					@include media-breakpoint-up(lg){
-						padding-right: 0rem;
-						padding-left: 0rem;						
-					}	
-					.room-no{
-						    position: absolute;
-						    left: 0;
-						    top: -18px;
-						    color:$white;
-					}
-					.left-line{
-						&:before{
-							background-color:$white;
-							top:10px;
-						}
-
-					
-					}
-					.accom-inner{
-						@media screen and (min-width: 992px){
-							width: 310px;
-						}
-						@media screen and (min-width: 1200px){
-							width: 380px;
-						}
-						@media screen and (min-width: 1300px){
-							width: 410px;
-						}
-						@media screen and (min-width: 1500px){
-							width: 480px;
-						}
-					}
-					.top-img{
-						min-height: 250px;
-						width: 100%;
-						margin-bottom: 3.75rem;
-					}
-					h6{
-						    margin: 1rem 0;
-					}
-					a{
-						color:$white;
-						font-family:$site_font_bold;
-						font-size: .9rem;
-						margin-bottom:2rem;
-					}
-					h4{
-						padding-bottom: 0.625rem;
-						@include media-breakpoint-down(lg){
-							padding-left: 0px;
-						}
-						&:before{
-							@include media-breakpoint-down(lg){
-								display: none;
-							}
-						}	
-					}
-					h5{
-						color: $black;
-						span{
-							color: $primary-color;
-						}
-						padding-left: 7.5rem;
-						padding-bottom: 3.125rem;
-						@include media-breakpoint-down(lg){
-							padding-left: 0px;
-							padding-bottom: 1rem;
-						}
-					}
-					.btn-custom{
-						margin-bottom: 7.5rem;
-						margin-left: 7.5rem;
-						@include media-breakpoint-down(lg){
-							margin-left: 0px;
-						}
-					}
-					.first-item{
-						@include media-breakpoint-up(lg){
-							float: left;
-						}
-					}
-					.second-item{
-						@include media-breakpoint-up(lg){
-							margin-left: auto;
-							margin-right: auto;
-						}	
-					}
-					.third-item{
-						@include media-breakpoint-up(lg){
-							float: right;
-						}	
-					}
-				}
-			}
-
-			.btn-custom{
-				&.white{
-					position: absolute;
-					bottom: 0px;
-					right: 0px;
-				}
-			}
-		}
-	}
-}
 
 .accommodation-details-img{
 	height: 300px;
