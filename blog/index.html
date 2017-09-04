@@ -40,12 +40,12 @@ parent: blog
                 <div class="pagination">
                     {% if data_paginator.previous_page %}
                         {% if data_paginator.page %}
-                            <a class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
+                            <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
                         {% else %}
                             <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> {{ page }} </a>
                          {% endif %}
                     {% else %}
-                        <a href="#" class="bg-center-center bg-norepeat left-arrow disabled"></a>
+                        <a href="#"  name="previous" title="previous"  class="bg-center-center bg-norepeat left-arrow disabled"></a>
                     {% endif %}
                     <div class="pagnum">
                         {% for page in (1..data_paginator.total_pages) %}
@@ -59,9 +59,9 @@ parent: blog
                         {% endfor %}
                     </div>
                     {% if data_paginator.next_page %}
-                        <a  class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> </a>
+                        <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> </a>
                     {% else %}
-                        <a href="#" class="bg-center-center bg-norepeat right-arrow disabled"> </a>
+                        <a href="#"  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow disabled"> </a>
                     {% endif %}
                 </div>
             {% endif %}
