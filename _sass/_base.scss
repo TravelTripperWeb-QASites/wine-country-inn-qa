@@ -112,7 +112,10 @@ h6 {
 .ita_large_text{
     font-family:$headings_font_semiboldita;
     color:$hover-green;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+    }
     line-height: 2rem;
     margin: 1rem 0 3rem 0;
 }
@@ -453,4 +456,10 @@ input[type=number]::-webkit-outer-spin-button {
       margin-right:1rem;
     }
    
+}
+
+.show-lg{
+    @include media-breakpoint-down(lg){
+        display: none;
+    }
 }

@@ -177,3 +177,10 @@
 	}
 }
 
+.common-banner{
+	.banner-content{
+		&.contact-page{
+			max-width: 710px;
+		}
+	}
+}

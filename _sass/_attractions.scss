@@ -83,15 +83,18 @@
 				padding: 4rem 0 3rem 0;			
 				.list-row{
 					@extend .row;
+					h3{
+						color: $white;
+						padding: 0rem 1rem 1.5rem 1rem;
+						@include media-breakpoint-up(xl) {
+							padding: 0rem 3rem 1.5rem 4rem;
+						}
+					}
 					.list-left, .list-right{
 						@extend .col-lg-6;
 						padding: 0rem 1rem 0rem 1rem;
 						@include media-breakpoint-up(xl) {
 							padding: 0rem 3rem 0rem 4rem;
-						}
-						h3{
-							color: $white;
-							padding-bottom: 1.5rem;
 						}
 						li{
 							padding-bottom: 0.9rem;

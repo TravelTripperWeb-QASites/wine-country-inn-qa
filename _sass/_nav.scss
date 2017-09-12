@@ -15,10 +15,10 @@
 			display: inline-block;			
 			text-align: center;
 			background-color: $white;
-			padding: 15px 0 15px 0;
+			padding: 17px 0 17px 0;
 			width: 120px;
 			@media screen and (max-width: 1650px){
-				padding: 10px 0 10px 0;
+				padding: 12px 0 12px 0;
 			}
 			@media screen and (min-width: 992px){
 				display: none;
@@ -58,6 +58,9 @@
 				}
 				@media screen and (max-width: 1299px) and (min-width: 992px){
 					padding-right: 14px;
+				}
+				@media screen and (max-width: 991px){
+					text-align: center;
 				}
 				&.logo-item{
 					display: inline-block;
@@ -133,12 +136,13 @@
 			text-align: center;
 			padding: 30px 10px 30px 10px;
 			border: 0px;
+			font-size: 1rem;
 			@media screen and (max-width: 1650px){
 				padding-left: 240px;
 				padding: 25px 10px 25px 10px;
 			}
-			@media screen and (max-width: 1499px){
-				font-size: 0.7rem;
+			@media screen and (max-width: 1040px){
+				font-size: 0.95rem;
 			}
 			@media screen and (max-width: 991px){
 				position: absolute;
