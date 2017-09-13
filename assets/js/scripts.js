@@ -1,4 +1,51 @@
+
+var fbAppId = '750157678442177';
+window.fbAsyncInit = function() {
+FB.init({appId: fbAppId, status: true, cookie: true,
+xfbml: true});
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+
 $(document).ready(function(){
+
+
+	$('.fb-share').click(function(e){ 
+        e.preventDefault();
+        FB.ui({
+            method: 'share_open_graph',
+            action_type: 'og.shares',
+            action_properties: JSON.stringify({
+                object : {
+                   'og:url': window.location.href,
+                   'og:title': $("h3.blog-details-title").text(),
+                   'og:description': $(".blog-description").text(),
+                   'og:image:width': '1200',
+                   'og:image:height': '650',
+                   'og:image': $(".post-img").css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '')
+                }
+            })
+        });
+    });
+
+    $('.twitter-share').click(function() {
+       // window.open("https://www.w3schools.com");       
+
+        var url = window.location.href;
+        var media = $(".inner-page-banner").css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
+        var desc = $(".offer-details-inner h1").text();    
+        $('meta[name="twitter:image"]').attr('content', media);
+        var hash = "%23chathamtides";
+
+        window.open("https://twitter.com/share?text="+encodeURIComponent(desc)+hash+
+        "&url="+url, "","toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
+        return false;
+    });
+
 	var height = $(window).height();  //getting windows height
 	jQuery('#homePageMainSlider').css('height',height+'px');   //and setting height of carousel
 	jQuery('#accomPageSlider').css('height',height+'px');   //and setting height of carousel
@@ -49,6 +96,9 @@ $(document).ready(function(){
 	      }
 	    }
 	  });	
+
+
+
 
 });
 

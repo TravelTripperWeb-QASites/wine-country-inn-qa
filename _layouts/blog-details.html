@@ -30,99 +30,48 @@ parent: /blog/
 </section>
   {%endif%}
   {%endfor%}
-
+<div id="fb-root"></div>
 <section class="blog-main-sec blog-detail-main">
     <div class="blog-main-inner">
         <div class="blog-box blog-details">
-        
             <div class="post">
-                    <div class="next-prev">
+                <div class="next-prev">
                     {%if prevPostUrl %}
                     <a href="/blog/{{prevPostUrl}}" title="Prev" class="prev">Prev</a>
                     {%endif%}
                     {%if nextPostUrl %}
                     <a href="/blog/{{nextPostUrl}}" title="Next" class="next">Next</a>
                     {%endif%}
-                    </div>
-                    <h3>{{blog.title}}</h3>
+                </div>
+                <h3 class="blog-details-title">{{blog.title}}</h3>
                 <div class="info">
-                  <div class="date">
-                  {% assign d = blog.date | date: "%-d" %}
-                      <p><span class="">{{ blog.date | date: "%B" }} {{ d }},
-                {{ blog.date | date: "%Y" }}</span>{%for banner in category%}
-                {%if banner.id == blog.category %}
-                  <span class="categories"><a href="/blog/category/{{banner.url_friendly_name}}/">{{banner.title}}</a></span>
-                {%endif%}
-                {%endfor%}
-                </p>
-                  </div>
-                   <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
-                  {{blog.long_description}}
-                 
-                  <div class="tags">
-                    <ul>
-                      <span>share: </span>
-                      <li><a href="" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-              <!--     <div class="related-posts-block no-padding">
-                    <h5>related posts</h5>
-                    <div class="related-posts-block-inner">
-                      <div class="blog-related">
-                        <img src="/images/blogs/blog-thumb.jpg" alt="Blog">
-                        <h4>boutique shopping</h4>
-                        <div class="date">
-                            <p><span class="">July 10, 2017</span> <span class="categories"><a href="" title="Dining">dining</a></span></p>
-                        </div>
-                      </div>
-                      <div class="blog-related">
-                        <img src="/images/blogs/blog-thumb.jpg" alt="Blog">
-                        <h4>boutique shopping</h4>
-                        <div class="date">
-                            <p><span class="">July 10, 2017</span> <span class="categories"><a href="" title="Dining">dining</a></span></p>
-                        </div>
-                      </div>
+                    <div class="date">
+                        {% assign d = blog.date | date: "%-d" %}
+                        <p><span class="">{{ blog.date | date: "%B" }} {{ d }},
+                            {{ blog.date | date: "%Y" }}</span>{%for banner in category%}
+                            {%if banner.id == blog.category %}
+                            <span class="categories"><a href="/blog/category/{{banner.url_friendly_name}}/">{{banner.title}}</a></span>
+                            {%endif%}
+                            {%endfor%}
+                        </p>
                     </div>
-                  </div> -->
-<!--                   <div class="comment-sec-main no-padding">
-                    <h5><span>2</span> comments</h5>
-                      <div class="comment-sec">
-                          <p class="commenter">Daniel Vandaft </p>
-                          <p class="comment-con">Comment example here. Nulla risus lacus, vehicula id mi vitae, auctor accumsan nulla. Sed a mi quam. In euismod urna ac massa adipiscing interdum.</p>
-                          <p class="comment-time">June 26 2017 at 15 hours ago</p>
-                      </div>
-                      <div class="comment-sec">
-                          <p class="commenter">Daniel Vandaft </p>
-                          <p class="comment-con">Comment example here. Nulla risus lacus, vehicula id mi vitae, auctor accumsan nulla. Sed a mi quam. In euismod urna ac massa adipiscing interdum.</p>
-                          <p class="comment-time">June 26 2017 at 15 hours ago</p>
-                      </div>
-                  </div>
-                  <div class="form-section no-padding">
-                    <h5>LEAVE A COMMENT</h5>
-                    <h6>Required fields are marked *</h6>
-                      <div class="form-group name">
-                          <input type="text" class="form-control" id="" placeholder="Name *" aria-label="Name">
-                      </div>
-                      <div class="pull-right form-group name">
-                          <input type="text" class="form-control" id="" placeholder="Email *" aria-label="Email">
-                      </div>
-                      <div class="form-group">
-                          <input type="text" class="form-control" id="" placeholder="Your Website" aria-label="Your Website">
-                      </div>
-                      <div class="form-group">
-                        <textarea class="form-control" id="" placeholder="Comment" aria-label="Comment"></textarea>
-                      </div>
-                      <button type="submit" class="theme-btn transparent-dark">Submit Comment <i class="fa  fa-caret-right" aria-hidden="true"></i></button>
-                  </div> -->
-
+                    <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
+                    <div class="blog-description"> 
+                        {{blog.long_description}}
+                    </div>
+                    <div class="tags">
+                        <ul>
+                            <span>share: </span>
+                            <li><a href="javascript:void(0)" class="fb-share" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)" class="twitter-share" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <!-- <li><a href="" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <!--  {% include blog-aside.html %} -->
     </div>
-
 </section>
 
 <section class="common-banner mt-0" style="background-image: url(/assets/images/hero-amenities.jpg);">
