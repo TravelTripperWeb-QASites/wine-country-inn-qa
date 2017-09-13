@@ -36,10 +36,10 @@ $(document).ready(function(){
        // window.open("https://www.w3schools.com");       
 
         var url = window.location.href;
-        var media = $(".inner-page-banner").css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
-        var desc = $(".offer-details-inner h1").text();    
+        var media = $(".post-img").css("backgroundImage").replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
+        var desc = $("h3.blog-details-title").text();    
         $('meta[name="twitter:image"]').attr('content', media);
-        var hash = "%23chathamtides";
+        var hash = "%23wcountryinn";
 
         window.open("https://twitter.com/share?text="+encodeURIComponent(desc)+hash+
         "&url="+url, "","toolbar=no, scrollbars=no, resizable=no, top=0, right=0");
