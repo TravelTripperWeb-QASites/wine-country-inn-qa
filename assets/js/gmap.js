@@ -176,7 +176,7 @@ markers1 = [
   //hint ['serial id','title', lat,long, 'category','Marker label' ]
     ['0', 'Wine Country Inn & Cottages', 38.526180, -122.494766, 'hotel', ''],
 
-    ['1', 'Archetype', 38.505528, -122.471073, 'sthelena', ''],
+    /*['1', 'Archetype', 38.505528, -122.471073, 'sthelena', ''],
     ['2', 'Auberge du Soleil', 38.493758, -122.406059, 'sthelena', ''],
     ['3', 'Brasswood Bar + Kitchen', 38.528113, -122.501505, 'sthelena', ''],
     ['4', 'Cindy’s Backstreet Kitchen', 38.505264, -122.468862, 'sthelena', ''],
@@ -207,7 +207,7 @@ markers1 = [
     ['27', 'French Laundry', 38.404591, -122.365031, 'yountville',''],
     ['28', 'Hurley’s', 38.402436, -122.361249, 'yountville',''],
     ['29', 'Mustards', 38.419213, -122.388238, 'yountville',''],
-    ['30', 'REDD Napa ', 38.399788, -122.358783, 'yountville','']
+    ['30', 'REDD Napa ', 38.399788, -122.358783, 'yountville','']*/
 
 ];
 
