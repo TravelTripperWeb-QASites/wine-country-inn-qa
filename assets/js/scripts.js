@@ -1,5 +1,10 @@
 
 var fbAppId = '750157678442177';
+
+if(document.location.hostname.indexOf('winecountryinn.com') > -1){
+	fbAppId = '353354188421501';
+}
+
 window.fbAsyncInit = function() {
 FB.init({appId: fbAppId, status: true, cookie: true,
 xfbml: true});
@@ -8,7 +13,7 @@ xfbml: true});
 var e = document.createElement('script'); e.async = true;
 e.src = document.location.protocol +
 '//connect.facebook.net/en_US/all.js';
-//document.getElementById('fb-root').appendChild(e);
+document.getElementById('fb-root').appendChild(e);
 }());
 
 $(document).ready(function(){
