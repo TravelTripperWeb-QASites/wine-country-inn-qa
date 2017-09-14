@@ -115,3 +115,23 @@
             height:2px;
            }
     }
+
+.amenities-container{
+    @extend .container;
+    max-width: 1080px;
+    margin-top: 30px;
+    h4{
+        color: $black;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 15px; 
+    }
+    ul{
+        li{
+            list-style: disc;
+            list-style-position: inside;
+        }
+    }
+}
