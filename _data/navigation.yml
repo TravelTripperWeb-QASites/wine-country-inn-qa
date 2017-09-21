@@ -7,8 +7,8 @@ leftmenu:
     url: /amenities/
   - title: Offers
     url: /offers/
-  - title: Events
-    url: /events/
+  - title: Groups
+    url: /groups/
   - title: Dining
     url: /dining/
 rightmenu:
