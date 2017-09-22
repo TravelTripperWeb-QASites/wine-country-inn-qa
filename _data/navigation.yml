@@ -1,4 +1,4 @@
-leftmenu:
+menu:
   - title: About
     url: /about/
   - title: Accommodations
@@ -7,16 +7,15 @@ leftmenu:
     url: /amenities/
   - title: Offers
     url: /offers/
-  - title: Groups
-    url: /groups/
-    submenu: true
-    subtitle: Calendar
-    suburl: /groups/calendar/
   - title: Dining
     url: /dining/
-rightmenu:
-  - title: Wineries
+  - title: Wineries & Attractions
     url: /wineries/
+    submenu: true
+    subtitle: Attractions
+    suburl: /attractions/
+    subtitle-two: Napa Valley Events
+    suburl-two: /events/
   - title: Gallery
     url: /gallery/
   - title: Blog
