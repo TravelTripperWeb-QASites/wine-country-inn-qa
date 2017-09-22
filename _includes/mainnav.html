@@ -14,6 +14,13 @@
 	            {% for item in leftmenuitems %}
 	            <li class="nav-item {% if page.url == item.url %} active {% endif %} {% if page.parent == item.url %} active {% endif %}">
 	                <a class="nav-link" href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
+
+	                {% if item.submenu == true %}
+	                	<ul class="submenu">
+	                		<li> <a href="{{item.suburl}}">{{item.subtitle}}</a></li>
+	                	</ul>
+	                {% endif %}
+
 	            </li>
 	            {% endfor %}
            		<li class="nav-item logo-item">

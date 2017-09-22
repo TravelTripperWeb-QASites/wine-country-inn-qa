@@ -9,6 +9,9 @@ leftmenu:
     url: /offers/
   - title: Groups
     url: /groups/
+    submenu: true
+    subtitle: Calendar
+    suburl: /groups/calendar/
   - title: Dining
     url: /dining/
 rightmenu:
