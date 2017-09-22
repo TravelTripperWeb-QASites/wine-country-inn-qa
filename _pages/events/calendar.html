@@ -1,0 +1,63 @@
+---
+layout: default
+title: "Things to do in Napa Valley | Wine Tours at Wine Country Inn"
+meta_description: "Napa Valley wine tours and attractions leave nothing to be desired, view some of our favorite things to do in St Helena CA and around Napa Valley."
+permalink: groups/calendar/
+---
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/attractions/attractions-banner.jpg);">
+  <h1>Calendar of Events</h1>
+</section>
+<section class="event-calendar">
+{% assign postsByYearMonth = site._models.events | group_by : 'date' | "date: '%Y %b'" %}
+{% for yearMonth in postsByYearMonth %}
+ <div class="month" data-month="{{ group.name | date: "%B" }}">
+  <h2><span>{{ yearMonth.date | date: "%b" }} {{ yearMonth.date | date: "%Y" }} <i class="italic">Events</i></span></h2>
+  {% for post in yearMonth.items %}
+  <div class="event-block">
+    <h5>{{ post.date | date: "%b" }}</h5>
+    {% if post.end_date and post.end_date != "" %}
+    <div class="_left"> 
+     <span class="date">
+      <h3>{{ post.end_date | date: "%Y" }}</h3>
+     </span> 
+    </div>
+    {% endif %}
+    <div class="_right">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.description }}</p>
+      <a href="{{ post.event_website_url }}" title="{{ post.title }}" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
+  </div>
+  {% endfor %}
+ </div>
+ {% endfor %}
+ <div class="no-results">No Results Found</div>
+ <!--<div class="month">
+  <h2><span>November 2017 <i class="italic">Events</i></span></h2>
+  <div class="event-block">
+    <h5>November</h5>
+    <div class="_left"> 
+     <span class="date">
+      <h3>12 <br>~ <br>16</h3>
+     </span> 
+    </div>
+    <div class="_right">
+      <h3>Napa Valley Restaurant Week</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
+  </div>
+  <div class="event-block">
+    <h5>November</h5>
+    <div class="_left"> 
+     <span class="date">
+      <h3>12 <br>~ <br>16</h3>
+     </span> 
+    </div>
+    <div class="_right">
+      <h3>Napa Valley Restaurant Week</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
+  </div>
+ </div>-->
+
+
+</section>

@@ -102,7 +102,28 @@ $(document).ready(function(){
 	    }
 	  });	
 
+	$('#guide-month').on('change', function() {
+	  var mselected = this.value;
 
+	  $('.guide-item').hide();
+	  $('.no-results').hide();
+      if(mselected == "Show All"){
+          $('.guide-item').show();
+	  }else{
+          if($(".guide-item[data-month="+mselected+"]").length > 0){
+        	  $('.guide-item').each(function( i, oitem){
+        		  if($(this).data('month') == mselected){
+
+        			  $('.guide-item[data-month="'+mselected+'"]').show();
+        		  }
+
+        	  });
+    	   }else{
+    			 $('.no-results').fadeIn();
+    		 }
+      }
+
+ 	});
 
 
 });
