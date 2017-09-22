@@ -6,6 +6,10 @@
 	display: inline-block;
 	.month{
 		padding: 70px 70px 80px;
+		@media screen and (max-width: 575px){
+			padding: 30px 50px 30px 50px;
+			text-align: center;
+		}
 		max-width: 1440px;
 		margin: 0 auto;
 		@extend .row;
@@ -31,8 +35,12 @@
 		}
 		.event-block{
 			@extend .col-md-4;
+			margin-bottom: 50px;
 			._right{
 				padding-left: 30px;
+				@media screen and (max-width: 575px){
+					padding-left: 0px;
+				}
 			}
 
 		}
