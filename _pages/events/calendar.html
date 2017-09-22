@@ -4,60 +4,60 @@ title: "Things to do in Napa Valley | Wine Tours at Wine Country Inn"
 meta_description: "Napa Valley wine tours and attractions leave nothing to be desired, view some of our favorite things to do in St Helena CA and around Napa Valley."
 permalink: groups/calendar/
 ---
-<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/attractions/attractions-banner.jpg);">
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/events/events-banner3.jpg);">
   <h1>Calendar of Events</h1>
 </section>
 <section class="event-calendar">
-{% assign postsByYearMonth = site._models.events | group_by : 'date' | "date: '%Y %b'" %}
-{% for yearMonth in postsByYearMonth %}
- <div class="month" data-month="{{ group.name | date: "%B" }}">
-  <h2><span>{{ yearMonth.date | date: "%b" }} {{ yearMonth.date | date: "%Y" }} <i class="italic">Events</i></span></h2>
-  {% for post in yearMonth.items %}
-  <div class="event-block">
-    <h5>{{ post.date | date: "%b" }}</h5>
-    {% if post.end_date and post.end_date != "" %}
-    <div class="_left"> 
-     <span class="date">
-      <h3>{{ post.end_date | date: "%Y" }}</h3>
-     </span> 
+   <select class="form-control month-select" id="event-month">
+	  <option value="Show All">All Happenings</option>
+	  <option value="January">January</option>
+	  <option value="February">February</option>
+	  <option value="March">March</option>
+	  <option value="April">April</option>
+	  <option value="May">May</option>
+	  <option value="June">June</option>
+	  <option value="July">July</option>
+	  <option value="August">August</option>
+	  <option value="September">September</option>
+	  <option value="October">October</option>
+	  <option value="November">November</option>
+	  <option value="December">December</option>
+	</select>
+{% assign eventPosts = site.data._models.events | sort:'date' | group_by : 'date' %}
+{% for events in eventPosts %}
+      {% assign currentdate = events.name | date: "%B %Y" %}
+      {% if currentdate != datelist %}
+	   <div class="month" data-month="{{ events.name | date: "%B" }}">
+	   <h2><span>{{ events.name | date: "%B" }} {{ events.name | date: "%Y" }} <i class="italic">Events</i></span></h2>
+		  {%endif%}
+			  {% for event in events.items %}
+			  <div class="event-block">
+				<h5>{{ event.date | date: "%B" }}</h5>
+				<div class="_left"> 
+				 <span class="date">
+				  <h3>{{ event.date | date: "%d" }}</h3>
+				 </span> 
+				</div>
+				<div class="_right">
+				  <h3>{{ event.title }}</h3>
+				  <p>{{ event.description }}</p>
+				  <a href="{{ event.event_website_url }}" title="{{ event.title }}" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
+			  </div>
+			  {% endfor %}
+	{% if currentdate == datelist %}
     </div>
-    {% endif %}
-    <div class="_right">
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.description }}</p>
-      <a href="{{ post.event_website_url }}" title="{{ post.title }}" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
-  </div>
-  {% endfor %}
- </div>
+    {%endif%}
+    {% assign datelist = currentdate %} 
  {% endfor %}
+ </div>
  <div class="no-results">No Results Found</div>
- <!--<div class="month">
-  <h2><span>November 2017 <i class="italic">Events</i></span></h2>
-  <div class="event-block">
-    <h5>November</h5>
-    <div class="_left"> 
-     <span class="date">
-      <h3>12 <br>~ <br>16</h3>
-     </span> 
-    </div>
-    <div class="_right">
-      <h3>Napa Valley Restaurant Week</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
-  </div>
-  <div class="event-block">
-    <h5>November</h5>
-    <div class="_left"> 
-     <span class="date">
-      <h3>12 <br>~ <br>16</h3>
-     </span> 
-    </div>
-    <div class="_right">
-      <h3>Napa Valley Restaurant Week</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a> </div>
-  </div>
- </div>-->
-
-
+ </section>
+ <section class="common-banner m-t-0" style="background-image: url(/assets/images/events/events-banner2.jpg);">
+	<div class="banner-content">
+		<h4>Escape to comfort in wine country.</h4>
+		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
+		<a href="#" class="theme-btn" target="_blank">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+	</div>
 </section>
+
+

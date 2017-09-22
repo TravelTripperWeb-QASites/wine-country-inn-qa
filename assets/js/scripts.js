@@ -101,31 +101,26 @@ $(document).ready(function(){
 	      }
 	    }
 	  });	
-
-	$('#guide-month').on('change', function() {
+	$('.month-select').niceSelect();
+	$('#event-month').on('change', function() {
 	  var mselected = this.value;
 
-	  $('.guide-item').hide();
+	  $('.month').hide();
 	  $('.no-results').hide();
       if(mselected == "Show All"){
-          $('.guide-item').show();
+          $('.month').show();
 	  }else{
-          if($(".guide-item[data-month="+mselected+"]").length > 0){
-        	  $('.guide-item').each(function( i, oitem){
+          if($(".month[data-month="+mselected+"]").length > 0){
+        	  $('.month').each(function( i, oitem){
         		  if($(this).data('month') == mselected){
-
-        			  $('.guide-item[data-month="'+mselected+'"]').show();
+					  $('.month[data-month="'+mselected+'"]').show();
         		  }
-
-        	  });
+			  });
     	   }else{
     			 $('.no-results').fadeIn();
     		 }
       }
-
- 	});
-
-
+	});
 });
 
 

@@ -2,6 +2,8 @@
 	@extend .container;
 	@extend .home-events-more;
 	max-width: 100%;
+	padding:0;
+	display: inline-block;
 	.month{
 		padding: 70px 70px 80px;
 		max-width: 1440px;
@@ -18,7 +20,7 @@
 				background: #fff;
 				position: relative;
 				display: inline-block;
-				z-index: 9;
+				z-index: 1;
 				padding-right: 30px;
 			}
 			&::after{
@@ -45,4 +47,40 @@
 			}
 		}
 	}
+}
+.no-results{display:none;}
+.month-select{
+	border-radius: 0px;
+    font-size: 13px;
+	font-family: $site_font_bold;
+    width: 200px;
+    padding: 10px 0 8px 15px;
+    line-height: 24px;
+	text-transform: uppercase;
+    background-color: #ffffff;
+    color: #333333;
+    border-color: #333333;
+    height: auto;
+    float: none;
+	margin: 30px auto;
+	&:before{
+		content: '';
+		position: absolute;
+		top:0;
+		bottom:0;
+    	display: block;
+		width:40px;
+		background: #333333;
+		right:0px;
+	}
+	&:after{
+		height:10px;
+		width:10px;
+		margin-top: -7px;
+		right:16px;
+		border-color: #dddcdb;
+	}
+}
+.m-t-0{
+	margin-top: 0 !important;
 }
