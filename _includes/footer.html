@@ -1,14 +1,71 @@
-<div class="container d-flex justify-content-between">
-  <div class="social-icons">
-    {% if site.data.ui-text[site.default_lang].follow_label %}
-      <strong>{{ site.data.ui-text[site.default_lang].follow_label }}</strong>
-    {% endif %}
-    {% if site.data.social.twitter.username %}
-      <a href="https://twitter.com/{{ site.data.social.twitter.username }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a>
-    {% endif %}
-    {% if site.data.social.facebook.username %}
-      <a href="https://facebook.com/{{ site.data.social.facebook.username }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a>
-    {% endif %}
-  </div>
-  <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
-</div>
+
+<footer>
+<section class="top-footer">
+
+	<div class="footer-container no-padding">
+			<div class="footer-top-wrapper ">
+			<div class="logo-section">
+			<img class="img-fluid" alt="" src="/assets/images/footer-logo.png"/>
+			</div>
+			<div class="address-section">
+				<div class="left-line">
+				
+				<h4>address</h4>
+				<a href="https://www.google.com/maps/place/Wine+Country+Inn/@38.5261732,-122.496957,17z/data=!3m1!4b1!4m5!3m4!1s0x80845af52a16f105:0x23ed098bfa86aabe!8m2!3d38.526169!4d-122.494763" target="_blank"> 1152 Lodi Lane<br> St. Helena, CA 94574<br> United States</a>
+				</div>
+				</div>
+			<div class="contact-section ">
+				<div class="left-line">
+				<h4>contact us</h4>
+				<a href="mailto:romance@winecountryinn.com">  romance@winecountryinn.com</a>
+				<a href="tel:(707) 963-7077">  Phone:	(707) 963-7077</a>
+				<a href="tel:(707) 963-9018">  Fax:		(707) 963-9018</a>
+				<a href="tel:(888) 465-4608"> Toll-Free:	(888) 465-4608</a>
+				</div>
+			</div>
+			<div class="quick-section ">
+				<div class="left-line">
+				<h4>quick links</h4>
+					<a href="/gift-certificates/">    Gift Certificates</a>
+					<a href="/rfp/">	Request For Proposal</a>
+					<a href="/accommodations/">	Accommodations</a>
+					<a href="/offers/">	Offers</a>
+					<a href="/wineries/">	Wineries</a>
+					<a href="/gallery/">	Gallery</a>
+					<a href="/contact/">	Contact</a>
+				</div>
+			</div>
+			<div class="news-section col-md-3">
+				<div class="left-line">
+				<h4>Newsletter</h4>
+				<p>Subscribe to stay informed about upcoming events and specials.
+				<div class="form-holder ">
+					<form class="contact-form" action="https://submit.jotform.me/submit/72412299882465/" method="post" name="form_72412299882465" id="72412299882465" accept-charset="utf-8">
+					<input type="hidden" name="formID" value="72412299882465" />
+					<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Your email address" id="input_66" name="q3_email" aria-label="Your Email Address" required />
+				      <span class="input-group-btn">
+				        <button class="btn submit-btn" type="submit"> Subscribe  <i class="fa  fa-angle-right" aria-hidden="true"></i></button>
+				      </span>
+				    </div>
+		            
+		          </form>
+
+		          </div>
+				</div>
+			</div>
+			</div>
+	</div>
+
+</section>
+
+</footer>
+<section class="footer-copyright">
+    <div class="copyright-container">
+    <div class="copyright-row d-flex align-items-center">
+        <div class="copyright-content">COPYRIGHT 2017 WINE COUNTRY INN ALL RIGHTS RESERVED</div>
+        {% include social-share.html %}
+        <div class="credentials"><strong>Powered By</strong> <a href="https://www.traveltripper.com/" target="_blank"><img src="/assets/images/traveltripper-logo.png" class="img-fluid" alt="Travel Trpper"></a></div>
+    </div>
+    </div>
+</section>

@@ -1,15 +1,24 @@
-main:
+menu:
   - title: About
-    url: /
-  - title: Rooms
-    url: /
+    url: /about/
+  - title: Accommodations
+    url: /accommodations/
+  - title: Amenities
+    url: /amenities/
   - title: Offers
-    url: /
-  - title: Location
-    url: /
-  - title: Events
-    url: 
+    url: /offers/
+  - title: Dining
+    url: /dining/
+  - title: Wineries & Attractions
+    url: /wineries/
+    submenu: true
+    subtitle: Attractions
+    suburl: /attractions/
+    subtitle-two: Napa Valley Events
+    suburl-two: /events/
   - title: Gallery
-    url: /
+    url: /gallery/
+  - title: Blog
+    url: /blog/
   - title: Contact
-    url: /
+    url: /contact/

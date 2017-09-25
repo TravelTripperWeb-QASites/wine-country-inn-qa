@@ -1,79 +1,32 @@
-/*
-   Typography
-   ========================================================================== */
+/* Colors */
 
-$font-size-base             : 1rem !default; // Assumes the browser default, typically `16px`
+$primary-color: #A54F55;
+$black: #000;
+$white: #FFF;
+$hover-green: #768347;
+$dark-grey: #333333;
+$light-grey: #F2F1F0;
+$light-grey2: #FBFBFB;
+$light-grey3: #e5e5e5;
+$light-grey4: #999999;
+$primary-hover: #A6333B;
+$pink-bg: #FFD6A4;
+$grey3: #939393;
+$grey4: #fdfdfd;
+$border-color: #CCCCCC;
+$black-transparent: rgba(0, 0, 0, 0.85);
+$transparent-white : rgba(255, 255, 255, 0.8);
+$transparent-white2 : rgba(255, 255, 255, 0.9);
+$transparent-white3 : rgba(255, 255, 255, 0.5);
+$calender-after: #dddcdb;
 
-/* systrem typefaces */
-$serif                      : Georgia, Times, serif !default;
-$sans-serif                 : -apple-systrem, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
+/* Fonts */
 
-/* sans serif typefaces */
-$sans-serif-narrow          : $sans-serif !default;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+$site_font: "Avenir LT W01_45 Book1475508";
+$site_font_medium: "Avenir LT W01_45 Book1475508";
+$site_font_bold: "Avenir LT W01_95 Black1475556";
 
-/* serif typefaces */
-$georgia                    : Georgia, serif !default;
-$times                      : Times, serif !default;
-$bodoni                     : "Bodoni MT", serif !default;
-$calisto                    : "Calisto MT", serif !default;
-$garamond                   : Garamond, serif !default;
-
-$global-font-family         : $sans-serif !default;
-$header-font-family         : $sans-serif !default;
-$caption-font-family        : $serif !default;
-
-/* type scale */
-$type-size-1                : 2.441rem !default;  // ~39.056px
-$type-size-2                : 1.953rem !default;  // ~31.248px
-$type-size-3                : 1.563rem !default;  // ~25.008px
-$type-size-4                : 1.25rem !default;   // ~20px
-$type-size-5                : 1rem !default;      // ~16px
-$type-size-6                : 0.75rem !default;   // ~12px
-$type-size-7                : 0.6875rem !default; // ~11px
-$type-size-8                : 0.625rem !default;  // ~10px
-
-
-/*
-   Colors
-   ========================================================================== */
-
-$gray                       : #7a8288 !default;
-$dark-gray                  : mix(#000, $gray, 40%) !default;
-$darker-gray                : mix(#000, $gray, 60%) !default;
-$light-gray                 : mix(#fff, $gray, 50%) !default;
-$lighter-gray               : mix(#fff, $gray, 90%) !default;
-
-$body-color                 : #fff !default;
-$background-color           : #fff !default;
-$text-color                 : $dark-gray !default;
-$border-color               : $lighter-gray !default;
-
-$primary-color              : #7a8288 !default;
-$success-color              : #62c462 !default;
-$warning-color              : #f89406 !default;
-$danger-color               : #ee5f5b !default;
-$info-color                 : #007a9c !default;
-
-/* brands */
-$facebook-color             : #3b5998 !default;
-$google-plus-color          : #dd4b39 !default;
-$instagram-color            : #517fa4 !default;
-$pinterest-color            : #cb2027 !default;
-$twitter-color              : #55acee !default;
-$youtube-color              : #bb0000 !default;
-
-/* links */
-$link-color                 : $info-color !default;
-$link-color-hover           : mix(#000, $link-color, 25%) !default;
-$link-color-visited         : mix(#fff, $link-color, 25%) !default;
-
-
-/*
-   Other
-   ========================================================================== */
-
-$border-radius              : 4px !default;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
-$global-transition          : all 0.2s ease-in-out !default;
+$headings_font: "Bembo W01";
+$headings_font_bold: "Bembo MT W01 Semibold705762";
+$headings_font_ita: "Bembo MT W01 Italic705759";
+$headings_font_semiboldita: "BemboMTW01-SemiboldItal";

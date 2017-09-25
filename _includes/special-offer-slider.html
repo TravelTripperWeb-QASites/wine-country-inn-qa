@@ -1,0 +1,51 @@
+<div class="special-offers-section">
+	<div class="offers-container">
+		<h2>Special <span class="italic">offers</span></h2>
+		<div id="offersSlider" class="carousel slide special-offers-slider" data-ride="carousel">
+		    <ol class="carousel-indicators custom">
+		   
+      		
+		    {% assign offers-List = site.data._models.offers  | sort:'order' | limit: 4 %}
+      		
+		     {% for offers in offers-List %}
+
+		      <li data-target="#offersSlider" data-slide-to="{{forloop.index0}}" class="{% if forloop.index == 1 %} active {% endif %}">
+		      	<span>  0{{forloop.index}}</span>
+		      </li>
+		     {% endfor %}	        
+		        
+		      
+		    </ol>
+		    <div class="carousel-inner" role="listbox">
+
+		    {% assign offers-List = site.data._models.offers | sort:'order' | limit: 4 %}
+      		
+		     {% for offers in offers-List %}
+		        <div class="carousel-item {% if forloop.first == true %} active{% endif %} ">
+			        <div class="offers-row">
+			        	<div class="offer-text">
+			        		<!-- <span class="slide-count">	1 / {{forloop.index }}</span> -->
+			        		<div class="offer-text-inner left-line">
+			        			<h3>{{offers.title }}</h3>
+			        			<p>{{offers.short_description}}</p>
+			        			<a href="/offers/" class="theme-btn transparent-primary">All Offers <i class="fa fa-angle-right"></i></a>
+			        			<a href="{{offers.check_rate_url}}" class="theme-btn white-theme">Book Offer <i class="fa fa-angle-right"></i></a>
+			        		</div>
+			        	</div>
+			        	<div class="offer-img bg-center-center bg-norepeat bg-cover" style="background-image: url({{offers.thumb_image.url}});">
+			        		
+			        	</div>
+			        </div>
+		        </div>
+		   {% endfor %}
+		    </div>
+		    <div class="carousel-arrows">
+		    	<a data-slide="prev" data-target="#offersSlider" class="bg-center-center bg-norepeat left-arrow" title="Previous Slide" name="Previous Slide">
+		    	</a>
+		    	<a data-slide="next" data-target="#offersSlider" class="bg-center-center bg-norepeat right-arrow" title="Next Slide" name="Next Slide">
+		    	</a>
+		    	<div class="clear-float"></div>
+		    </div>
+		</div>
+	</div>	
+</div>	
