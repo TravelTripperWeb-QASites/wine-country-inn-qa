@@ -149,7 +149,7 @@ permalink: /attractions/
 		</div>
   
 
-{% assign eventlist = site.data._models.events | sort:'date'  | reverse %} 
+{% assign eventlist = site.data._models.events | sort:'date' %} 
         <div class="owl-carousel owl-theme">
             
             {% for events in eventlist limit:6 %}  
