@@ -8,7 +8,7 @@ permalink: /events/
   <h1>Calendar of Events</h1>
 </section>
 <section class="event-calendar">
-   <select class="form-control month-select" id="event-month">
+   <!-- <select class="form-control month-select" id="event-month">
 	  <option value="Show All">All Happenings</option>
 	  <option value="January">January</option>
 	  <option value="February">February</option>
@@ -22,7 +22,7 @@ permalink: /events/
 	  <option value="October">October</option>
 	  <option value="November">November</option>
 	  <option value="December">December</option>
-	</select>
+	</select> -->
 {% assign eventPosts = site.data._models.events | sort:'date' | group_by : 'date' %}
 {% for events in eventPosts %}
       {% assign currentdate = events.name | date: "%B %Y" %}
@@ -55,8 +55,8 @@ permalink: /events/
  <section class="common-banner m-t-0" style="background-image: url(/assets/images/events/events-banner2.jpg);">
 	<div class="banner-content">
 		<h4>Escape to comfort in wine country.</h4>
-		<div class="ita_large_text left-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-		<a href="#" class="theme-btn" target="_blank">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+		<div class="ita_large_text left-line">This authentic Napa Valley boutique inn is perfect for a romantic getaway.</div>
+		<a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" class="theme-btn" target="_blank">Book Your Stay<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
 	</div>
 </section>
 

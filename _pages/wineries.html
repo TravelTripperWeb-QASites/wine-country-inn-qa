@@ -50,14 +50,14 @@ permalink: /wineries/
 					<p class="left-line">
 						With more than 500 wineries, Napa Valley is filled with amazing wineries. From small labels to world-famous names, many of the region’s best winemakers are located right in St. Helena, conveniently near the Wine Country Inn & Cottages. While some wineries require reservations, others do not. Guests are encouraged to research ahead of time to make the most of their Napa getaway.
 					</p>
-					<a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn">Discover More <i class="fa fa-angle-right"></i> </a>
+					<a href="https://napavintners.com/wineries/all_wineries.asp" target="_blank" class="theme-btn" title="View All Napa Valley Wineries">View All Napa Valley Wineries <i class="fa fa-angle-right"></i> </a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="highlights bg-center-bottom bg-cover bg-norepeat" style="background-image: url(/assets/images/attractions/highlights-bg.jpg);">
+<!-- <section class="highlights bg-center-bottom bg-cover bg-norepeat" style="background-image: url(/assets/images/attractions/highlights-bg.jpg);">
 	<div class="highlights-wrapper">
 		<div class="highlights-row">
 			<div class="highlights-left">
@@ -66,7 +66,7 @@ permalink: /wineries/
 					<p class="left-line">
 						Overlooking several St. Helena vineyards, the Wine Country Inn & Cottages is in the heart of wine country. Here guests can explore everything from local favorites to world-renowned wineries in the Napa Valley, using the hotel as their starting point.
 					</p>
-					<!-- <a href="#" class="theme-btn" title="Discover More">Discover More <i class=" fa fa-angle-right"></i></a> -->
+					 <a href="#" class="theme-btn" title="Discover More">Discover More <i class=" fa fa-angle-right"></i></a>
 				</div>
 			</div>
 			<div class="highlights-right">
@@ -101,7 +101,60 @@ permalink: /wineries/
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
+
+<div class="map-wrap">
+    <div class="dining-widget">
+        <h4>Choose A Local Winery Below</h4>
+        <ul class="nav nav-tabs" role="tablist">
+            <a class="nav-link active" data-toggle="tab" onclick="filterMarkers('sthelena');" data-target="#tab1"  role="tab"><span>St helena & <br> ruthersford <br> Wineries<span></a>
+            <a class="nav-link" onclick="filterMarkers('calistoga');" data-toggle="tab" data-target="#tab2" role="tab"><span>Calistoga <br>Wineries</span></a>
+            <a class="nav-link"  onclick="filterMarkers('yountville');"  data-toggle="tab" data-target="#tab3" role="tab"><span>Yountville <br>Wineries</span></a>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1" role="tabpanel">
+                <div class="content-container"></div>
+	                <p><a href="http://www.freemarkabbey.com/" target="_blank">Freemark Abbey</a></p>
+			 		<p><a href="" target="_blank">Markham</a></p>
+					<p><a href="" target="_blank">Frank Family</a></p>
+					<p><a href="" target="_blank">Duckhorn</a></p>
+					<p><a href="" target="_blank">Titus</a></p>
+					<p><a href="" target="_blank">Schweiger</a></p>
+					<p><a href="" target="_blank">Whitehall Lane</a></p>
+					<p><a href="" target="_blank">Rombauer</a></p>
+					<p>Get address, description, and website links from here <a href="https://napavintners.com/wineries/wineries_in_st_helena.asp" target="_blank">https://napavintners.com/wineries/wineries_in_st_helena.asp</a></p>
+            </div>
+            <div class="tab-pane" id="tab2" role="tabpanel">
+            	<p><a href="" target="_blank">Amici Cellars</a></p>
+				<p><a href="" target="_blank">Bennett Lane</a></p>
+				<p><a href="" target="_blank">Carter Cellars</a></p>
+				<p><a href="" target="_blank">Castello di Amorosa</a></p>
+				<p><a href="" target="_blank">Dutch Henry Winery</a></p>
+				<p><a href="" target="_blank">Frank Family Vineyards</a></p>
+				<p><a href="" target="_blank">Kenefick Ranch Winery</a></p>
+				<p><a href="" target="_blank">Paoletti Estates Winery</a></p>
+				<p><a href="" target="_blank">THE GRADE Cellars</a></p>
+				<p><a href="" target="_blank">Valley Floor Vineyard</a></p>
+				<p>Get address, description, and website links from here - <a href="https://napavintners.com/wineries/wineries_in_calistoga.asp" target="_blank">https://napavintners.com/wineries/wineries_in_calistoga.asp</a></p>
+            </div>
+            <div class="tab-pane" id="tab3" role="tabpanel">
+            	<p><a href="" target="_blank">Bell Wine Cellars</a></p>
+				<p><a href="" target="_blank">Chiarello Family Vineyards, LLC</a></p>
+				<p><a href="" target="_blank">Domaine Chandon</a></p>
+				<p><a href="" target="_blank">Girard Winery</a></p>
+				<p><a href="" target="_blank">Handwritten Wines</a></p>
+				<p><a href="" target="_blank">Hestan Vineyards</a></p>
+				<p><a href="" target="_blank">Jessup Cellars</a></p>
+				<p><a href="" target="_blank">Priest Ranch</a></p>
+				<p><a href="" target="_blank">Stewart Cellars</a></p>
+				<p><a href="" target="_blank">Tres Perlas</a></p>
+				<p>Get address, description, and website links from here - <a href="https://napavintners.com/wineries/wineries_in_yountville.asp" target="_blank">https://napavintners.com/wineries/wineries_in_yountville.asp</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="map-inner"  id="map-canvas"> </div>
+</div>
 
 <section class="recent-events">
 	<div class="events-container">		
