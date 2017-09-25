@@ -1,0 +1,54 @@
+.bottom-bg{
+	&.events-page-bottom{
+		@include media-breakpoint-up(sm) {
+			min-height: 1920px;
+			.bottom-container{
+				.bottom-row{
+							.link{
+								font-family:$site_font_bold;
+								color:$dark-grey;
+
+								&:hover{
+									color:$primary-color;
+								}
+							}
+			   	}
+			}
+		}
+	}
+}
+
+.text-with-bg{
+	padding-top: 3rem;
+	.text-with-bg-container {
+		@extend .container;
+		.text-with-bg-row{
+			@extend .row;
+			.left-part{
+				@extend .col-md-6;
+				padding: 0px;
+				h2{
+					text-transform: none;
+					color: $black;
+				}
+				p{
+					&.italic {
+						font-size: 1.563rem;
+						line-height: 1.875rem;
+						color: $hover-green;
+					}
+				}
+				.theme-btn{
+					margin-bottom: 40px;
+				}
+			}
+			.right-part{
+				@extend .col-md-6;
+				padding: 0px;
+			}
+		}
+	}
+	@include media-breakpoint-up(sm) {
+		min-height: 1980px;
+	}
+}

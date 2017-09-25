@@ -1,11 +1,11 @@
 # Site Settings
-title                    : "Bedrock"
-title_separator          : "-"
-name                     : "Hotel Property Name"
-description              : "Site default description."
+title                    : "Wine Country Inn"
+title_separator          : "|"
+name                     : "Wine Country Inn"
+description              : "Wine Country Inn"
 url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : TravelTripperWeb/bedrock # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
+repository               : https://github.com/TravelTripperWeb-Sites/wine-country-inn # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
 # Language Settings
 default_lang             : 'en'
@@ -75,30 +75,23 @@ sass:
 permalink: pretty
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# data_paginate: 
-#   per_page: 5
-#   data: 'blog'
-#   path: 'blog/page:num'
-#   pagination_template: 'blog/index.html'
-#   sort_field: 'date'
-#   sort_reverse: true
+data_paginate: 
+    per_page: 5
+    data: 'blog'
+    path: 'blog/page:num'
+    pagination_template: 'blog/index.html'
+    sort_field: 'date'
 
 page_gen: # 
-  # - data: 'attractions'
-  #   template: 'single-attraction'
-  #   dir: 'attractions'
-  # - data: 'blog'
-  #   template: 'single-blog'
-  #   dir: 'blog'
-  # - data: 'events'
-  #   template: 'single-event'
-  #   dir: 'events'
-  # - data: 'offers'
-  #   template: 'single-offer'
-  #   dir: 'offers'
-  # - data: 'rooms'
-  #   template: 'single-room'
-  #   dir: 'rooms'
-  # - data: 'specials'
-  #   template: 'single-special'
-  #   dir: 'specials'
+  - data: 'accommodations'
+    template: 'accommodation-details'
+    dir: 'accommodations'
+  - data: 'offers'
+    template: 'offer-details'
+    dir: 'offers'
+  - data: 'blog'
+    template: 'blog-details'
+    dir: 'blog'
+  # - data: 'category'
+  #   template: 'category-list'
+  #   dir: 'blog/category'

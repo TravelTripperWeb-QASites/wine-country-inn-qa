@@ -1,19 +1,37 @@
-{% assign menuitems = site.data.navigation.main %}
+{% assign menu = site.data.navigation.menu %}
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #e3f2fd;">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	<span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <a class="navbar-brand" href="{{ home | absolute_url }}">{{ site.title }}</a>
+<section class="navbar-section">	
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	    <button class="navbar-toggler navbar-toggler-right" type="button" title="navigation" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	    </button>
+		<a class="small-logo" href="/" title="Wine Country Inn">
+			<img src="/assets/images/small-logo.png" alt="Wine Country Inn" />
+		</a>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        <ul class="navbar-nav mr-auto">
+				<li class="nav-item logo-item">
+					<div class="header-logo">
+						<a href="/" title="Wine Country Inn">
+								<img src="/assets/images/main-logo.png" alt="Wine Country Inn" />
+							</a>
+					</div>
+				</li>
+	            {% for item in menu %}
+	            <li class="nav-item {% if page.url == item.url %} active {% endif %} {% if page.parent == item.url %} active {% endif %}">
+	                <a class="nav-link" href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	<ul class="navbar-nav mr-auto">
-	    {% for item in menuitems %}
-	    <li class="nav-item {% if page.url==item.url %}active{% endif%}">
-		<a class="nav-link" href="{{item.url | absolute_url}}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
-	    </li>
-	    {% endfor %}
-	</ul>
-    </div>
-</nav>
+					{% if item.submenu == true %}
+						<ul class="submenu">
+							<li><a href="{{item.suburl}}">{{item.subtitle}}</a></li>
+							<li><a href="{{item.suburl-two}}">{{item.subtitle-two}}</a></li>
+						</ul>
+					{% endif %}
+
+	            </li>
+	            {% endfor %}
+	        </ul>
+	    </div>
+	    <a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" target="_blank" class="theme-btn check-availability-btn" title="Book Now">Book Now</a>
+	</nav>
+</section>

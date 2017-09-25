@@ -1,0 +1,31 @@
+{ 
+"title":
+	{
+		"required":true,
+		"label":"Title"
+	},
+"date":
+	{
+		"type":"date",
+		"required":true,
+		"label":"Start Date"
+	},
+"end_date":
+	{
+		"type":"date",
+		"label":"End Date"
+	},
+"event_website_url":{},
+"url_friendly_name":
+	{
+		"type":"url_slug",
+		"label":"URL friendly name",
+		"required":true
+	},
+"description":
+	{
+		"required":true,
+		"type":"richtext",
+		"label":"Event Description"
+	}
+}

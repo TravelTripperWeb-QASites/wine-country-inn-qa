@@ -1,0 +1,36 @@
+---
+layout: default
+title: ""
+meta_description: ""
+parent: /offers/
+---
+
+{% assign offers = page %}
+{% assign model = page %}
+
+<div id="fb-root"></div>
+<section class="inner-page-banner bg-img-cover offers-banner" style="background-image: url({{offers.large_image.url}});">
+</section>
+
+
+<section class="accommodations-container no-padding">
+		<div class="accommodations-row">
+		<div class="accommodations-col">
+	
+
+			<h3> <span class="italic"> {{offers.title}}</h3>
+				<div class="left-line">
+		
+			<h5  class="semi-ital">From treetops to magnificent panoramic views, enjoy a spectacular morning soaring above it all. Enjoy an approximately one hour hot air balloon ride, followed by a scrumptious post-flight champagne brunch at Domaine Chandon Winery.	</h5>
+					<p>{{offers.long_description}} </p>
+
+					<a href="https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513" target="_blank" class="theme-btn">Book Offer <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					
+			</div>
+		</div>
+		</div>	
+</section>
+
+{% include special-offer-slider.html %}
+
+{% include elope-banner.html %}

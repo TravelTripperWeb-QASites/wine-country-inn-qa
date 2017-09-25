@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Sitemap"
+meta_description: "Sitemap Descriptions"
+permalink: /sitemap/
+---
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/gallery/gallery-banner.jpg);">
+	<div class="banner-center">		
+	 	<h1>Sitemap</h1>	
+	</div>
+</section>
+{% assign leftmenuitems = site.data.navigation.leftmenu %}
+{% assign rightmenuitems = site.data.navigation.rightmenu %}
+<div class="sitemap">
+	<h3 class="text-center m-t-30 m-b-20">Sitemap</h3>
+	<ul class="text-center">
+		{% for item in leftmenuitems %}
+	        <li>
+	            <a href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }}</a>
+	        </li>
+        {% endfor %}
+        {% for item in rightmenuitems %}
+            <li>
+                <a href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+	</ul>
+</div>

@@ -1,0 +1,89 @@
+.img-bg-sec{
+	.full-img-container{
+		@extend .container;
+		.left-gap{
+			padding-top: 80px;
+			padding-bottom: 80px;
+			@include media-breakpoint-up(sm) {
+				padding-top: 150px;
+				padding-bottom: 150px;
+			}			
+			@include media-breakpoint-up(lg) {
+				padding-top: 350px;
+				padding-bottom: 350px;
+			}
+		}
+		.small-underline{
+			width: 60px;
+			background-color: $white;
+			height: 1px;
+			margin-top: 30px; 
+		}
+		h2{
+			width: 100%;
+			text-transform: none;
+			@include media-breakpoint-up(xl) {
+				width: 50%;
+			}
+			@media screen and (min-width: 1560px){
+				width: 35%;
+			}
+		}
+	}
+}
+.video-sec{
+	.theme-btn{
+		margin-right: 40px;
+	}
+}
+
+.bottom-bg{
+
+	min-height: 500px;
+	padding-top: 2rem;
+	background-position: center bottom;
+	@include media-breakpoint-up(sm) {
+		min-height: 1750px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-top: 4rem;
+	}
+
+	@include media-breakpoint-up(xl) {		
+		padding-top: 7.5rem;
+	}
+	.bottom-container{
+		@extend .container;
+		.bottom-row{
+			@extend .row;
+			@media screen and (max-width: 1300px){	
+				background-color: $transparent-white3;
+				padding-left: 20px;
+				padding-right: 20px; 
+			}
+			.bottom-img{
+				@extend .col-lg-6;
+				padding: 0px;
+				img{
+					width: 100%;
+				}
+			}
+			.bottom-text{
+				h2{
+					color: $black;
+					text-transform: none;
+				}
+				@extend .col-lg-6;
+				padding: 0px;
+				.view-attr{
+					margin-right: 20px;
+				}
+				.theme-btn {
+					// width: 250px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

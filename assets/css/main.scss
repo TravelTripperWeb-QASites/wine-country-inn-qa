@@ -2,9 +2,30 @@
 ---
 
 @import "bootstrap/scss/bootstrap";
+@import "fonts";
 @import "variables";
+@import "tt_standards";
 @import "base";
-@import "footer";
 @import "utilities";
+@import "nav";
+@import "footer";
+@import "home";
+@import "accommodations";
+@import "offers";
+@import "accommodation-details";
+@import "amenities";
+@import "about";
+@import "events";
+@import "gallery";
+@import "blogs";
+@import "dining";
+@import "attractions";
+@import "attraction-details";
+@import "contact";
+@import "rfp";
+@import "page-not-found";
+@import "event-calendar";
+@import "activities";
+
 
 /* Import custom Sass files below */

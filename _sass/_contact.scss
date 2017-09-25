@@ -1,0 +1,186 @@
+.contact-page{
+	.contact-container-main{
+		background-color: $white;
+		@extend .container;
+		.contact-container{
+			padding-top: 7.5rem;
+			max-width: 1440px;
+			@include media-breakpoint-down(lg){
+				padding-top: 3rem;
+			}
+			.contact-details{
+				.contact-row{
+					@extend .row;
+					padding-bottom: 2.188rem;
+					border-bottom: 1px solid $border-color;
+					.address, .map{
+						@extend .col-md-6;
+						h2{
+							text-transform: none;
+							color: $black;
+							padding-bottom: 2.5rem;
+							@include media-breakpoint-down(xs){
+								text-align: center;
+								padding-bottom: 1.5rem;
+							}
+						}
+						ul{
+							position: relative;
+							padding-left: 7.5rem;
+							margin-bottom: 50px;
+							@include media-breakpoint-down(xs){
+								padding-left: 0rem;
+								text-align: center;
+							}
+							li{
+								padding-bottom: 10px;
+    							margin-bottom: 0px;
+    							color: $black;
+    							font-family: $site_font;
+    							a{
+    								color: $black;
+    								&:hover{
+    									color: $primary-color;
+    								}
+    							}
+    							span{
+    								font-family: $site_font_medium;
+    								font-weight: 700;
+    							}
+							}
+						}
+						img{
+							&.map-img{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+		.contact-form-container{
+			padding-top: 2.75rem;
+			padding-bottom: 7.5rem;
+			max-width: 1440px;
+			@include media-breakpoint-down(sm){
+				padding-bottom: 3.5rem;
+			}	
+			h3{
+				text-transform: none;
+				color: $dark-grey;
+				padding-left: 15px;
+			}
+			p{
+				padding-left: 15px;
+				&.required{
+					color: $dark-grey;
+					font-size: 0.9rem;
+					line-height: auto;
+					padding-bottom: 2.5rem;
+					font-style: italic;
+				}
+
+			}
+			.form-row{
+				@extend .row;
+				&.top{
+					.form-group{
+						@include media-breakpoint-up(xl){
+							width: 80%;
+						}
+						@media screen and (min-width: 1400px) {
+							width: 60%;
+						}
+					}
+				}
+				.form-section{
+					@extend .col-md-6;
+				}
+				.message-sec{
+					@extend .col-md-12;
+					.form-group{						
+						textarea{
+							&.message{
+								height: 11.25rem;
+								background-color: $white;
+							}
+						}
+					}
+				}
+				.submit-sec{
+					@extend .col-md-12;
+					.btn-custom{
+						cursor: pointer;
+						margin-top: 20px;
+						color: $black;
+						border-color: $black;
+					}
+				}
+				.form-group{
+					margin-bottom: 0px;
+				}				
+			}
+			input, textarea, select{
+				border: 1px solid $light-grey3;
+				padding: 1.125rem 0 1.125rem 1.125rem;
+				border-radius: 0px;
+				margin-bottom: 1.25rem;
+				height: 50px;
+				&:focus{
+					background-color: $white;
+				}
+				@include placeholder($grey3, 14px);
+				&.date-field{
+					background-image: url("/assets/images/contact/calendar.png");
+					background-repeat: no-repeat;
+					background-position: right 20px center;
+				}
+			}
+			.guests{
+				@extend .row;
+				margin-left: 0px;
+				margin-right: 0px;
+				.rooms-select, .adult-select, .children-select{
+					@extend .col-md-4;
+					padding-left: 0px;
+					padding-right: 0px;
+					.ui-corner-all{		
+						height: 50px;
+						border: 1px solid $light-grey3;
+						.ui-spinner-button{
+							background: none;
+							border: none;
+						}
+						input{
+							margin: 0px;
+							border: 0px solid $light-grey3;
+						}
+						@include media-breakpoint-down(md){
+							width:100%;
+							margin-bottom:20px;
+						}
+					}
+
+					input{
+						@include placeholder($grey3, 14px);
+						width: 100%;
+					}
+				}
+				.rooms-select, .adult-select{
+					@include media-breakpoint-up(md){
+						padding-right: 18px;
+					}
+					
+				}	
+			}
+		}
+	}
+}
+
+.common-banner{
+	.banner-content{
+		&.contact-page{
+			max-width: 710px;
+		}
+	}
+}

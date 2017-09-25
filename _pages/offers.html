@@ -1,0 +1,58 @@
+---
+layout: default
+title: "Wine Vacation Packages | Offers at Wine Country Inn"
+meta_description: "Whether you are planning a Napa Valley romantic getaway, or just a relaxing trip to Wine Country in St. Helena, we have the perfect vacation package for you."
+permalink: /offers/
+parent: offers
+---
+
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-offers.jpg);">
+ 	<h1>special offers</h1>
+</section>
+
+<section class="accommodations-container no-padding">
+		<div class="accommodations-row">
+		<div class="accommodations-col">
+	
+				<h3> All the more reason to <span class="italic"> stay at <br class="show-lg" /> Wine Country Inn </span> & Cottages </h3>
+				<div class="left-line">
+		
+					<h5  class="semi-ital">Wine country packages and special hotel offers for a stay that's unforgettable.</h5>
+					<p>Whether it’s a romantic getaway, girls’ trip, or just a relaxing weekend in Napa Valley, the Wine Country Inn & Cottages has the perfect vacation package</p>
+
+					<a href="/contact/" class="theme-btn two-btn-margin">Contact Us<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+					<a href="/gallery/" class="theme-btn transparent-dark">View Gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		</div>	
+</section>
+
+
+<section class="accom-list-container">
+ {% assign offers-List = site.data._models.offers | sort: 'order' %}
+    {% for offers in offers-List %}
+
+		<div class="accom-item">									        
+    		<div class="accom-item-col offerbg no-padding {% cycle '', 'push-lg-7' %}">
+    			<div class="accom-item-text">
+    			
+    			
+                <h4>{{offers.title }}</h4>
+    			<p>{{offers.short_description}}</p>
+    			<div class="btns-group">
+    				<a href="{{offers.check_rate_url}}" target="_blank" title="Book Offer" class="theme-btn transparent-btn-dark">Book Offer<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    				<a href="{{offers.url_friendly_name}}/"  title="Book Room" class="theme-btn transparent-btn-dark" >learn more<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+    			</div>
+    		 </div>	
+    		</div>
+    		<div class="accom-item-img no-padding bg-cover bg-center-center bg-norepeat {% cycle '', 'pull-lg-5' %}" style="background-image: url({{offers.thumb_image.url}});" >
+    			
+    		</div>						    	
+		</div>		
+	
+{% endfor %}
+</section>
+
+
+
+{% include latest-blog.html %}
