@@ -1,0 +1,48 @@
+ {% assign offersCarousel = site.data._models.offers | sort : 'order' %}
+ {% if offersCarousel.size > 0 %}
+
+    <div class="special-offers-wrapper" >
+      <div class="special-offers-container no-padding">
+        <h3>Special Offers</h3>
+<div class="special-offers-slider">
+    <div id="specialOffersSlider" class="carousel slide" data-ride="carousel">
+        <!--<ol class="carousel-indicators vertical">
+            <li data-target="#specialOffersSlider" data-slide-to="0" class="active">01</li>
+            <li data-target="#specialOffersSlider" data-slide-to="1">02</li>
+            <li data-target="#specialOffersSlider" data-slide-to="2">03</li>
+            <li data-target="#specialOffersSlider" data-slide-to="3">04</li>
+        </ol>-->
+        <div class="carousel-inner" role="listbox"> 
+           
+            {% for offers in offersCarousel %}
+            {% if(offer.url_friendly_name != offers.url_friendly_name  )%}					     
+            <div class="carousel-item {% if forloop.first == true %} active{% endif %} ">
+                <div class="spl-off-content">
+                    <div class="spl-off-text no-padding">
+                        <!--<h6>{{offers.order}}</h6>-->
+                        <h4>{{offers.title }}</h4>
+                        <p>{{offers.short_description}}</p>
+                        <div class="special-offers-btns">
+                            <a href="{{offers.booking_url}}" title="Book Offer" class="btn-custom white">Book Offer <i class="fa  fa-caret-right" aria-hidden="true"></i></a>
+                            <a href="/offers/" title="All Offers" class="btn-custom transparent">All Offers <i class="fa  fa-caret-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="spl-off-img no-padding bg-cover bg-center-center bg-norepeat" style="background-image: url({{offers.thumb_image.url}}); min-height: 480px;" >
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="carousel-arrows">
+            <a data-slide="prev" name="prev" title="prev" href="#specialOffersSlider" class="bg-center-center bg-norepeat left-arrow">
+            </a>
+            <a data-slide="next" name="next" title="next"  href="#specialOffersSlider" class="bg-center-center bg-norepeat right-arrow">
+            </a>
+            <div class="clear-float"></div>
+        </div>
+    </div>
+</div>
+ 
+
+ {%endif%}

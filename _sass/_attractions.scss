@@ -1,0 +1,323 @@
+.left-image-fluid{
+	@extend .container-fluid;
+	padding: 0px;
+	.left-img-row{
+		@extend .row;
+		.img-sec, .txt-sec{
+			@extend .col-md-6;
+			padding: 0px;
+			min-height: 400px;
+			@include media-breakpoint-up(lg) {
+				min-height: 980px;
+			}
+		}
+		.txt-sec{
+			background-color: $grey4;
+			padding: 2rem;
+			@include media-breakpoint-up(lg) {
+				padding: 6.5rem 6.5rem 6.5rem 0;
+			}
+			h2{
+				color: $black;
+				text-transform: none;
+				padding-bottom: 1.5rem;
+			}
+			p{
+				padding-bottom: 3rem;
+			}
+			ul{
+				margin: 0 0 50px 0;
+			    @include media-breakpoint-up(lg) {
+			        padding-left: 7.5rem;
+			        position: relative;
+			    } 
+			    li{
+			    	padding-left:12px;
+			    	font-size:0.75rem;
+			    	position:relative;
+			    	&:before{
+			    		content: "";
+			    		background:$dark-grey;
+					    width: 6px;
+					    height: 6px;
+					    position: absolute;
+					    border-radius: 100%;
+					    top: 5px;
+					    left: 0;
+					    @include media-breakpoint-up(lg) {
+					    	top: 8px;
+					    }
+			    	}
+			    	@include media-breakpoint-up(lg) {
+				        font-size: 0.9375rem;
+				    }
+			    }   
+			}
+		}
+	}
+}
+
+.highlights-wrapper{
+	@extend .container-fluid;	
+	padding: 3.5rem 0px 0 0;
+	min-height: 1100px;
+	@include media-breakpoint-up(md) {
+		min-height: 1400px;
+		padding: 7.5rem 0px 0 0;
+	}
+	h2{
+		color: $black;
+		text-transform: none;
+		padding-bottom: 1.5rem;
+	}
+	p{
+		padding-bottom: 2.5rem;
+	}
+	a{
+		margin-bottom: 2rem;
+	}
+
+	&.bottom{
+		h2{
+			color: $white;
+		}
+		p{
+			color: $white;
+			&.left-line{
+				&:before{
+					background-color: $white;
+				}
+			}
+		}
+	}
+
+	.highlights-row{
+		@extend .row;
+		.highlights-left{
+			@extend .col-lg-6;
+			padding: 0px;
+		}
+		.highlights-right{
+			@extend .col-lg-6;
+			padding: 0rem 0.5rem 0rem 0.5rem;
+			@include media-breakpoint-up(xl) {
+				padding: 0rem 2.5rem 0rem 2.5rem;
+			}
+			@media screen and (min-width: 1400){
+				padding: 0rem 7.5rem 0rem 7.5rem;
+			}
+			.highlights-list{
+				background-color: $dark-grey;	
+				padding: 4rem 0 3rem 0;			
+				.list-row{
+					@extend .row;
+					h3{
+						color: $white;
+						padding: 0rem 1rem 1.5rem 1rem;
+						@include media-breakpoint-up(xl) {
+							padding: 0rem 3rem 1.5rem 4rem;
+						}
+					}
+					.list-left, .list-right{
+						@extend .col-lg-6;
+						padding: 0rem 1rem 0rem 1rem;
+						@include media-breakpoint-up(xl) {
+							padding: 0rem 3rem 0rem 4rem;
+						}
+						li{
+							padding-bottom: 0.9rem;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.home-events-more{
+	background: $light-grey;
+	padding: 6.875rem 0 8rem;
+	position:relative;
+	@media screen and (min-width: 1680px) {
+		padding:6.875rem 0;
+	}
+	.home-events{
+		@extend .container;
+		position: relative;
+		max-width:1500px;
+		h2{
+			padding-bottom:3.15rem;
+			position:relative;
+			color: $black;
+			text-transform: none;
+			&:after{
+				@include media-breakpoint-down(xs){
+					display: none;
+				}
+				@extend .before-line;
+				background-color: $black;
+				    width: 100%;
+				    left: 0;
+				    top: 60px;
+				    margin-top: 20px;
+				    @media screen and (min-width: 1680px) {
+				    	width: 61%;
+					    left: 39%;
+					    top: 41px;
+					    margin-top: 0px;
+				    }
+			}
+		}
+		.btn-block-ev{
+	    	position:absolute;
+	    	left: auto;
+	    	bottom: 0;
+	    	top: 0px;
+	    	right: 0;
+	    	a{
+	    		color: $hover-green;
+	    		text-transform: uppercase;
+	    	}
+	    }
+		.event-block{
+			float:left;
+			h5{
+				line-height: normal;
+				text-transform: uppercase;
+				font-family: $site_font_medium;
+				color: $hover-green;
+				font-size: 1.063rem;
+				font-weight:700;
+				padding-bottom:1rem;
+
+			}
+			._left{
+				width: 25%;
+			    float: left;
+			    padding-right: 2.125rem;
+			    @media screen and (max-width: 575px){
+			        text-align: center;
+    				padding-right: 0;
+    				width: 100%;
+    			}	
+				.date{
+				    float: left;
+				    border: 2px solid $hover-green;
+				    color: $hover-green;
+				    text-align:center;
+				    width:100px;
+				    height:auto;
+				    padding: 30px 0 30px 0;
+				    @media screen and (max-width: 575px){
+				    	float: none;
+				    	display: inline-block;
+				    }
+				    h3{
+			    	    padding-bottom: 0;
+						line-height: 2.813rem;
+						line-height: 25px;
+						font-family: $site_font_medium;
+						color: $hover-green;
+				    	&:after{
+				    		content:none;
+				    	}
+				    	span{
+				    		font-size: 0.875rem;
+						    display: block;
+						    height: 0;
+						    /* width: 0; */
+						    line-height: normal;
+				    	}
+				    }
+				}
+			}
+			._right{
+				width:70%;
+				float:left;
+				h3{
+					padding-bottom:1rem;
+					width:90%;
+					color: $dark-grey;
+					text-transform: none;
+					@media screen and (max-width: 575px){
+				    	width: 100%;		
+				    }
+				}
+				p{
+					padding-bottom:1.5rem;
+					width:80%;
+					@media screen and (max-width: 575px){
+						width: 100%;
+						padding-bottom: 5px;
+					}
+				}
+				a{
+					color: $hover-green;
+					text-transform: uppercase;
+					font-size: 13px;
+				}
+				 @include media-breakpoint-down(xs){
+			    	width: 100%;
+			    	margin-top: 20px; 
+			    }
+			}
+		}
+		.owl-nav{
+          position:absolute;
+          top:auto;
+          margin:0;
+          width:113px;
+          left:50%;
+          bottom:-50px;
+          @include translate-text(-50%, -50%);
+          @media screen and (min-width: 1680px) { 
+          	@include translate-text(0%, -50%); 
+          	left:auto; 
+          	top:50%;
+          	bottom:auto;
+          	width:100%;
+          }
+          [class*=owl-]{
+            background: $white;
+            opacity: 1;
+            border-radius: 0px;
+            width: 56px;
+            height: 56px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-indent: 100%;
+            cursor:pointer;
+            margin:0;
+            padding:0;
+            position:absolute;
+            &:hover{
+            	background-color:$primary-color;
+            }
+          }
+          .owl-prev{
+            background: $white url('/assets/images/home/left-arrow-grey.png') no-repeat 16px 20px;
+
+            left:0;
+            @media screen and (min-width: 1680px) { 
+            	left:-100px;
+            }
+            &:hover{
+            	background: $dark-grey url('/assets/images/home/left-arrow-white.png') no-repeat 16px 20px;
+            }
+          }
+          .owl-next{
+            background: $white url('/assets/images/home/right-arrow-grey.png') no-repeat 16px 20px;
+            right:0;
+            @media screen and (min-width: 1680px) { 
+            	right:-100px; 
+            }
+            &:hover{
+            	background: $dark-grey url('/assets/images/home/right-arrow-white.png') no-repeat 16px 20px;
+            }
+          }
+        }
+        
+	}
+
+}

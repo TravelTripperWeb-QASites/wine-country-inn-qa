@@ -1,9 +1,129 @@
 ---
 layout: default
-title: Region Example
+parent: home
+title: Napa Valley Bed and Breakfast | Wine Country Inn
+meta_description: A sophisticated luxury Napa Valley Bed and Breakfast in St. Helena. Wine Country Inn is the perfect St. Helena hotel for a wine tasting adventure.
 ---
+<section class="home-page-slider">
+	<div class="container-fluid no-padding">
+		<div data-ride="carousel" class="carousel slide" id="homePageMainSlider">
+		    <div role="listbox" class="carousel-inner">
+		        <div class="carousel-item active bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-1.jpg');">
+		            <div class="carousel-caption">
+		                <h2>The Napa Valley <span class="italic"> Retreat </span> </h2>
+		            </div>
+		        </div>
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-2.jpg');">
+		            <div class="carousel-caption">
+		               <h2>Unforgettable <span class="italic"> experiences </span> </h2>
+		            </div>
+		        </div>
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-5.jpg');">
+		            <div class="carousel-caption">
+		                <h2>Pet Friendly<span class="italic"> Accommodations </span> </h2>
+		            </div>
+		        </div>
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-3.jpg');">
+		            <div class="carousel-caption">
+		                <h2>Boutique <span class="italic"> Comfort </span> </h2>
+		            </div>
+		        </div>		        
+		        <div class="carousel-item bg-center-center bg-norepeat bg-cover" style="background-image: url('/assets/images/home/home-slide-4.jpg');">
+		            <div class="carousel-caption">
+		                <h2>Culinary <span class="italic"> Adventures </span></h2>
+		            </div>
+		        </div>		        
+		    </div>
+		    <div class="carousel-arrows">
+		    	<a data-slide="prev"  data-target="#homePageMainSlider" class="bg-center-center bg-norepeat left-arrow" title="Previous Slide" name="Previous Slide">
+		    	</a>
+		    	<a data-slide="next"  data-target="#homePageMainSlider" class="bg-center-center bg-norepeat right-arrow" title="Next Slide" name="Next Slide">
+		    	</a>
+		    	<div class="clear-float"></div>
+		    </div>
+		</div>
+	</div>
+</section>
 
-Regions:
-<hr/>
-{% region region1 %}
-{% region region2 %}
+<section class="welcome-section-bg bg-cover bg-norepeat" style="background-image: url('/assets/images/home/welcome-bg.jpg');">
+   <div class="welcome-container">
+        <div class="left-gap">
+      		<div class="welcome-row">
+           		<div class="welcome-left">   
+		            <h2>Welcome to <span class="italic"> wine country </span></h2>
+           			<div class="left-line">           				
+		              	<p>Set inside an actual Napa Valley vineyard, the Wine Country Inn & Cottages offers its guests some of the most comfortable and authentic accommodations in the Napa Valley. Romantic and secluded, this boutique hotel is one of the few pet-friendly getaways in all of the California wine country, offering guests a relaxing retreat for themselves and their four-legged family members. </p>
+ 
+						<p>With a delicious breakfast homemade daily, weekly wine tastings, the highest-quality linens and spectacular vineyard views from the hotel’s private patios, the Wine Country Inn & Cottages exceeds expectations. After all, the most simple comforts are always the most worthwhile.</p>
+           			</div>        			
+	              	<a href="/about/" class="theme-btn" target="_blank" title="Learn More">Learn More<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+           		</div>
+	           	<div class="welcome-right">
+	              	<img src="/assets/images/home/welcome-img.jpg" alt="Welcome to Wine Country Inn">
+	           	</div>
+           </div>
+      	</div>
+   </div>
+</section>
+
+<section class="full-text-section">
+	<div class="text-section-container">
+		<div class="left-gap">			
+			<div class="text-row">
+				<div class="text-col">
+					<h2>Escape <span class="italic"> to the heart </span> of the Napa Valley</h2>
+				</div>
+				<div class="text-col">
+					
+				</div>
+			</div>
+			<div class="text-row">
+				<div class="text-col">
+					<p class="semi-ital left-line">
+						The Wine Country Inn & Cottages allows guests to rest, relax, and rejuvenate in the intimacy of a longtime Napa Valley hideaway, where quaint accommodations blend with surrounding vineyards for the perfect wine country experience.
+					</p>
+					<a href="/accommodations" class="theme-btn" title="All Accommodations"> All Accommodations <i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="text-col">
+					<p class="left-gap">
+						Recognized by TripAdvisor as one of the top bed and breakfasts in Napa Valley, the Wine Country Inn & Cottages offers 29 pet-friendly guestrooms and suites, each perfectly balanced between contemporary design and country charm making it one of the most unique boutique hotels in the Napa Valley. Adding to its appeal, the inn is located in the heart of the Napa Valley, among a caché of quaint wine country hamlets, ripe for the exploring.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="rooms-slider">
+	<div class="rooms-container">
+		{% include rooms-slider.html %}
+	</div>
+</section>
+
+<section class="special-offers bg-cover bg-norepeat" style="background-image: url(/assets/images/home/special-offers-bg.jpg);">	
+	{% include special-offer-slider.html %}
+</section>
+
+<section class="full-text-section side-image">
+	<div class="text-section-container">
+		<div class="left-gap">			
+			<div class="text-row">
+				<div class="text-col">
+					<h2>Sensational <span class="italic"> tastes </span> for every palate</h2>
+					<p class="left-line">
+						With its Michelin-starred restaurants and James Beard Award-winning chefs, the Napa Valley's gastronomic landscape serves as the perfect accompaniment to the region’s world-class vineyards. Whether its acclaimed tasting menus or roadside comfort food, the concierge at the Wine Country Inn & Cottages is happy to provide suggestions and make arrangements for guests.
+					</p>
+					<a href="/dining/" class="theme-btn transparent-dark" title="Wine & Dine">Wine & Dine <i class="fa fa-angle-right"></i></a>
+				</div>
+				<div class="text-col">
+					<div class="left-gap">						
+						<img src="/assets/images/home/food.jpg" alt="Food" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include latest-blog.html %}
+

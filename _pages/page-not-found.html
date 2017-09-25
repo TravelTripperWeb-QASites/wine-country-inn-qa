@@ -1,0 +1,32 @@
+---
+layout: default
+title: "404 - Page Not Found"
+meta_description: "Page Not Found Descriptions"
+permalink: /page-not-found/
+---
+<section class="inner-page-banner bg-img-cover page-not-found-banner" style="background-image: url(/assets/images/gallery/gallery-banner.jpg);">
+	<div class="banner-center">		
+	 	<h1>404</h1>
+	 	<h2>Page Not Found</h2>
+	</div>
+</section>
+<div class="page-not-found-container m-t-40 m-b-40 text-center">
+	<p>WE'RE SORRY BUT IT LOOKS LIKE THAT PAGE DOESN'T EXIST ANYMORE. PLEASE VIEW THE SITEMAP BELOW OR GO BACK TO THE <a class="theme-color" href="/" title="Home Page"> HOMEPAGE </a> .</p>
+</div>
+{% assign leftmenuitems = site.data.navigation.leftmenu %}
+{% assign rightmenuitems = site.data.navigation.rightmenu %}
+<div class="sitemap">
+	<h3 class="text-center m-b-20">Sitemap</h3>
+	<ul class="text-center">
+		{% for item in leftmenuitems %}
+	        <li>
+	            <a href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }}</a>
+	        </li>
+        {% endfor %}
+        {% for item in rightmenuitems %}
+            <li>
+                <a href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+	</ul>
+</div>

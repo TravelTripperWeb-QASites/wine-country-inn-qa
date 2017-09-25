@@ -1,0 +1,85 @@
+---
+layout: default 
+parent: /blog/
+---
+{% assign blog = page %}
+{% assign model = page %}
+
+{% assign post = site.data._models.blog  %}
+{% for p in post %}
+  {% if p.url_friendly_name == blog.url_friendly_name %}
+    {% assign pInd = forloop.index0 | minus: 1 %}
+    {% assign nInd = forloop.index0 | plus: 1 %}
+    {% if forloop.first != true %}
+      {% assign prevPostTitle = post[pInd].title %}
+      {% assign prevPostUrl = post[pInd].url_friendly_name %}
+    {% endif %}
+    {% if forloop.last != true %}
+      {% assign nextPostTitle = post[nInd].title %}
+      {% assign nextPostUrl = post[nInd].url_friendly_name %}
+    {% endif %}
+
+  {% endif %}
+{% endfor %}
+{% assign category = site.data._models.category  %}
+{%for banner in category%}
+   {%if banner.id == blog.category.id %}
+<section class="inner-page-banner bg-img-cover" style="background-image: url(/assets/images/hero-blog.jpg);">
+<h1>Blog</h1>
+         
+</section>
+  {%endif%}
+  {%endfor%}
+<section class="blog-main-sec blog-detail-main">
+    <div class="blog-main-inner">
+        <div class="blog-box blog-details">
+            <div class="post">
+                <div class="next-prev">
+                    {%if prevPostUrl %}
+                    <a href="/blog/{{prevPostUrl}}" title="Prev" class="prev">Prev</a>
+                    {%endif%}
+                    {%if nextPostUrl %}
+                    <a href="/blog/{{nextPostUrl}}" title="Next" class="next">Next</a>
+                    {%endif%}
+                </div>
+                <h3 class="blog-details-title">{{blog.title}}</h3>
+                <div class="info">
+                    <div class="date">
+                        {% assign d = blog.date | date: "%-d" %}
+                        <p><span class="">{{ blog.date | date: "%B" }} {{ d }},
+                            {{ blog.date | date: "%Y" }}</span>{%for banner in category%}
+                            {%if banner.id == blog.category %}
+                            <span class="categories"><a href="/blog/category/{{banner.url_friendly_name}}/">{{banner.title}}</a></span>
+                            {%endif%}
+                            {%endfor%}
+                        </p>
+                    </div>
+                    <div class="post-img"  style="background-image: url({{blog.blogimage.url}});"></div>
+                    <div class="blog-description"> 
+                        {{blog.long_description}}
+                    </div>
+                    <div class="tags">
+                        <ul>
+                            <span>share: </span>
+                            <li><a href="javascript:void(0)" class="fb-share" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="javascript:void(0)" class="twitter-share" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <!-- <li><a href="" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  {% include blog-aside.html %} -->
+    </div>
+</section>
+
+<section class="common-banner mt-0" style="background-image: url(/assets/images/hero-amenities.jpg);">
+  
+  <div class="banner-content">
+    <h4>Enjoy a host of <span class="italic">unique extras</span> during your stay.</h4>
+    <div class="ita_large_text left-line">Wine Country Inn & Cottages is one of the most beautiful St. Helena hotels near Napa Valley.</div>
+    <a href="/amenities/" class="theme-btn" >view amenities<i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+
+  </div>
+
+</section>

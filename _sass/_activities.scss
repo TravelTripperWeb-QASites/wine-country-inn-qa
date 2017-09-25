@@ -1,0 +1,40 @@
+.left-image{
+	.left-image-fluid{
+		.black-content{
+			.txt-sec{
+			    padding: 0 0 7.5rem 0;
+			    background-color: transparent;
+			    flex: 0 0 100%;
+    			max-width: 100%;
+			    @include media-breakpoint-up(xl) {
+			    	flex: 0 0 50%;
+    				max-width: 50%;
+			    }
+			    .left-gap{
+			    	margin-left:2rem;
+			    	margin-right:2rem;
+			    	padding:3rem;
+			    	background:$dark-grey;
+			    	@include media-breakpoint-up(xl) {
+			    		margin-left:7.5rem;
+			    		margin-right:0;
+			    		padding:5rem;
+			    	}
+			    	h2, p, li{
+			    		color:$white;
+			    	}
+			    	li{
+			    		&:before{
+			    			background:$white;
+			    		}
+			    	}
+			    	p{
+			    		&:before{
+			    			background:$white;
+			    		}
+			    	}
+			    }
+			}
+		}
+	}
+}
