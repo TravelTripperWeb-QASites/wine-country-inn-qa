@@ -147,11 +147,28 @@ permalink: /attractions/
 				<h2 class="">Napa Valley <i class="italic">events</i> <span class="right-line"></span></h2>
 			</div>
 		</div>
+  
 
-
-
+{% assign eventlist = site.data._models.events | sort:'date'  | reverse %} 
         <div class="owl-carousel owl-theme">
-            <div class="event-block">
+            
+            {% for events in eventlist limit:6 %}  
+                <div class="event-block">
+	                <h5>{{ events.date | date: "%B" }}</h5>
+	                <div class="_left">
+	                     <span class="date">
+	                         <h3>{{ events.date | date: "%d" }}</h3>
+	                     </span>
+	                </div>
+	                <div class="_right">
+	                     <h3>{{ events.title }}</h3>
+	                     <p>{{ events.description }}</p>
+				          <a href="{{ events.event_website_url }}" title="{{ events.title }}" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
+	                </div>
+	            </div>
+ 
+            {% endfor %}
+            <!-- <div class="event-block">
                 <h5>January</h5>
                 <div class="_left">
                     <span class="date">
@@ -163,46 +180,8 @@ permalink: /attractions/
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
                 </div>
-            </div>
-            <div class="event-block">
-                <h5>January</h5>
-                <div class="_left">
-                    <span class="date">
-                        <h3>24 <br> ~ <br> 30</h3>
-                    </span>
-                </div>
-                <div class="_right">
-                    <h3>Napa Valley Truffle Festival</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="event-block">
-                <h5>February</h5>
-                <div class="_left">
-                    <span class="date">
-                        <h3>04</h3>
-                    </span>
-                </div>
-                <div class="_right">
-                    <h3>Napa Valley Vintners' "Premiere Napa Valley"</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="event-block">
-                <h5>January</h5>
-                <div class="_left">
-                    <span class="date">
-                        <h3>12</h3>
-                    </span>
-                </div>
-                <div class="_right">
-                    <h3>Napa Valley Truffle Festival</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="" title="Learn More" class="btn-custom no-border">Learn More <i class="fa  fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
+            </div> -->
+
         </div>
     </div>
     

@@ -23,7 +23,7 @@ permalink: /events/
 	  <option value="November">November</option>
 	  <option value="December">December</option>
 	</select> -->
-{% assign eventPosts = site.data._models.events | sort:'date' | group_by : 'date' %}
+{% assign eventPosts = site.data._models.events | sort:'date' | group_by : 'date'  | reverse %}
 {% for events in eventPosts %}
       {% assign currentdate = events.name | date: "%B %Y" %}
       {% if currentdate != datelist %}
