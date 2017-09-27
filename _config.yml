@@ -3,7 +3,7 @@ title                    : "Wine Country Inn"
 title_separator          : "|"
 name                     : "Wine Country Inn"
 description              : "Wine Country Inn"
-url                      : # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
+url                      : "https://www.winecountryinn.com" # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : https://github.com/TravelTripperWeb-Sites/wine-country-inn # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
