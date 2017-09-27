@@ -1,126 +1,117 @@
-.top-footer{
+.top-footer {
+    background-color: $dark-grey;
+    .footer-container {
+        @extend .container;
+        .footer-top-wrapper {
+            @extend .row;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 3.75rem 0 3.75rem 0;
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+        }
+        .left-line {
+            padding-left: 0rem;
+            @include media-breakpoint-up(lg) {
+                padding-left: 4rem;
+            }
+            &:before {
+                background-color: $white;
+                top: 3px;
+                width: 3rem;
+            }
+        }
+        h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: .4rem;
+        }
+        h4,
+        a,
+        p {
+            color: $white;
+        }
+        p,
+        a {
+            display: block;
+            font-size: .8rem;
+            line-height: 28px;
+        }
+        a {
+            &:hover {
+                color: $hover-green;
+            }
+        }
+        .logo-section {
+            @extend .col-lg-3;
+            @extend .col-md-6;
+            @extend .col-12;
+        }
+        .address-section {
+            @include media-breakpoint-down(sm) {
+                padding-top: 3rem;
+            }
+            @extend .col-lg-3;
+            @extend .col-md-6;
+            @extend .col-12;
+        }
+        .contact-section {
 
-	background-color:  $dark-grey;
-
-	.footer-container{
-		@extend .container;
-		  .footer-top-wrapper{
-				@extend .row;
-				margin-left: 0px;
-				margin-right: 0px;
-				padding: 3.75rem 0 3.75rem 0;
-				@include media-breakpoint-down(sm) {
-
-                   text-align: center;
+            @extend .col-lg-3;
+            @extend .col-md-6;
+            @extend .col-12;
+            @include media-breakpoint-down(md) {
+        		margin-top: 3rem;
+            }
+        }
+        .quick-section {
+            @extend .col-lg-3;
+            @extend .col-md-6;
+            @extend .col-12;
+            text-transform: uppercase;
+            @include media-breakpoint-down(md) {
+                padding-top: 3rem;
+            }
+        }
+        .news-section {
+            @include media-breakpoint-down(md) {
+                padding-top: 3rem;
+            }
+            @extend .col-xl-4;
+            @extend .col-md-8;
+            @extend .col-sm-12;
+            .input-group {
+                margin: 1rem 0;
+            }
+            input {
+                font-size: .8rem;
+                font-style: oblique;
+            }
+            input,
+            button {
+                padding: 1.2rem;
+                border: 0;
+            }
+            button {
+                letter-spacing: .1rem;
+                border: none;
+                @extend .theme-btn;
+                cursor: pointer;
+                border-radius: 0;
+                background-color: $hover-green;
+                color: $white;
+                border-radius: none;
+                &:hover {
+                    background-color: $primary-color;
+                    border: #a54f55;
                 }
-			}
-			.left-line{
-				padding-left: 0rem;
-				@include media-breakpoint-up(lg) {
-					padding-left: 4rem;
-				}
-				    
-				&:before{
-					background-color:$white;
-					top: 3px;
-					width: 3rem;
-				}
-			}
-			h4{
-				font-size: 1rem;
-    			text-transform: uppercase;
-    			margin-bottom: .4rem;
-			}
-			h4,a,p{
-				color:$white;
-			}
-			p,a{
-				
-				display:block;
-				font-size: .8rem;
-				line-height: 28px;
-			}
-			a{
-
-				&:hover{
-					color:$hover-green;
-				}
-
-			}
-			.logo-section {
-
-			@extend .col-xl-2;
-			@extend .col-md-4;
-			@extend .col-sm-12;
-
-			}
-			.address-section {
-				@include media-breakpoint-down(sm) {
-					padding-top:3rem;
-				}
-			@extend .col-xl-2;
-			@extend .col-md-4;
-			@extend .col-sm-12;
-			}
-			.contact-section {
-				@include media-breakpoint-down(sm) {
-					padding-top:3rem;
-				}
-			@extend .col-xl-2;
-			@extend .col-md-4;
-			@extend .col-sm-12;
-			}
-			.quick-section {
-
-			@extend .col-xl-2;	
-			@extend .col-md-4;	
-			@extend .col-sm-12;					
-				text-transform:uppercase;
-
-				@include media-breakpoint-down(md) {
-					padding-top:3rem;
-				}
-			}
-			.news-section {
-				@include media-breakpoint-down(md) {
-					padding-top:3rem;
-				}
-			@extend .col-xl-4;	
-			@extend .col-md-8;
-			@extend .col-sm-12;
-				.input-group{
-					    margin: 1rem 0;
-				}	
-				input{
-					font-size: .8rem;
-	    			font-style: oblique;
-				}						
-				input,button{
-					    padding: 1.2rem;
-					    border: 0;
-				}
-				button{
-					    
-	    				letter-spacing: .1rem;
-	    				border:none;
-						@extend .theme-btn;
-						cursor:pointer;
-						border-radius: 0;
-						background-color:$hover-green;
-						color:$white;
-						border-radius:none;
-						&:hover{
-						background-color:$primary-color;
-						border: #a54f55;
-						}
-				}
-			}
-
-	}
+            }
+        }
+    }
 }
 
 .footer-copyright {
-    
     min-height: 60px;
     color: $white;
     padding: 1rem 1rem .8rem 1rem;
@@ -135,36 +126,34 @@
     .copyright-row {
         @extend .row;
         @extend .no-margin;
-         color:$dark-grey; 
-         a {
+        color: $dark-grey;
+        a {
             color: $dark-grey;
         }
-         .social{
-                a{
-                    color:$dark-grey ;
-                    margin: .5rem;
-                    .fa{
-                      color:$dark-grey ;  
-                    }
+        .social {
+            a {
+                color: $dark-grey;
+                margin: .5rem;
+                .fa {
+                    color: $dark-grey;
                 }
-            } 
+            }
+        }
     }
     .copyright-content {
         @extend .col-lg-4;
-        font-size: .7rem ;
-        text-transform:uppercase;
+        font-size: .7rem;
+        text-transform: uppercase;
         @include media-breakpoint-down (md) {
-        	 text-align: center;
-        }            
-        
-    } 
-    .social-content{
+            text-align: center;
+        }
+    }
+    .social-content {
         @extend .col-lg-4;
         @extend .social;
         @include media-breakpoint-down (md) {
-        	margin:2rem 0;
+            margin: 2rem 0;
         }
-
     }
     .credentials {
         @extend .col-lg-4;
@@ -184,5 +173,5 @@
             display: inline-block;
             padding: 5px 0 0 0;
         }
-    }  
+    }
 }

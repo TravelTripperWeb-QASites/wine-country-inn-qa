@@ -6,7 +6,13 @@ menu:
   - title: Amenities
     url: /amenities/
   - title: Offers
-    url: /offers/
+    url: /offers/  
+  - title: Groups
+    url: /groups/
+    submenu: true
+    subtitle: Request For Proposal
+    suburl: /rfp/
+    class: rfp
   - title: Dining
     url: /dining/
   - title: Wineries & Attractions
@@ -18,7 +24,5 @@ menu:
     suburl-two: /events/
   - title: Gallery
     url: /gallery/
-  - title: Blog
-    url: /blog/
   - title: Contact
     url: /contact/
