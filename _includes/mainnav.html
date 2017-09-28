@@ -17,12 +17,15 @@
                     </div>
                 </li>
                 {% for item in menu %}
-                <li class="nav-item {% if page.url == item.url %} active {% endif %} {% if page.parent == item.url %} active {% endif %}">
+                <li class="nav-item {% if page.url == item.url %} active {% endif %} {% if page.parent == item.url %} active {% endif %} {% if item.class %} {{item.class}} {% endif %} ">
                     <a class="nav-link" href="{{item.url | absolute_url}}" title="{{ item.title }}">{{ item.title }} {% if page.url==item.url %}<span class="sr-only">(current)</span>{% endif%}</a>
                     {% if item.submenu == true %}
                     <ul class="submenu {% if item.class == 'rfp' %} rfp {% endif %} ">
-                        <li><a href="{{item.suburl}}">{{item.subtitle}}</a></li>
-                        <li><a href="{{item.suburl-two}}">{{item.subtitle-two}}</a></li>
+                        {% if item.subtitle-one %} <li><a href="{{item.suburl-one}}">{{item.subtitle-one}}</a></li> {% endif %}
+
+                        {% if item.subtitle-two %}<li><a href="{{item.suburl-two}}">{{item.subtitle-two}}</a></li> {% endif %}
+
+                        {% if item.subtitle-three %}<li><a href="{{item.suburl-three}}">{{item.subtitle-three}}</a></li> {% endif %}
                     </ul>
                     {% endif %}
                 </li>

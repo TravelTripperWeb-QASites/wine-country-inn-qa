@@ -1,4 +1,7 @@
 menu:
+  - title: Home
+    url: /  
+    class: homenav
   - title: About
     url: /about/
   - title: Accommodations
@@ -10,19 +13,23 @@ menu:
   - title: Groups
     url: /groups/
     submenu: true
-    subtitle: Request For Proposal
-    suburl: /rfp/
+    subtitle-one: Request For Proposal
+    suburl-one: /rfp/
     class: rfp
   - title: Dining
     url: /dining/
   - title: Wineries & Attractions
     url: /wineries/
     submenu: true
-    subtitle: Attractions
-    suburl: /attractions/
-    subtitle-two: Napa Valley Events
-    suburl-two: /events/
+    subtitle-one: Wineries
+    suburl-one: /wineries/
+    subtitle-two: Attractions
+    suburl-two: /attractions/    
+    subtitle-three: Napa Valley Events
+    suburl-three: /events/
   - title: Gallery
-    url: /gallery/
+    url: /gallery/  
+  - title: Blog
+    url: /blog/
   - title: Contact
     url: /contact/
