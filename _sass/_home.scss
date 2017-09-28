@@ -322,6 +322,11 @@
 }
 
 .special-offers-slider{
+	.carousel-item{
+		@media screen and (min-width: 992px){
+			height: 540px;
+		}
+	}
 	.offers-row{
 		@extend .row;
 		width: 100%;
@@ -375,6 +380,14 @@
 			@include media-breakpoint-down(md) {
 				min-height: 400px;
 			}
+		}
+	}
+}
+
+.rooms-slider{
+	.carousel-item{
+		@media screen and (min-width: 992px){
+			height: 540px;
 		}
 	}
 }
