@@ -1,10 +1,10 @@
 {
-  "order": "03",
-  "title": "Stay Four Nights Save 20%",
-  "seo_title": "Stay Four Nights Save 20%  | Offers at Wine Country Inn",
-  "url_friendly_name": "stay-four-nights-save-20",
-  "seo_description": "Your reservation includes a split of wine and assorted beverages upon arrival and a Wine Country Breakfast buffet each morning.",
-  "short_description": "Your reservation includes a split of wine and assorted beverages upon arrival and a Wine Country Breakfast buffet each morning.",
+  "order": "01",
+  "title": "Rekindle Your Romance",
+  "seo_title": "Rekindle Your Romance  | Offers at Wine Country Inn",
+  "url_friendly_name": "rekindle-your-romance",
+  "seo_description": "Relax, take a break, and let romance blossom with a stay at the Wine Country Inn & Cottages.",
+  "short_description": "Relax, take a break, and let romance blossom with a stay at the Wine Country Inn & Cottages.",
   "check_rate_url": "https://res.windsurfercrs.com/ibe/index.aspx?propertyID=14513",
   "thumb_image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-30-054904/WCIPathway.jpg",
@@ -20,7 +20,7 @@
     "width": 300,
     "height": 200,
     "file_size": 42868,
-    "alt": "WCI",
+    "alt": "Rekindle Your Romance",
     "caption": "",
     "description": ""
   },
@@ -38,9 +38,9 @@
     "width": 300,
     "height": 200,
     "file_size": 42868,
-    "alt": "WCI",
+    "alt": "Rekindle Your Romance",
     "caption": "",
     "description": ""
   },
-  "long_description": "<p>Your reservation includes a split of wine and assorted beverages upon arrival and a Wine Country Breakfast buffet each morning. On Friday and Saturday evenings, enjoy a complimentary wine and cheese tasting served in the Winery House, hosted by a local vintner! This is an advance purchase, pre-paid rate. No refunds if cancelled or changed. Your credit card will be charged in full for the total amount of your stay. Room rates based upon availability. Non commissionable.</p>"
+  "long_description": "<p>Relax, take a break, and let romance blossom with a stay at the Wine Country Inn &amp; Cottages. Set the mood with a chilled split of sparkling wine, local chocolates, and a rose petal turn down waiting in the guest room. Loved ones will have the ultimate relaxation experience with two 60-minute Classic Swedish Spa Treatments included. Special complimentary winery tasting experiences are included to add to any Napa Valley Experience. Of course, complimentary Wine Country breakfast is included every morning, as well as wine tastings on the weekends.</p>\n<p>The Romance package is priced at $375.00 for TWO adults, including tax and gratuity (room rate not included). Two-night minimum stay is required. Reserve any two nights, select the desired room type and add on the Romance package option.</p>"
 }
