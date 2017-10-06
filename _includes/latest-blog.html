@@ -20,7 +20,7 @@
 						
 					</div>
 					<div class="item-text left-line">
-						<h3>{{blog-item.title | truncatewords:10 }}</h3>
+						<a href="/blog/{{ blog-item.url_friendly_name }}/" title="{{blog-item.title}}"> <h3>{{blog-item.title | truncatewords:10 }}</h3> </a>
 						<a href="/blog/{{ blog-item.url_friendly_name }}/" title="Read More">Read More <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
