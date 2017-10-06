@@ -40,26 +40,26 @@ parent: blog
                 <div class="pagination">
                     {% if data_paginator.previous_page %}
                         {% if data_paginator.page %}
-                            <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> </a>
+                            <a name="previous" title="previous" class="bg-center-center bg-norepeat left-arrow" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
                         {% else %}
-                            <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> {{ page }} </a>
+                            <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> {{ page }} </a>
                          {% endif %}
                     {% else %}
                         <a href="#"  name="previous" title="previous"  class="bg-center-center bg-norepeat left-arrow disabled"></a>
                     {% endif %}
                     <div class="pagnum">
                         {% for page in (1..data_paginator.total_pages) %}
-                            {% if page == data_paginator.page %}
-                                <a class="current" href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/">{{ page }}</a>
-                            {% elsif page == 1 %}
-                                <a href="{{ data_paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}/">{{ page }}</a>
+                             {% if page == 1 %}
+                                <a href="/blog/">{{ page }}</a>                                
+                            {% elsif page == data_paginator.page %}
+                                <a class="current" href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>                           
                             {% else %}
                                 <a href="/blog{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
                             {% endif %}
                         {% endfor %}
                     </div>
                     {% if data_paginator.next_page %}
-                        <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/"> </a>
+                        <a  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow" href="{{ data_paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> </a>
                     {% else %}
                         <a href="#"  name="next" title="next"  class="bg-center-center bg-norepeat right-arrow disabled"> </a>
                     {% endif %}
