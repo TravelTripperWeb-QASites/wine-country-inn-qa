@@ -1,0 +1,31 @@
+<div id="fire-popup" class="modal fade" role="dialog" style="top: 250px;">
+    <div class="modal-dialog">
+  
+      <div class="modal-wrapper">
+  
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+  
+        <div class="modal-content">
+  
+          <div class="modal-top">
+            <p>There are several fire conditions surrounding the Napa Valley.<br><br>
+            It is highly inadvisable to travel to Napa, unless it is an emergency.</p>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  
+  <script>
+    $(window).on('load',function(){
+      var firePopup = localStorage.getItem('firePopup');
+      if (firePopup == null) {
+        localStorage.setItem('firePopup', 1);
+        $('#fire-popup').show();
+        $('#fire-popup').modal();
+      }
+    });
+  </script>
