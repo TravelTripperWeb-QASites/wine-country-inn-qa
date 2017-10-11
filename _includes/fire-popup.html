@@ -22,11 +22,7 @@
   
   <script>
     $(window).on('load',function(){
-      var firePopup = localStorage.getItem('firePopup');
-      if (firePopup == null) {
-        localStorage.setItem('firePopup', 1);
-        $('#fire-popup').show();
-        $('#fire-popup').modal();
-      }
+      $('#fire-popup').show();
+      $('#fire-popup').modal();
     });
   </script>
