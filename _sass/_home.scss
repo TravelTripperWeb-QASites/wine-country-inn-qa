@@ -1,25 +1,27 @@
 #homePageMainSlider{
-	height: 100%;
+	//height: inherit;
+	//min-height:500px;
 	.carousel-inner{
-		height: 100%;
-	}
-	.carousel-item{
-		height: 100%;
-		.carousel-caption{
-			bottom: 100px;
-			h2{
-				color: $white;
-				font-size: 6.25rem;
-				font-family: $headings_font;
-				text-transform: none;
-				@include media-breakpoint-down(lg) {
-				 	font-size: 4.25rem;
-				}
-				@include media-breakpoint-down(md) {
-				 	font-size: 3.25rem;
-				}
-				@include media-breakpoint-down(sm) {
-				 	font-size: 2.25rem;
+		height: inherit;
+		.carousel-item{
+			height: inherit;
+			min-height:400px;
+			.carousel-caption{
+				bottom: 100px;
+				h2{
+					color: $white;
+					font-size: 6.25rem;
+					font-family: $headings_font;
+					text-transform: none;
+					@include media-breakpoint-down(lg) {
+					 	font-size: 4.25rem;
+					}
+					@include media-breakpoint-down(md) {
+					 	font-size: 3.25rem;
+					}
+					@include media-breakpoint-down(sm) {
+					 	font-size: 2.25rem;
+					}
 				}
 			}
 		}

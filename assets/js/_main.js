@@ -21,6 +21,13 @@ document.getElementById('fb-root').appendChild(e);
 
 $(document).ready(function(){
 
+	if (Cookies.get('popup') != 'showoffer') {
+	    $('#fire-popup').show();
+	    $('#fire-popup').modal();
+	    Cookies.set('popup', 'showoffer', {
+	      expires: 1
+	    });
+	}
 
 	$('.fb-share').click(function(e){ 
         e.preventDefault();
@@ -137,4 +144,7 @@ function setScrollHeader(){
 	    }	
 	}
 }
+
+    
+
 
