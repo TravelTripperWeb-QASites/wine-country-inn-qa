@@ -32,10 +32,7 @@
 {% else %}
 {% assign seo_description = page.seo_description | default: page.excerpt | default: site.description %}
 {% endif %}
-{% elsif page.url contains '/offers/' %} 
-{% assign seo_description = page.seo_description  %}
-{% elsif page.url contains '/accommodations/' %} 
-{% assign seo_description = page.seo_description  %}
+
 {%else%}
 {% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}
 {% endif %}
