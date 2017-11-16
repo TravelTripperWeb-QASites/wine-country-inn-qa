@@ -2,25 +2,6 @@
   "name": "Gallery",
   "photos": [
     {
-      "name": "Couples-Massage",
-      "file_name": "Couples-Massage.jpg",
-      "file_type": "image/jpeg",
-      "url": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/Couples-Massage.jpg",
-      "date_added": "2017-08-31 05:35:58",
-      "tags": "",
-      "file_size": 44726,
-      "width": 1000,
-      "height": 406,
-      "description": "",
-      "url_large": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/large_Couples-Massage.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/medium_Couples-Massage.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/small_Couples-Massage.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/xsmall_Couples-Massage.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/thumb_Couples-Massage.jpg",
-      "git_file_name": "_assets/image_data/site-assets_32_758_6768_media_2017-08-31-053557_Couples-Massage.jpg.json",
-      "path": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/Couples-Massage.jpg"
-    },
-    {
       "name": "Napa-Bike-Tours",
       "file_name": "Napa-Bike-Tours.jpg",
       "file_type": "image/jpeg",
@@ -38,6 +19,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-095945/thumb_Napa-Bike-Tours.jpg",
       "git_file_name": "_assets/image_data/site-assets_32_758_6768_media_2017-08-31-095945_Napa-Bike-Tours.jpg.json",
       "path": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-095945/Napa-Bike-Tours.jpg"
+    },
+    {
+      "name": "Couples-Massage",
+      "file_name": "Couples-Massage.jpg",
+      "file_type": "image/jpeg",
+      "url": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/Couples-Massage.jpg",
+      "date_added": "2017-08-31 05:35:58",
+      "tags": "",
+      "file_size": 44726,
+      "width": 1000,
+      "height": 406,
+      "description": "",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/large_Couples-Massage.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/medium_Couples-Massage.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/small_Couples-Massage.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/xsmall_Couples-Massage.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/thumb_Couples-Massage.jpg",
+      "git_file_name": "_assets/image_data/site-assets_32_758_6768_media_2017-08-31-053557_Couples-Massage.jpg.json",
+      "path": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-053557/Couples-Massage.jpg"
     },
     {
       "name": "lg-3",
