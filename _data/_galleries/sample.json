@@ -1,44 +1,5 @@
 {
-  "name": "Sample",
-  "photos": [
-    {
-      "name": "ThinkstockPhotos",
-      "file_name": "ThinkstockPhotos.jpg",
-      "file_type": "image/jpeg",
-      "url": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/ThinkstockPhotos.jpg",
-      "date_added": "2017-08-31 07:30:30",
-      "tags": "",
-      "file_size": 147891,
-      "width": 1000,
-      "height": 406,
-      "description": "",
-      "url_large": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/large_ThinkstockPhotos.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/medium_ThinkstockPhotos.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/small_ThinkstockPhotos.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/xsmall_ThinkstockPhotos.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/thumb_ThinkstockPhotos.jpg",
-      "git_file_name": "_assets/image_data/site-assets_32_758_6768_media_2017-08-31-073029_ThinkstockPhotos.jpg.json",
-      "path": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-31-073029/ThinkstockPhotos.jpg"
-    },
-    {
-      "name": "birthday-package",
-      "file_name": "birthday-package.jpg",
-      "file_type": "image/jpeg",
-      "url": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg",
-      "tags": "",
-      "file_size": 296076,
-      "width": 1920,
-      "height": 1080,
-      "description": "",
-      "date_added": "2017-09-29-125132",
-      "url_large": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/large_birthday-package.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/medium_birthday-package.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/small_birthday-package.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/xsmall_birthday-package.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/thumb_birthday-package.jpg",
-      "git_file_name": "_assets/image_data/birthday-package.json",
-      "path": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg"
-    }
-  ],
+  "name": "",
+  "photos": null,
   "description": ""
 }
