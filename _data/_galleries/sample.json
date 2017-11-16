@@ -21,25 +21,6 @@
       "path": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg"
     },
     {
-      "name": "lg-acc-2",
-      "file_name": "lg-acc-2.jpg",
-      "file_type": "image/jpeg",
-      "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/lg-acc-2.jpg",
-      "date_added": "2017-08-28 08:05:14",
-      "tags": "",
-      "file_size": 213250,
-      "width": 1000,
-      "height": 667,
-      "description": "",
-      "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/large_lg-acc-2.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/medium_lg-acc-2.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/small_lg-acc-2.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/xsmall_lg-acc-2.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/thumb_lg-acc-2.jpg",
-      "git_file_name": "_assets/image_data/site-assets_32_758_6369_media_2017-08-28-080512_lg-acc-2.jpg.json",
-      "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/lg-acc-2.jpg"
-    },
-    {
       "name": "lg-jam-2",
       "file_name": "lg-jam-2.jpg",
       "file_type": "image/jpeg",
@@ -57,6 +38,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072932/thumb_lg-jam-2.jpg",
       "git_file_name": "_assets/image_data/site-assets_32_758_6369_media_2017-08-28-072932_lg-jam-2.jpg.json",
       "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072932/lg-jam-2.jpg"
+    },
+    {
+      "name": "lg-acc-2",
+      "file_name": "lg-acc-2.jpg",
+      "file_type": "image/jpeg",
+      "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/lg-acc-2.jpg",
+      "date_added": "2017-08-28 08:05:14",
+      "tags": "",
+      "file_size": 213250,
+      "width": 1000,
+      "height": 667,
+      "description": "",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/large_lg-acc-2.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/medium_lg-acc-2.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/small_lg-acc-2.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/xsmall_lg-acc-2.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/thumb_lg-acc-2.jpg",
+      "git_file_name": "_assets/image_data/site-assets_32_758_6369_media_2017-08-28-080512_lg-acc-2.jpg.json",
+      "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-080512/lg-acc-2.jpg"
     }
   ],
   "description": ""
