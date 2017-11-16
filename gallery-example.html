@@ -1,0 +1,10 @@
+---
+title: gallery example
+----
+<html>
+<body>
+{% for photo in site.data._galleries.alex_gallery.photos %}
+  <img src={{photo.url}} />
+{% endfor %}
+</body>
+</html>
