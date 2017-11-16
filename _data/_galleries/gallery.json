@@ -57,6 +57,25 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-30-062007/thumb_lg-3.jpg",
       "git_file_name": "_assets/image_data/site-assets_32_758_6768_media_2017-08-30-062007_lg-3.jpg.json",
       "path": "https://cdn.traveltripper.io/site-assets/32_758_6768/media/2017-08-30-062007/lg-3.jpg"
+    },
+    {
+      "name": "th-spa-3",
+      "file_name": "th-spa-3.jpg",
+      "file_type": "image/jpeg",
+      "url": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/th-spa-3.jpg",
+      "date_added": "2017-08-28 07:23:23",
+      "tags": "",
+      "file_size": 111400,
+      "width": 520,
+      "height": 340,
+      "description": "",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/large_th-spa-3.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/medium_th-spa-3.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/small_th-spa-3.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/xsmall_th-spa-3.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/thumb_th-spa-3.jpg",
+      "git_file_name": "_assets/image_data/site-assets_32_758_6369_media_2017-08-28-072322_th-spa-3.jpg.json",
+      "path": "https://cdn.traveltripper.io/site-assets/32_758_6369/media/2017-08-28-072322/th-spa-3.jpg"
     }
   ],
   "description": ""
