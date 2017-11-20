@@ -2,6 +2,25 @@
   "name": "Alex's Gallery",
   "photos": [
     {
+      "name": "garden-view-king",
+      "file_name": "garden-view-king.jpg",
+      "file_type": "image/jpeg",
+      "url": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/garden-view-king.jpg",
+      "tags": "",
+      "file_size": 1891760,
+      "width": 4500,
+      "height": 3000,
+      "description": "",
+      "date_added": "2017-09-28-154740",
+      "url_large": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/large_garden-view-king.jpg",
+      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/medium_garden-view-king.jpg",
+      "url_small": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/small_garden-view-king.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/xsmall_garden-view-king.jpg",
+      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/thumb_garden-view-king.jpg",
+      "git_file_name": "_assets/image_data/garden-view-king.json",
+      "path": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/garden-view-king.jpg"
+    },
+    {
       "name": "little-book-of-big-experiences-package",
       "file_name": "little-book-of-big-experiences-package.jpg",
       "file_type": "image/jpeg",
@@ -57,25 +76,6 @@
       "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/thumb_birthday-package.jpg",
       "git_file_name": "_assets/image_data/birthday-package.json",
       "path": "//cdn.traveltripper.io/site-assets/32_758_7703/media/2017-09-29-125132/birthday-package.jpg"
-    },
-    {
-      "name": "garden-view-king",
-      "file_name": "garden-view-king.jpg",
-      "file_type": "image/jpeg",
-      "url": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/garden-view-king.jpg",
-      "tags": "",
-      "file_size": 1891760,
-      "width": 4500,
-      "height": 3000,
-      "description": "",
-      "date_added": "2017-09-28-154740",
-      "url_large": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/large_garden-view-king.jpg",
-      "url_medium": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/medium_garden-view-king.jpg",
-      "url_small": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/small_garden-view-king.jpg",
-      "url_xsmall": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/xsmall_garden-view-king.jpg",
-      "url_thumb": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/thumb_garden-view-king.jpg",
-      "git_file_name": "_assets/image_data/garden-view-king.json",
-      "path": "//cdn.traveltripper.io/site-assets/32_758_7656/media/2017-09-28-154740/garden-view-king.jpg"
     }
   ],
   "description": ""
